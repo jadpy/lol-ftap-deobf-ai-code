@@ -1,0 +1,125 @@
+    local GAME2 = GAME
+    local v22 = loadstring(GAME2.HttpGet(GAME2, "https://raw.githubusercontent.com/BlizTBr/scripts/main/Orion%20X"))()
+    local tbl = v22
+    GAME2 = tbl.MakeWindow(tbl, {
+        ["Name"] = "k hub Key System",
+        ["HidePremium"] = false,
+        ["IntroEnabled"] = false,
+        ["SaveConfig"] = false,
+        ["ConfigFolder"] = "Key(Syna)"
+    })
+    tbl = GAME
+    tbl.GetService(tbl, "HttpService")
+    local GAME = GAME
+    GAME = GAME.GetService(GAME, "Players").LocalPlayer
+    local v32 = "SavedKey"
+    local v42 = ""
+    
+    local function function1(...)
+        local pcall = pcall
+        GAME = {
+            pcall(function(...)
+                pcall = GAME
+                return pcall.HttpGet(pcall, b[w[1]]) 
+            end)
+        }
+        local tbl2 = pcall(function(...)
+            pcall = GAME
+            return pcall.HttpGet(pcall, b[w[1]]) 
+        end)
+        if tbl2 then tbl2 = tbl2[2] end
+        return tbl2 or nil 
+    end
+    
+    local function function3(function2, ...) writefile(v32, function2) end
+    
+    local function function4(...)
+        wait(1.5)
+        local tbl3 = v22
+        tbl3.Destroy(tbl3)
+        local GAME3 = GAME
+        loadstring(GAME3.HttpGet(GAME3, "https://raw.githubusercontent.com/makkurokurosukescript/Ftap.K.hub/refs/heads/main/.gitignore", true))() 
+    end
+    
+    local function function6(function5, ...)
+        local v5 = function5
+        local v62 = function1()
+        local enable1 = not v62
+        if enable1 then
+            enable1 = v22
+            enable1.MakeNotification(enable1, {
+                ["Name"] = "Error",
+                ["Content"] = "Failed to retrieve key from ",
+                ["Image"] = "rbxassetid://4483345998",
+                ["Time"] = 5
+            })
+        end
+        enable1 = v5 == v62
+        if enable1 then
+            function3(v5)
+            enable1 = v22
+            enable1.MakeNotification(enable1, {
+                ["Name"] = "Correct Key",
+                ["Content"] = "Script loading",
+                ["Image"] = "rbxassetid://4483345998",
+                ["Time"] = 5
+            })
+            task.wait(1)
+            function4()
+        else
+            enable1 = v22
+            enable1.MakeNotification(enable1, {
+                ["Name"] = "Incorrect Key",
+                ["Content"] = "Please Try again",
+                ["Image"] = "rbxassetid://4483345998",
+                ["Time"] = 5
+            })
+        end 
+    end
+    
+    enable2 = GAME2.MakeTab(GAME2, {
+        ["Name"] = "Login",
+        ["Icon"] = "",
+        ["PremiumOnly"] = false
+    })
+    GAME = GAME2.MakeTab(GAME2, {
+        ["Name"] = "info",
+        ["Icon"] = "rbxassetid://4483345998",
+        ["PremiumOnly"] = false
+    })
+    enable2.AddSection(enable2, { ["Name"] = "Login" })
+    enable2.AddParagraph(enable2, "How to Get key", "1. discord join k hub key")
+    enable2.AddTextbox(enable2, {
+        ["Name"] = "Enter Key",
+        ["Default"] = "",
+        ["TextDisappear"] = false,
+        ["Callback"] = function(function7, ...) v42 = function7 end
+    })
+    enable2.AddButton(enable2, {
+        ["Name"] = "Check Key",
+        ["Callback"] = function(...)
+            if v42 and v42 ~= "" then
+                function6(v42)
+            else
+                local tbl4 = v22
+                tbl4.MakeNotification(tbl4, {
+                    ["Name"] = "Error",
+                    ["Content"] = "Please enter a key",
+                    ["Image"] = "rbxassetid://4483345998",
+                    ["Time"] = 5
+                })
+            end 
+        end
+    })
+    enable2.AddButton(enable2, {
+        ["Name"] = "Get Key",
+        ["Callback"] = function(...) setclipboard("https://discord.gg/GssY5fqfqP") end
+    })
+    GAME.AddSection(GAME, { ["Name"] = "script Update" })
+    GAME.AddParagraph(GAME, "2025/12/03", "\xe8\x89\xb2\xe3\x82\x93\xe3\x81\xaa\xe6\xa9\x9f\xe8\x83\xbd\xe3\x82\x92\xe8\xbf\xbd\xe5\x8a\xa0\xe3\x81\x97\xe3\x81\x9f")
+    GAME.AddParagraph(GAME, "2025/12/06", "k hub \xe9\x85\x8d\xe5\xb8\x83")
+    GAME.AddSection(GAME, { ["Name"] = "Developer" })
+    GAME.AddParagraph(GAME, "Owner", "\xe3\x81\x8f\xe3\x82\x8d\xe3\x81\x99\xe3\x81\x91")
+    GAME.AddParagraph(GAME, "Sub Owner", "\xe8\xaa\xb0\xe3\x81\x8b\xe3\x81\x95\xe3\x82\x93")
+    GAME.AddParagraph(GAME, "Group", "\xe8\xaa\xb0\xe3\x81\x8b\xe3\x81\x95\xe3\x82\x93")
+end
