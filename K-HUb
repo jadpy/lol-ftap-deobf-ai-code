@@ -215,7 +215,6 @@ Seat230:Sit(Humanoid214)
 RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
 wait(0.004166666666666667)
 Seat230:Sit(Humanoid214)
-error("D:\\new deobf\\23\\deobf bot\\25ms\\./httplog2:628: <25ms: infinitelooperror>")
 end
 local 380 =14:MakeWindow({
   ["ConfigFolder"] = "FTAP",
