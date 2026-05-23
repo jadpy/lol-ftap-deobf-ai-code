@@ -1,0 +1,4063 @@
+    local GAME = GAME
+    local players = GAME.GetService(GAME, "Players")
+    local GAME = GAME
+    GAME.GetService(GAME, "RunService")
+    GAME = GAME
+    local inputService = GAME.GetService(GAME, "UserInputService")
+    local GAME2 = GAME
+    local repStorage = GAME2.GetService(GAME2, "ReplicatedStorage")
+    local GAME3 = GAME
+    local workspace = GAME3.GetService(GAME3, "Workspace")
+    local GAME4 = GAME
+    GAME4.GetService(GAME4, "TweenService")
+    GAME4 = GAME
+    GAME4.GetService(GAME4, "Debris")
+    GAME4 = GAME
+    local teleportService = GAME4.GetService(GAME4, "TeleportService")
+    local GAME5 = GAME
+    GAME5.GetService(GAME5, "StarterGui")
+    GAME5 = GAME
+    GAME5.GetService(GAME5, "CoreGui")
+    local localPlayer = players.LocalPlayer
+    GAME5 = localPlayer
+    local tbl2 = GAME5.GetMouse(GAME5)
+    
+    local function function1(...) return localPlayer end
+    
+    local function function2(...) return tbl2.Target end
+    
+    local function function3(...) return tbl2 end
+    
+    local function function4(...)
+        local character = localPlayer.Character
+        if character then
+            return character
+        else
+            character = localPlayer.CharacterAdded
+            character.Wait(character)
+        end 
+    end
+    
+    local function function5(...)
+        local tbl3 = function4()
+        local v27 = tbl3.FindFirstChild(tbl3, "HumanoidRootPart")
+        if v27 then
+            return v27
+        else
+            tbl3.FindFirstChild(tbl3, "Torso")
+        end 
+    end
+    
+    local function function6(...)
+        local tbl4 = function4()
+        return tbl4.FindFirstChildOfClass(tbl4, "Humanoid") 
+    end
+    
+    local function function9(function8, function7, ...)
+        local bodyVel = Instance.new("BodyVelocity")
+        bodyVel.MaxForce = Vector3.one * math.huge
+        local v32 = function7
+        bodyVel.Velocity = v32
+        v32 = function8
+        bodyVel.Parent = v32
+        task.spawn(function(...)
+            task.wait(1)
+            local tbl5 = bodyVel
+            tbl5.Destroy(tbl5) 
+        end) 
+    end
+    
+    local function function11(function10, ...)
+        local tbl6 = repStorage
+        local tbl7 = tbl6.FindFirstChild(tbl6, "GrabEvents")
+        if tbl7 then tbl7.FindFirstChild(tbl7, "SetNetworkOwner") end
+        if tbl7 then
+            tbl6 = tbl7.SetNetworkOwner
+            tbl6.FireServer(tbl6, function10, function5().CFrame)
+        end 
+    end
+    
+    local function function14(function12, function13, ...)
+        local tbl8 = workspace
+        return tbl8.GetPartBoundsInRadius(tbl8, function12, function13) 
+    end
+    
+    local function function17(function16, function15, ...)
+        local tbl10 = function16
+        local tbl9 = function15
+        local ipairs = ipairs
+        local tbl12 = tbl10.Parent
+        local tbl11 = tbl12[3]
+        tbl11 = tbl11[1]
+        for v62, index2 in tbl11, ipairs(tbl11.GetDescendants(tbl11)) do
+            if index2.IsA(index2, "BasePart") then index2.CanCollide = false end 
+        end
+        tbl11 = typeof(tbl9) == "CFrame" and tbl9.Position
+        ipairs = ipairs
+        if tbl11 then
+            local bodyPos = Instance.new("BodyPosition")
+            bodyPos.MaxForce = Vector3.one * math.huge
+            local v52 = tbl11
+            bodyPos.Position = v52
+            bodyPos.v5 = 20000
+            bodyPos.D = 5000
+            bodyPos.Parent = tbl10
+            task.spawn(function(...)
+                ipairs = bodyPos.ReachedTarget
+                ipairs.Wait(ipairs)
+                pcall(bodyPos.Destroy, bodyPos)
+                tbl9 = tbl10.Parent
+                tbl9 = tbl9[3]
+                tbl9 = tbl9[1]
+                for v42, index in tbl9, ipairs(tbl9.GetDescendants(tbl9)) do
+                    if index.IsA(index, "BasePart") then index.CanCollide = true end 
+                end 
+            end)
+        else
+            tbl9 = function15
+        end 
+    end
+    
+    local function function19(function18, ...)
+        local tbl13 = function18
+        local cframe = tbl13.CFrame
+        for index3 = 1, 2 do
+            function5().CFrame = tbl13.CFrame
+            function11(tbl13)
+            task.spawn(function(...)
+                index3 = r15("\xe2O\xe1\xc4", 14391153367597)
+                task[tbl[index3]](0.5)
+                for v72 = 1, 2 do
+                    task.wait(0.5)
+                    function11(tbl13)
+                    local bodyPos = Instance.new("BodyPosition")
+                    bodyPos.Position = tbl13.CFrame.Position
+                    bodyPos.MaxForce = Vector3.one * math.huge
+                    bodyPos.Parent = tbl13
+                    GAME2 = Instance.new("BodyGyro")
+                    GAME2.CFrame = cframe
+                    GAME2.MaxTorque = Vector3.one * math.huge
+                    GAME2.Parent = tbl13 
+                end 
+            end)
+            task.wait() 
+        end
+        function5().CFrame = function5().CFrame 
+    end
+    
+    local function function21(function20, ...)
+        local tbl14 = repStorage
+        GAME2 = tbl
+        local tbl15 = tbl14.FindFirstChild(tbl14, "GrabEvents")
+        if tbl15 then tbl15.FindFirstChild(tbl15, "CreateGrabLine") end
+        if tbl15 then
+            tbl15 = function20
+            for v82 = 1, tbl15 do
+                tbl14 = tbl14.FindFirstChild(tbl14, tbl15[GAME]).CreateGrabLine
+                tbl14.FireServer(tbl14) 
+            end
+        end 
+    end
+    
+    local function function23(function22, ...)
+        local tbl16 = repStorage
+        GAME2 = tbl
+        local tbl17 = tbl16.FindFirstChild(tbl16, "GrabEvents")
+        if tbl17 then tbl17.FindFirstChild(tbl17, "ExtendGrabLine") end
+        if tbl17 then
+            tbl17 = function22
+            for v9 = 1, tbl17 do
+                tbl16 = tbl16.FindFirstChild(tbl16, tbl17[GAME]).ExtendGrabLine
+                tbl16.FireServer(tbl16, string.rep("Balls", function22)) 
+            end
+        end 
+    end
+    
+    local function function25(function24, ...)
+        local tbl18 = repStorage
+        local tbl19 = tbl18.FindFirstChild(tbl18, "GrabEvents")
+        if tbl19 then tbl19.FindFirstChild(tbl19, "DestroyGrabLine") end
+        if tbl19 then
+            tbl18 = tbl19.DestroyGrabLine
+            tbl18.FireServer(tbl18, function24)
+        end 
+    end
+    
+    local function function26(...)
+        local tbl20 = workspace
+        return tbl20.FindFirstChild(tbl20, localPlayer.Name .. "SpawnedInToys") 
+    end
+    
+    local function function30(function27, function29, function28, ...)
+        local v102 = function27
+        local tbl21 = repStorage
+        v102 = function28
+        local tbl22 = tbl21.FindFirstChild(tbl21, "MenuToys")
+        if tbl22 then tbl22.FindFirstChild(tbl22, "SpawnToyRemoteFunction") end
+        if tbl22 then
+            tbl21 = tbl22.SpawnToyRemoteFunction
+            if v102 then
+                tbl21 = tbl21
+                return tbl21.InvokeServer(tbl21, function27, function29, v102)
+            end
+        end
+        return nil 
+    end
+    
+    local function function32(function31, ...)
+        local tbl23 = repStorage
+        local tbl24 = tbl23.FindFirstChild(tbl23, "MenuToys")
+        if tbl24 then tbl24.FindFirstChild(tbl24, "DestroyToy") end
+        if tbl24 then
+            tbl23 = tbl24.DestroyToy
+            tbl23.FireServer(tbl23, function31)
+        end 
+    end
+    
+    local function function33(...)
+        local tbl26 = function4() and function5()
+        task.wait()
+        local tbl28 = function4()
+        if tbl28 and function5() then
+            tbl28 = function26()
+            if tbl28 then
+                local func = tbl28.GetChildren
+                tbl26 = { func(tbl28) }
+                tbl28 = func[2]
+                local v132 = func[3]
+                for v122, index4 in pairs(u(tbl26)) do
+                    if index4.Name == "NinjaShuriken" then
+                        local tbl27 = index4.FindFirstChild(index4, "StickyPart")
+                        function1 = tbl27.FindFirstChild(tbl27, "SoundPart")
+                        if tbl27 then
+                            tbl27 = tbl27.StickyPart
+                            function1 = tbl27.FindFirstChild(tbl27, "PartOwner")
+                        end
+                        if function1 then function32(tbl27) end
+                        tbl27 = tbl27.FindFirstChild(tbl27, "SoundPart")
+                        if tbl27 then
+                            tbl27 = tbl27.SoundPart
+                            function1 = tbl27.FindFirstChild(tbl27, "PartOwner")
+                        end
+                        if tbl27 then function32(tbl27) end
+                        if not true then
+                            local tbl25 = function30("NinjaShuriken", function5().CFrame)
+                            if tbl26 then tbl27 = tbl26.FindFirstChild(tbl26, "NinjaShuriken") end
+                            local v112 = GAME5
+                            task.wait()
+                            if tbl26 then tbl27 = tbl26.FindFirstChild(tbl26, "NinjaShuriken") end
+                            v112 = v112
+                            if tbl26 then
+                                func = tbl25
+                                tbl26 = v112
+                                if func then
+                                    func = tbl25
+                                    tbl27 = func.FindFirstChild(func, "SoundPart")
+                                end
+                                v112 = tbl26
+                                if func then
+                                    function11(tbl25.SoundPart)
+                                    tbl25.SoundPart.CFrame = function5().CFrame + Vector3.new(0, 0.5, 0)
+                                end
+                                if tbl26 then tbl27 = tbl26.FindFirstChild(tbl26, "NinjaShuriken") end
+                                v112 = v112
+                                task.wait()
+                                if tbl26 then tbl27 = tbl26.FindFirstChild(tbl26, "NinjaShuriken") end
+                                v112 = v112
+                                if tbl26 then
+                                    func = tbl25
+                                    if func then
+                                        func = tbl25
+                                        tbl27 = func.FindFirstChild(func, "SoundPart")
+                                    end
+                                    v112 = v112
+                                    if func then
+                                        tbl25.SoundPart.CFrame = function5().CFrame + Vector3.new(0, 0.5, 0)
+                                        tbl26 = Instance.new("WeldConstraint")
+                                        tbl26.Part0 = tbl25.SoundPart
+                                        tbl26.Part1 = function5()
+                                        tbl26.Parent = function5()
+                                        break
+                                    end
+                                end
+                            end
+                        end
+                    end 
+                end
+            end
+        end 
+    end
+    
+    local function function34(...)
+        local tbl29 = repStorage
+        local tbl30 = tbl29.FindFirstChild(tbl29, "CharacterEvents")
+        if tbl30 then tbl30.FindFirstChild(tbl30, "RagdollRemote") end
+        if tbl30 then
+            tbl29 = tbl30.RagdollRemote
+            tbl29.FireServer(tbl29, function5(), 0)
+        end 
+    end
+    
+    local function function36(function35, ...)
+        local tbl32 = function35
+        if not tbl32 or not tbl32.UserId then return false end
+        local tbl31 = localPlayer
+        return tbl31.IsFriendsWith(tbl31, tbl32.UserId) 
+    end
+    
+    local function function38(function37, ...)
+        local tbl33 = function37
+        if tbl33 then tbl33.FindFirstChild(tbl33, "InPlot") and tbl33.InPlot.Value end
+        return tbl33 
+    end
+    
+    local function function40(function39, ...)
+        GAME2.lower(GAME2)
+        for index5, v142 in pairs(GAME4.GetPlayers(GAME4)) do
+            GAME4.lower(GAME4)
+            if index5.sub(index5, GAME2, #GAME2) == GAME2 then
+                break
+            else
+                index5.lower(index5)
+                GAME2.sub(GAME2, 1, #GAME2)
+            end 
+        end
+        return nil 
+    end
+    
+    local function function42(function41, ...)
+        local v152 = function41
+        task.spawn(function(...)
+            local GAME6 = GAME
+            local sound = Instance.new("Sound", GAME6.GetService(GAME6, "JointsService"))
+            sound.SoundId = v152
+            sound.Play(sound)
+            return sound 
+        end) 
+    end
+    
+    local function function45(function43, function44, ...)
+        local tbl36 = function43
+        local func2 = function44
+        local v202 = function5().CFrame
+        task.spawn(function(...)
+            local tbl34 = r15
+            local tbl35 = { "Head", "Torso", "HumanoidRootPart" }
+            tbl35 = tbl34[2]
+            local v162 = tbl34[3]
+            for v172, index6 in pairs(tbl35) do
+                function1 = function4()
+                function1 = function1.FindFirstChild(function1, index6)
+                if function1 then function1.CanCollide = false end 
+            end
+            local v182 = "new"
+            tbl35 = tbl36.Position
+            function1 = tbl36.CFrame.LookVector * 15
+            function5().CFrame = CFrame[v182](v182)
+            task.wait(.1)
+            function1 = tbl36
+            tbl35 = function1.Position
+            workspace.CurrentCamera.CFrame = CFrame.lookAt(workspace.CurrentCamera.CFrame.Position, tbl35)
+            for v192 = tbl35, 4, function1 do
+                tbl35 = 0
+                function11(tbl36)
+                task.wait(.05) 
+            end
+            task.wait(.1)
+            func2(select(-2, ...))
+            v162 = workspace.CurrentCamera.CFrame
+            workspace.CurrentCamera.CFrame = v162
+            tbl35 = r15
+            task.wait(.1)
+            v182 = tbl35[3]
+            v162 = tbl35[2]
+            for index7, index8 in pairs(tbl35) do
+                index7 = function4()
+                index7 = index7.FindFirstChild(index7, index8)
+                if index7 then index7.CanCollide = true end 
+            end
+            function5().CFrame = v202
+            function9(function5(), Vector3.zero) 
+        end, ...) 
+    end
+    
+    local GAME7 = GAME
+    local enable1 = not GAME7.IsLoaded(GAME7)
+    if enable1 then
+        local tbl37 = GAME.Loaded
+        tbl37.Wait(tbl37)
+    end
+    local GAME8 = GAME
+    enable1 = loadstring(GAME8.HttpGet(GAME8, "https://pastefy.app/QUxuLydD/raw"))()
+    x4[1] = 30470893172589
+    x4[4] = "\xe4\x17\xed"
+    x4[3] = 4106980886392
+    x4[5] = 29910651713128
+    x4[2] = "++\""
+    x4[1] = r15(x4[2], x4[3])
+    x4[2] = 417467400386
+    x4[1] = "\x99+iy\x1f\xc3\x86\xa7O\xcf^\xd5\xb0"
+    x4[1] = tbl
+    x4[2] = r15
+    x4[3] = x4[2](x4[4], x4[5])
+    x4[1] = -7
+    x4[2] = 575
+    local tbl38 = {
+        ["W"] = false,
+        ["A"] = false,
+        ["S"] = false,
+        ["D"] = false,
+        ["Space"] = false,
+        ["Shift"] = false
+    }
+    GAME7 = inputService.InputBegan
+    GAME7.Connect(GAME7, function(function46, function47, ...)
+        GAME2 = function46.KeyCode
+        if GAME2 == Enum.KeyCode.W then tbl38.W = true end
+        if GAME2 == Enum.KeyCode.v4 then tbl38.v4 = true end
+        if GAME2 == Enum.KeyCode.S then tbl38.S = true end
+        if GAME2 == Enum.KeyCode.D then tbl38.D = true end
+        if GAME2 == Enum.KeyCode.Space then tbl38.Space = true end
+        if GAME2 == Enum.KeyCode.LeftShift or GAME2 == Enum.KeyCode.RightShift then
+            tbl38.Shift = true
+        end 
+    end)
+    GAME7 = inputService.InputEnded
+    GAME7.Connect(GAME7, function(function48, function49, ...)
+        GAME2 = function48.KeyCode
+        if GAME2 == Enum.KeyCode.W then tbl38.W = false end
+        if GAME2 == Enum.KeyCode.v4 then tbl38.v4 = false end
+        if GAME2 == Enum.KeyCode.S then tbl38.S = false end
+        if GAME2 == Enum.KeyCode.D then tbl38.D = false end
+        if GAME2 == Enum.KeyCode.Space then tbl38.Space = false end
+        if GAME2 == Enum.KeyCode.LeftShift or GAME2 == Enum.KeyCode.RightShift then
+            tbl38.Shift = false
+        end 
+    end)
+    GAME7 = inputService.InputChanged
+    GAME7.Connect(GAME7, function(function50, ...) local v212 = function50 end)
+    
+    local function function51(...)
+        local tbl39 = r65
+        if tbl39 then
+            tbl39 = r65
+            tbl39.Destroy(tbl39)
+        end
+        local bodyVel = Instance.new("BodyVelocity")
+        bodyVel.MaxForce = Vector3.one * math.huge
+        bodyVel.Parent = function5() 
+    end
+    
+    local function function52(...)
+        if r65 then
+            local tbl40 = r65
+            tbl40.Destroy(tbl40)
+        end 
+    end
+    
+    local tbl41 = {}
+    
+    local function function53(...)
+        for v232 = #tbl41, 1, -1 do
+            GAME2 = not ({
+                ["ESP"] = false,
+                ["FOV"] = 70,
+                ["TPS"] = false,
+                ["Spectate"] = nil
+            }).ESP 
+        end
+        if ({
+            ["ESP"] = false,
+            ["FOV"] = 70,
+            ["TPS"] = false,
+            ["Spectate"] = nil
+        }).ESP then
+            GAME2 = players
+            local tbl42 = GAME2[3]
+            for v222, index9 in pairs(tbl42.GetPlayers(tbl42)) do
+                if index9 ~= localPlayer and index9.Character then
+                    local character2 = index9.Character
+                    local element = character2.FindFirstChild(character2, "__SuiseiESP")
+                    if not element then
+                        element = Instance.new("Highlight", index9.Character)
+                        element.Name = "__SuiseiESP"
+                        element.FillColor = Color3.fromRGB(64, 0, 255)
+                        element.OutlineColor = Color3.fromRGB(255, 255, 255)
+                        element.FillTransparency = 0.5
+                        table.insert(tbl41, element)
+                    end
+                end 
+            end
+        end 
+    end
+    
+    local function function54(...)
+        local tbl43 = function26()
+        if tbl43 then
+            local tbl44 = tbl43.FindFirstChild(tbl43, "CreatureBlobman")
+            if tbl44 then tbl44.FindFirstChild(tbl44, "VehicleSeat") end
+            if tbl44 then return tbl44 end
+        end
+        tbl43 = tbl
+        local tbl45 = workspace.PlotItems
+        tbl45 = tbl45[1]
+        for index10, index11 in ipairs(tbl45.GetChildren(tbl45)) do
+            index10 = index11.FindFirstChild(index11, "CreatureBlobman")
+            if index10 then
+                function1 = index10.FindFirstChild(index10, "PlayerValue") and index10.PlayerValue.Value == localPlayer.Name
+                index11.FindFirstChild(index11, tbl[v])
+            end
+            if index10 then
+                return index10
+            end 
+        end
+        return nil 
+    end
+    
+    local function function55(...) return function30("CreatureBlobman", function5().CFrame) end
+    
+    local function function59(function57, function56, function58, ...)
+        local tbl48 = function57
+        tbl48 = function58
+        local tbl47 = tbl48.FindFirstChild(tbl48, tbl48 .. "Detector")
+        local tbl46 = tbl48.FindFirstChild(tbl48, "BlobmanSeatAndOwnerScript")
+        if tbl46 then tbl46.FindFirstChild(tbl46, "CreatureGrab") end
+        if tbl46 then
+            tbl46 = tbl46.CreatureGrab
+            tbl46.FireServer(tbl46, tbl47, function56, tbl47 and tbl47.FindFirstChild(tbl47, tbl48 .. "Weld"))
+        end 
+    end
+    
+    local function function63(function61, function60, function62, ...)
+        local tbl49 = function60
+        function5().CFrame = tbl49.CFrame
+        task.wait(0.25)
+        function59(function61, tbl49, function62)
+        task.wait(0.25)
+        function5().CFrame = function5().CFrame 
+    end
+    
+    local function function67(function65, function64, function66, ...)
+        local tbl50 = function64
+        local v242 = function65
+        tbl50 = function66
+        function59(v242, function5(), tbl50)
+        task.wait(.1)
+        function11(tbl50)
+        task.wait()
+        tbl50.CFrame = tbl50.CFrame + Vector3.new(0, 16, 0)
+        task.wait(.1)
+        function25(tbl50)
+        function59(v242, tbl50, tbl50) 
+    end
+    
+    local tbl51 = enable1.CreateWindow(enable1, {
+        ["Name"] = "Noob hub",
+        ["Icon"] = 0,
+        ["LoadingTitle"] = "Noob Hub",
+        ["LoadingSubtitle"] = "Made by Bliz_tbr",
+        ["Theme"] = "Default",
+        ["DisableThemeChange"] = false
+    })
+    enable1.Notify(enable1, {
+        ["Title"] = "Noob hub",
+        ["Content"] = "Hello, " .. localPlayer.DisplayName,
+        ["Duration"] = 5
+    })
+    local tbl52 = tbl51.CreateTab(tbl51, "Movements", 175046912)
+    local tbl53 = tbl51.CreateTab(tbl51, "Players", 175046939)
+    local tbl54 = tbl51.CreateTab(tbl51, "Visuals", 175046936)
+    local tbl55 = tbl51.CreateTab(tbl51, "Combats", 175046919)
+    local tbl56 = tbl51.CreateTab(tbl51, "Auras", 175046930)
+    local tbl57 = tbl51.CreateTab(tbl51, "Grabs", 175046933)
+    local tbl58 = tbl51.CreateTab(tbl51, "Miscs", 175046942)
+    local tbl59 = tbl51.CreateTab(tbl51, "Blobmans", 175046945)
+    local tbl60 = tbl51.CreateTab(tbl51, "Snipes", 175046948)
+    local tbl61 = tbl51.CreateTab(tbl51, "Trolls", 175046951)
+    local tbl62 = tbl51.CreateTab(tbl51, "Settings", 175046954)
+    tbl52.CreateSlider(tbl52, {
+        ["Name"] = "Speed (Crouching)",
+        ["Range"] = { 0, 150 },
+        ["Increment"] = 1,
+        ["Suffix"] = "Speed",
+        ["CurrentValue"] = 16,
+        ["Flag"] = "CrouchSpeed",
+        ["Callback"] = function(function68, ...)
+            local tbl63 = function68
+            if not ({
+                ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                ["SpeedHack"] = { ["Value"] = 16 },
+                ["JumppowerHack"] = { ["Value"] = 50 },
+                ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                ["Infjump"] = { ["Value"] = false },
+                ["Fly"] = { ["Value"] = false },
+                ["Noclip"] = { ["Value"] = false },
+                ["FlyMethod"] = "Velocity",
+                ["SpeedMethod"] = "CFrame",
+                ["AutoSpeedMethod"] = true,
+                ["Teleports"] = {
+                    ["Barn"] = CFrame.new(-234, 85, -311),
+                    ["BlueHouse"] = CFrame.new(525, 98, -375),
+                    ["Factory"] = CFrame.new(138, 365, 346),
+                    ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                    ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                    ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                    ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                    ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                    ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                    ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                    [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                }
+            }).Fly then
+                tbl63 = function6()
+                if tbl63 then tbl63.WalkSpeed = function68 end
+            end 
+        end
+    })
+    tbl52.CreateToggle(tbl52, {
+        ["Name"] = "Loop Speed (Crouching)",
+        ["CurrentValue"] = false,
+        ["Flag"] = "LoopCrouchSpeed",
+        ["Callback"] = function(function69, ...) end
+    })
+    tbl52.CreateSlider(tbl52, {
+        ["Name"] = "Jumppower",
+        ["Range"] = { 0, 250 },
+        ["Increment"] = 1,
+        ["Suffix"] = "Power",
+        ["CurrentValue"] = 50,
+        ["Flag"] = "JumpPower",
+        ["Callback"] = function(function70, ...)
+            local v252 = function70
+            local v262 = v252
+            local tbl64 = function6()
+            if tbl64 then
+                tbl64 = function70
+                tbl64.JumpPower = tbl64
+            end 
+        end
+    })
+    tbl52.CreateToggle(tbl52, {
+        ["Name"] = "Loop Jumppower",
+        ["CurrentValue"] = false,
+        ["Flag"] = "LoopJumpPower",
+        ["Callback"] = function(function71, ...) end
+    })
+    tbl52.CreateSlider(tbl52, {
+        ["Name"] = "Speed",
+        ["Range"] = { 0, 150 },
+        ["Increment"] = 1,
+        ["Suffix"] = "Speed",
+        ["CurrentValue"] = 16,
+        ["Flag"] = "Speed",
+        ["Callback"] = function(function72, ...) end
+    })
+    tbl52.CreateToggle(tbl52, {
+        ["Name"] = "Inf Jump",
+        ["CurrentValue"] = false,
+        ["Flag"] = "InfJump",
+        ["Callback"] = function(function73, ...) end
+    })
+    tbl52.CreateToggle(tbl52, {
+        ["Name"] = "Fly",
+        ["CurrentValue"] = false,
+        ["Flag"] = "Fly",
+        ["Callback"] = function(function74, ...)
+            local v272 = function74
+            if v272 then
+                function51()
+            else
+                function52()
+            end 
+        end
+    })
+    tbl52.CreateToggle(tbl52, {
+        ["Name"] = "Noclip",
+        ["CurrentValue"] = false,
+        ["Flag"] = "Noclip",
+        ["Callback"] = function(function75, ...) end
+    })
+    tbl52.CreateToggle(tbl52, {
+        ["Name"] = "Freeze",
+        ["CurrentValue"] = false,
+        ["Flag"] = "Freeze",
+        ["Callback"] = function(function76, ...)
+            local v28 = function76
+            if v28 then function5().CFrame end 
+        end
+    })
+    tbl52.CreateDivider(tbl52)
+    tbl52.CreateInput(tbl52, {
+        ["Name"] = "Teleport Target",
+        ["PlaceholderText"] = "Player name",
+        ["RemoveTextAfterFocus"] = false,
+        ["Flag"] = "TPTarget",
+        ["Callback"] = function(function77, ...)
+            local func3 = function40
+            local tbl65 = func3(function77)
+            if tbl65 then local character3 = tbl65.Character end
+            if tbl65 then
+                func3 = tbl65.Character
+                tbl65 = func3.FindFirstChild(func3, "HumanoidRootPart")
+                if tbl65 then function5().CFrame = tbl65.CFrame end
+            end 
+        end
+    })
+    tbl52.CreateButton(tbl52, {
+        ["Name"] = "Teleport to Target",
+        ["Callback"] = function(...)
+            local func4 = function40
+            local tbl67 = func4(({
+                ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                ["SpeedHack"] = { ["Value"] = 16 },
+                ["JumppowerHack"] = { ["Value"] = 50 },
+                ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                ["Infjump"] = { ["Value"] = false },
+                ["Fly"] = { ["Value"] = false },
+                ["Noclip"] = { ["Value"] = false },
+                ["FlyMethod"] = "Velocity",
+                ["SpeedMethod"] = "CFrame",
+                ["AutoSpeedMethod"] = true,
+                ["Teleports"] = {
+                    ["Barn"] = CFrame.new(-234, 85, -311),
+                    ["BlueHouse"] = CFrame.new(525, 98, -375),
+                    ["Factory"] = CFrame.new(138, 365, 346),
+                    ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                    ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                    ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                    ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                    ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                    ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                    ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                    [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                }
+            }).Teleports.Target)
+            if tbl67 then local character4 = tbl67.Character end
+            if tbl67 then
+                func4 = tbl67.Character
+                local tbl66 = func4.FindFirstChild(func4, "HumanoidRootPart")
+                if tbl66 then function5().CFrame = tbl66.CFrame end
+            end 
+        end
+    })
+    tbl52.CreateButton(tbl52, {
+        ["Name"] = "Spawn",
+        ["Callback"] = function(...)
+            if function5() then function5().CFrame = CFrame.new(1, -10, -2) end 
+        end
+    })
+    tbl52.CreateButton(tbl52, {
+        ["Name"] = "Barn",
+        ["Callback"] = function(...)
+            if function5() then
+                function5().CFrame = ({
+                    ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                    ["SpeedHack"] = { ["Value"] = 16 },
+                    ["JumppowerHack"] = { ["Value"] = 50 },
+                    ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                    ["Infjump"] = { ["Value"] = false },
+                    ["Fly"] = { ["Value"] = false },
+                    ["Noclip"] = { ["Value"] = false },
+                    ["FlyMethod"] = "Velocity",
+                    ["SpeedMethod"] = "CFrame",
+                    ["AutoSpeedMethod"] = true,
+                    ["Teleports"] = {
+                        ["Barn"] = CFrame.new(-234, 85, -311),
+                        ["BlueHouse"] = CFrame.new(525, 98, -375),
+                        ["Factory"] = CFrame.new(138, 365, 346),
+                        ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                        ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                        ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                        ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                        ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                        ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                        ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                        [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                    }
+                }).Teleports.Barn
+            end 
+        end
+    })
+    tbl52.CreateButton(tbl52, {
+        ["Name"] = "Blue House",
+        ["Callback"] = function(...)
+            if function5() then
+                function5().CFrame = ({
+                    ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                    ["SpeedHack"] = { ["Value"] = 16 },
+                    ["JumppowerHack"] = { ["Value"] = 50 },
+                    ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                    ["Infjump"] = { ["Value"] = false },
+                    ["Fly"] = { ["Value"] = false },
+                    ["Noclip"] = { ["Value"] = false },
+                    ["FlyMethod"] = "Velocity",
+                    ["SpeedMethod"] = "CFrame",
+                    ["AutoSpeedMethod"] = true,
+                    ["Teleports"] = {
+                        ["Barn"] = CFrame.new(-234, 85, -311),
+                        ["BlueHouse"] = CFrame.new(525, 98, -375),
+                        ["Factory"] = CFrame.new(138, 365, 346),
+                        ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                        ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                        ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                        ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                        ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                        ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                        ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                        [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                    }
+                }).Teleports.BlueHouse
+            end 
+        end
+    })
+    tbl52.CreateButton(tbl52, {
+        ["Name"] = "Factory",
+        ["Callback"] = function(...)
+            if function5() then
+                function5().CFrame = ({
+                    ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                    ["SpeedHack"] = { ["Value"] = 16 },
+                    ["JumppowerHack"] = { ["Value"] = 50 },
+                    ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                    ["Infjump"] = { ["Value"] = false },
+                    ["Fly"] = { ["Value"] = false },
+                    ["Noclip"] = { ["Value"] = false },
+                    ["FlyMethod"] = "Velocity",
+                    ["SpeedMethod"] = "CFrame",
+                    ["AutoSpeedMethod"] = true,
+                    ["Teleports"] = {
+                        ["Barn"] = CFrame.new(-234, 85, -311),
+                        ["BlueHouse"] = CFrame.new(525, 98, -375),
+                        ["Factory"] = CFrame.new(138, 365, 346),
+                        ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                        ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                        ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                        ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                        ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                        ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                        ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                        [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                    }
+                }).Teleports.Factory
+            end 
+        end
+    })
+    tbl52.CreateButton(tbl52, {
+        ["Name"] = "Glass House",
+        ["Callback"] = function(...)
+            if function5() then
+                function5().CFrame = ({
+                    ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                    ["SpeedHack"] = { ["Value"] = 16 },
+                    ["JumppowerHack"] = { ["Value"] = 50 },
+                    ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                    ["Infjump"] = { ["Value"] = false },
+                    ["Fly"] = { ["Value"] = false },
+                    ["Noclip"] = { ["Value"] = false },
+                    ["FlyMethod"] = "Velocity",
+                    ["SpeedMethod"] = "CFrame",
+                    ["AutoSpeedMethod"] = true,
+                    ["Teleports"] = {
+                        ["Barn"] = CFrame.new(-234, 85, -311),
+                        ["BlueHouse"] = CFrame.new(525, 98, -375),
+                        ["Factory"] = CFrame.new(138, 365, 346),
+                        ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                        ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                        ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                        ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                        ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                        ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                        ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                        [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                    }
+                }).Teleports.GlassHouse
+            end 
+        end
+    })
+    tbl52.CreateButton(tbl52, {
+        ["Name"] = "Japanese House",
+        ["Callback"] = function(...)
+            if function5() then
+                function5().CFrame = ({
+                    ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                    ["SpeedHack"] = { ["Value"] = 16 },
+                    ["JumppowerHack"] = { ["Value"] = 50 },
+                    ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                    ["Infjump"] = { ["Value"] = false },
+                    ["Fly"] = { ["Value"] = false },
+                    ["Noclip"] = { ["Value"] = false },
+                    ["FlyMethod"] = "Velocity",
+                    ["SpeedMethod"] = "CFrame",
+                    ["AutoSpeedMethod"] = true,
+                    ["Teleports"] = {
+                        ["Barn"] = CFrame.new(-234, 85, -311),
+                        ["BlueHouse"] = CFrame.new(525, 98, -375),
+                        ["Factory"] = CFrame.new(138, 365, 346),
+                        ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                        ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                        ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                        ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                        ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                        ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                        ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                        [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                    }
+                }).Teleports.JapaneseHouse
+            end 
+        end
+    })
+    tbl52.CreateButton(tbl52, {
+        ["Name"] = "Train Cave",
+        ["Callback"] = function(...)
+            if function5() then
+                function5().CFrame = ({
+                    ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                    ["SpeedHack"] = { ["Value"] = 16 },
+                    ["JumppowerHack"] = { ["Value"] = 50 },
+                    ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                    ["Infjump"] = { ["Value"] = false },
+                    ["Fly"] = { ["Value"] = false },
+                    ["Noclip"] = { ["Value"] = false },
+                    ["FlyMethod"] = "Velocity",
+                    ["SpeedMethod"] = "CFrame",
+                    ["AutoSpeedMethod"] = true,
+                    ["Teleports"] = {
+                        ["Barn"] = CFrame.new(-234, 85, -311),
+                        ["BlueHouse"] = CFrame.new(525, 98, -375),
+                        ["Factory"] = CFrame.new(138, 365, 346),
+                        ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                        ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                        ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                        ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                        ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                        ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                        ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                        [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                    }
+                }).Teleports.TrainCave
+            end 
+        end
+    })
+    tbl53.CreateButton(tbl53, {
+        ["Name"] = "Barrier Destroyer",
+        ["Callback"] = function(...)
+            local tbl69 = function30("InstrumentWoodwindOcarina", function5().CFrame)
+            local tbl70 = { tbl69, function4() }
+            tbl69 = ipairs
+            local v33 = tbl69.FindFirstChild(tbl69, "HoldPart")
+            local tbl71 = v33
+            if tbl71 then
+                tbl71 = tbl69.HoldPart
+                tbl71 = tbl71.FindFirstChild(tbl71, "HoldItemRemoteFunction")
+            end
+            if tbl71 then
+                tbl70 = tbl69.HoldPart.HoldItemRemoteFunction
+                tbl70.InvokeServer(tbl70, unpack(tbl69))
+            end
+            task.wait(.05)
+            function5().CFrame = CFrame.new(304.06, 25.77, 488.54)
+            task.wait(.05)
+            function32(tbl69)
+            task.wait(.05)
+            function5().CFrame = function5().CFrame
+            local tbl68 = workspace.Plots
+            tbl71 = tbl68[3]
+            tbl68 = tbl68[1]
+            for v322, index13 in tbl68, ipairs(tbl68.GetChildren(tbl68)) do
+                if index13.FindFirstChild(index13, "Barrier") then
+                    function3 = tbl68.GetChildren
+                    local v30 = function3[1]
+                    local v31 = function3[2]
+                    for v29, index12 in ipairs(function3(tbl68)) do
+                        if index12.IsA(index12, "BasePart") then index12.CanCollide = false end 
+                    end
+                end 
+            end 
+        end
+    })
+    tbl53.CreateToggle(tbl53, {
+        ["Name"] = "Anti-Detect",
+        ["CurrentValue"] = false,
+        ["Flag"] = "AntiDetect",
+        ["Callback"] = function(function78, ...)
+            local v34 = function78
+            if v34 then function33() end 
+        end
+    })
+    tbl53.CreateToggle(tbl53, {
+        ["Name"] = "Anti-Ragdoll",
+        ["CurrentValue"] = false,
+        ["Flag"] = "AntiRagdoll",
+        ["Callback"] = function(function79, ...) end
+    })
+    tbl53.CreateToggle(tbl53, {
+        ["Name"] = "Anti-Touch",
+        ["CurrentValue"] = false,
+        ["Flag"] = "AntiTouch",
+        ["Callback"] = function(function80, ...) end
+    })
+    tbl53.CreateToggle(tbl53, {
+        ["Name"] = "Anti-Banana",
+        ["CurrentValue"] = false,
+        ["Flag"] = "AntiBanana",
+        ["Callback"] = function(function81, ...) end
+    })
+    tbl53.CreateToggle(tbl53, {
+        ["Name"] = "Ragdoll",
+        ["CurrentValue"] = false,
+        ["Flag"] = "Ragdoll",
+        ["Callback"] = function(function82, ...) end
+    })
+    tbl54.CreateToggle(tbl54, {
+        ["Name"] = "ESP",
+        ["CurrentValue"] = false,
+        ["Flag"] = "ESP",
+        ["Callback"] = function(function83, ...) function53() end
+    })
+    tbl54.CreateSlider(tbl54, {
+        ["Name"] = "FOV",
+        ["Range"] = { 1, 120 },
+        ["Increment"] = 1,
+        ["Suffix"] = "deg",
+        ["CurrentValue"] = 70,
+        ["Flag"] = "FOV",
+        ["Callback"] = function(function84, ...)
+            local v35 = function84
+            local v36 = v35
+            workspace.CurrentCamera.FieldOfView = v35 
+        end
+    })
+    tbl54.CreateToggle(tbl54, {
+        ["Name"] = "3rd Person",
+        ["CurrentValue"] = false,
+        ["Flag"] = "TPS",
+        ["Callback"] = function(function85, ...)
+            local v37 = function85
+            if v37 then
+                localPlayer.CameraMode = Enum.CameraMode.Classic
+                localPlayer.CameraMaxZoomDistance = 100
+            else
+                localPlayer.CameraMode = Enum.CameraMode.LockFirstPerson
+            end 
+        end
+    })
+    tbl54.CreateInput(tbl54, {
+        ["Name"] = "Spectate",
+        ["PlaceholderText"] = "Player name",
+        ["RemoveTextAfterFocus"] = false,
+        ["Flag"] = "Spectate",
+        ["Callback"] = function(function86, ...)
+            local func5 = function40
+            local tbl72 = func5(function86)
+            if tbl72 then local character5 = tbl72.Character end
+            if tbl72 then
+                func5 = tbl72.Character
+                tbl72 = func5.FindFirstChildOfClass(func5, "Humanoid")
+                if tbl72 then
+                    local GAME9 = GAME
+                    workspace.CurrentCamera.CameraSubject = GAME9
+                    func5(s)
+                end
+            end 
+        end
+    })
+    tbl55.CreateToggle(tbl55, {
+        ["Name"] = "Anti-Grab",
+        ["CurrentValue"] = false,
+        ["Flag"] = "AntiGrab",
+        ["Callback"] = function(function87, ...) end
+    })
+    tbl55.CreateToggle(tbl55, {
+        ["Name"] = "Anti-Void",
+        ["CurrentValue"] = false,
+        ["Flag"] = "AntiVoid",
+        ["Callback"] = function(function88, ...)
+            local v38 = function88
+            if v38 then
+                workspace.FallenPartsDestroyHeight = -1 / 0
+            else
+                workspace.FallenPartsDestroyHeight = -500
+            end 
+        end
+    })
+    tbl55.CreateToggle(tbl55, {
+        ["Name"] = "Anti-Far",
+        ["CurrentValue"] = false,
+        ["Flag"] = "AntiFar",
+        ["Callback"] = function(function89, ...) end
+    })
+    tbl55.CreateToggle(tbl55, {
+        ["Name"] = "Anti-Explode",
+        ["CurrentValue"] = false,
+        ["Flag"] = "AntiExplode",
+        ["Callback"] = function(function90, ...) end
+    })
+    tbl55.CreateToggle(tbl55, {
+        ["Name"] = "Strict Anti-Grab",
+        ["CurrentValue"] = false,
+        ["Flag"] = "StrAntiGrab",
+        ["Callback"] = function(function91, ...) end
+    })
+    tbl55.CreateToggle(tbl55, {
+        ["Name"] = "Extinguisher",
+        ["CurrentValue"] = false,
+        ["Flag"] = "Extinguisher",
+        ["Callback"] = function(function92, ...) end
+    })
+    tbl55.CreateToggle(tbl55, {
+        ["Name"] = "Invisible Line",
+        ["CurrentValue"] = false,
+        ["Flag"] = "InvisLine",
+        ["Callback"] = function(function93, ...)
+            local v40 = function93
+            if v40 then
+                local tbl73 = repStorage
+                local tbl74 = tbl73.FindFirstChild(tbl73, "GrabEvents")
+                if tbl74 then local v39 = tbl74.FindFirstChild(tbl74, "DestroyGrabLine") end
+                if tbl74 then
+                    tbl73 = tbl74.DestroyGrabLine
+                    tbl73.FireServer(tbl73)
+                end
+            end 
+        end
+    })
+    tbl55.CreateToggle(tbl55, {
+        ["Name"] = "Super Strength",
+        ["CurrentValue"] = false,
+        ["Flag"] = "SuperStrength",
+        ["Callback"] = function(function94, ...) end
+    })
+    tbl55.CreateSlider(tbl55, {
+        ["Name"] = "Super Strength Power",
+        ["Range"] = { 0, 5000 },
+        ["Increment"] = 10,
+        ["Suffix"] = "Force",
+        ["CurrentValue"] = 250,
+        ["Flag"] = "SuperStrengthPower",
+        ["Callback"] = function(function95, ...) end
+    })
+    tbl55.CreateToggle(tbl55, {
+        ["Name"] = "Inf Line",
+        ["CurrentValue"] = false,
+        ["Flag"] = "InfLine",
+        ["Callback"] = function(function96, ...) end
+    })
+    tbl55.CreateDivider(tbl55)
+    tbl55.CreateToggle(tbl55, {
+        ["Name"] = "Aim Bot",
+        ["CurrentValue"] = false,
+        ["Flag"] = "AimBot",
+        ["Callback"] = function(function97, ...) end
+    })
+    tbl55.CreateSlider(tbl55, {
+        ["Name"] = "Aim Bot Radius",
+        ["Range"] = { 0, 100 },
+        ["Increment"] = 1,
+        ["Suffix"] = "studs",
+        ["CurrentValue"] = 30,
+        ["Flag"] = "AimBotRadius",
+        ["Callback"] = function(function98, ...) end
+    })
+    tbl55.CreateDropdown(tbl55, {
+        ["Name"] = "Aim Bot Part",
+        ["Options"] = { "Head", "Torso", "HumanoidRootPart" },
+        ["CurrentOption"] = "Torso",
+        ["Flag"] = "AimBotPart",
+        ["Callback"] = function(function99, ...) end
+    })
+    tbl55.CreateDivider(tbl55)
+    tbl55.CreateToggle(tbl55, {
+        ["Name"] = "Revenge Void",
+        ["CurrentValue"] = false,
+        ["Flag"] = "RevengeVoid",
+        ["Callback"] = function(function100, ...) end
+    })
+    tbl55.CreateToggle(tbl55, {
+        ["Name"] = "Revenge Kill",
+        ["CurrentValue"] = false,
+        ["Flag"] = "RevengeKill",
+        ["Callback"] = function(function101, ...) end
+    })
+    tbl55.CreateToggle(tbl55, {
+        ["Name"] = "Revenge Poison",
+        ["CurrentValue"] = false,
+        ["Flag"] = "RevengePoison",
+        ["Callback"] = function(function102, ...) end
+    })
+    tbl55.CreateToggle(tbl55, {
+        ["Name"] = "Revenge Ragdoll",
+        ["CurrentValue"] = false,
+        ["Flag"] = "RevengeRagdoll",
+        ["Callback"] = function(function103, ...) end
+    })
+    tbl55.CreateToggle(tbl55, {
+        ["Name"] = "Revenge Death",
+        ["CurrentValue"] = false,
+        ["Flag"] = "RevengeDeath",
+        ["Callback"] = function(function104, ...) end
+    })
+    tbl56.CreateToggle(tbl56, {
+        ["Name"] = "Void Aura",
+        ["CurrentValue"] = false,
+        ["Flag"] = "VoidAura",
+        ["Callback"] = function(function105, ...) end
+    })
+    tbl56.CreateToggle(tbl56, {
+        ["Name"] = "Kill Aura",
+        ["CurrentValue"] = false,
+        ["Flag"] = "KillAura",
+        ["Callback"] = function(function106, ...) end
+    })
+    tbl56.CreateToggle(tbl56, {
+        ["Name"] = "Poison Aura",
+        ["CurrentValue"] = false,
+        ["Flag"] = "PoisonAura",
+        ["Callback"] = function(function107, ...) end
+    })
+    tbl56.CreateToggle(tbl56, {
+        ["Name"] = "Ragdoll Aura",
+        ["CurrentValue"] = false,
+        ["Flag"] = "RagdollAura",
+        ["Callback"] = function(function108, ...) end
+    })
+    tbl56.CreateToggle(tbl56, {
+        ["Name"] = "Death Aura",
+        ["CurrentValue"] = false,
+        ["Flag"] = "DeathAura",
+        ["Callback"] = function(function109, ...) end
+    })
+    tbl56.CreateToggle(tbl56, {
+        ["Name"] = "Fire Aura",
+        ["CurrentValue"] = false,
+        ["Flag"] = "FireAura",
+        ["Callback"] = function(function110, ...) end
+    })
+    tbl56.CreateToggle(tbl56, {
+        ["Name"] = "Anchor Aura",
+        ["CurrentValue"] = false,
+        ["Flag"] = "AnchorAura",
+        ["Callback"] = function(function111, ...) end
+    })
+    tbl56.CreateToggle(tbl56, {
+        ["Name"] = "Noclip Aura",
+        ["CurrentValue"] = false,
+        ["Flag"] = "NoclipAura",
+        ["Callback"] = function(function112, ...) end
+    })
+    tbl57.CreateToggle(tbl57, {
+        ["Name"] = "Void Grab",
+        ["CurrentValue"] = false,
+        ["Flag"] = "VoidGrab",
+        ["Callback"] = function(function113, ...) end
+    })
+    tbl57.CreateToggle(tbl57, {
+        ["Name"] = "Kill Grab",
+        ["CurrentValue"] = false,
+        ["Flag"] = "KillGrab",
+        ["Callback"] = function(function114, ...) end
+    })
+    tbl57.CreateToggle(tbl57, {
+        ["Name"] = "Poison Grab",
+        ["CurrentValue"] = false,
+        ["Flag"] = "PoisonGrab",
+        ["Callback"] = function(function115, ...) end
+    })
+    tbl57.CreateToggle(tbl57, {
+        ["Name"] = "Ragdoll Grab",
+        ["CurrentValue"] = false,
+        ["Flag"] = "RagdollGrab",
+        ["Callback"] = function(function116, ...) end
+    })
+    tbl57.CreateToggle(tbl57, {
+        ["Name"] = "Death Grab",
+        ["CurrentValue"] = false,
+        ["Flag"] = "DeathGrab",
+        ["Callback"] = function(function117, ...) end
+    })
+    tbl57.CreateToggle(tbl57, {
+        ["Name"] = "Anchor Grab",
+        ["CurrentValue"] = false,
+        ["Flag"] = "AnchorGrab",
+        ["Callback"] = function(function118, ...) end
+    })
+    tbl57.CreateToggle(tbl57, {
+        ["Name"] = "Kick Grab",
+        ["CurrentValue"] = false,
+        ["Flag"] = "KickGrab",
+        ["Callback"] = function(function119, ...) end
+    })
+    tbl57.CreateToggle(tbl57, {
+        ["Name"] = "Noclip Grab",
+        ["CurrentValue"] = false,
+        ["Flag"] = "NoclipGrab",
+        ["Callback"] = function(function120, ...) end
+    })
+    tbl58.CreateToggle(tbl58, {
+        ["Name"] = "Control (Grab to control)",
+        ["CurrentValue"] = false,
+        ["Flag"] = "Control",
+        ["Callback"] = function(function121, ...)
+            local v41 = function121
+            if not v41 then workspace.CurrentCamera.CameraSubject = function6() end 
+        end
+    })
+    tbl58.CreateToggle(tbl58, {
+        ["Name"] = "Ocean Walk",
+        ["CurrentValue"] = false,
+        ["Flag"] = "OceanWalk",
+        ["Callback"] = function(function122, ...)
+            local v44 = function122
+            local tbl76 = workspace
+            local tbl77 = tbl76.FindFirstChild(tbl76, "Map")
+            if tbl77 then
+                local tbl75 = tbl77.FindFirstChild(tbl77, "AlwaysHereTweenedObjects")
+                if tbl75 then
+                    if tbl76.FindFirstChild(tbl76, "Ocean") then
+                        tbl75 = tbl75.FindFirstChild(tbl75, "Object")
+                        if tbl75 then
+                            local func6 = 23273038342741
+                            tbl75 = func6.FindFirstChild(func6, tbl[r15("\xab\x0c\xcf\x8c \x87]\x05\xbd\x90\xe7", func6)])
+                            if tbl75 then
+                                func6 = tbl75.GetChildren
+                                local v422 = { func6(tbl75) }
+                                function1 = func6[3]
+                                for v43, index14 in func6[1], ipairs(u(v422)) do
+                                    if index14.IsA(index14, "BasePart") then index14.CanCollide = function122 end 
+                                end
+                            end
+                        end
+                    end
+                end
+            end 
+        end
+    })
+    tbl58.CreateButton(tbl58, {
+        ["Name"] = "Safespot",
+        ["Callback"] = function(...)
+            local part = Instance.new("Part", workspace)
+            part.Material = Enum.Material.Grass
+            part.Transparency = 0.5
+            part.Anchored = true
+            part.CFrame = CFrame.new(10000, 10000, 10000)
+            part.Size = Vector3.new(128, 4, 128)
+            function5().CFrame = CFrame.new(10000, 10010, 10000)
+            task.delay(5, function(...)
+                local tbl78 = part
+                tbl78.Destroy(tbl78) 
+            end) 
+        end
+    })
+    tbl58.CreateToggle(tbl58, {
+        ["Name"] = "Anti-Lag",
+        ["CurrentValue"] = false,
+        ["Flag"] = "AntiLag",
+        ["Callback"] = function(function123, ...)
+            local tbl80 = localPlayer.PlayerScripts
+            local tbl79 = tbl80.FindFirstChild(tbl80, "CharacterAndBeamMove")
+            if tbl79 then tbl79.Enabled = not function123 end 
+        end
+    })
+    tbl58.CreateToggle(tbl58, {
+        ["Name"] = "NetworkOwner Aura",
+        ["CurrentValue"] = false,
+        ["Flag"] = "NWOAura",
+        ["Callback"] = function(function124, ...) end
+    })
+    tbl58.CreateToggle(tbl58, {
+        ["Name"] = "No Typing",
+        ["CurrentValue"] = false,
+        ["Flag"] = "NoTyping",
+        ["Callback"] = function(function125, ...) end
+    })
+    tbl58.CreateToggle(tbl58, {
+        ["Name"] = "Anti-Kick Disabler",
+        ["CurrentValue"] = false,
+        ["Flag"] = "AntiKickDisabler",
+        ["Callback"] = function(function126, ...) end
+    })
+    tbl59.CreateInput(tbl59, {
+        ["Name"] = "Target",
+        ["PlaceholderText"] = "Player name",
+        ["RemoveTextAfterFocus"] = false,
+        ["Flag"] = "BlobTarget",
+        ["Callback"] = function(function127, ...) function40(function127) end
+    })
+    tbl59.CreateDropdown(tbl59, {
+        ["Name"] = "Arm Side",
+        ["Options"] = { "Left", "Right" },
+        ["CurrentOption"] = "Left",
+        ["Flag"] = "BlobArmSide",
+        ["Callback"] = function(function128, ...) end
+    })
+    tbl59.CreateButton(tbl59, {
+        ["Name"] = "Spawn Blobman",
+        ["Callback"] = function(...) function55() end
+    })
+    tbl59.CreateButton(tbl59, {
+        ["Name"] = "OP Blobman",
+        ["Callback"] = function(...)
+            local tbl81 = function54()
+            if not tbl81 then tbl81 = function55() end
+            local func7 = function6
+            local tbl82 = func7()
+            if tbl82 then
+                tbl81 = not tbl82.Sit and tbl81
+                func7 = function6
+            end
+            if tbl82 then
+                func7 = tbl81.VehicleSeat
+                func7.Sit(func7, tbl82)
+            end
+            task.wait()
+            if tbl81 then
+                if tbl82 then local v45 = func7().Sit end
+                func7 = task[tbl82]
+            end
+            if tbl81 then
+                local tbl85 = function30("YouDecoy", function5().CFrame)
+                if tbl85 then local v46 = tbl85.FindFirstChild(tbl85, "HumanoidRootPart") end
+                if tbl85 then
+                    function11(tbl85.HumanoidRootPart)
+                    local tbl86 = tbl82.FindFirstChild(tbl82, "RightDetector")
+                    if tbl86 then
+                        func7("YouDecoy", GAME4).HumanoidRootPart.CFrame = tbl86.CFrame
+                    end
+                    task.wait()
+                    function59(tbl86, tbl85.HumanoidRootPart, "Right")
+                    task.wait(1.25)
+                    function32(tbl85)
+                end
+                task.wait(.1)
+                local tbl83 = function30("YouDecoy", function5().CFrame)
+                if tbl83 then local v47 = tbl83.FindFirstChild(tbl83, "HumanoidRootPart") end
+                if tbl83 then
+                    function11(tbl83.HumanoidRootPart)
+                    local tbl84 = tbl83.FindFirstChild(tbl83, "LeftDetector")
+                    if tbl84 then
+                        func7("YouDecoy", tbl85).HumanoidRootPart.CFrame = tbl84.CFrame
+                    end
+                    task.wait()
+                    function59(tbl83, tbl83.HumanoidRootPart, "Left")
+                    task.wait(1.25)
+                    function32(tbl83)
+                end
+            end
+            function5().CFrame = function5().CFrame 
+        end
+    })
+    tbl59.CreateButton(tbl59, {
+        ["Name"] = "Bring",
+        ["Callback"] = function(...)
+            local tbl87 = ({
+                ["Target"] = nil,
+                ["ArmSide"] = "Left",
+                ["Noclip"] = false,
+                ["GrabAura"] = false,
+                ["KickAura"] = false,
+                ["LoopKick"] = false,
+                ["LoopKickAll"] = false
+            }).Target
+            local character6 = tbl87.Character
+            local tbl88 = character6
+            tbl88 = tbl88 and tbl88.FindFirstChild(tbl88, "HumanoidRootPart")
+            tbl87 = function54()
+            function5().CFrame = tbl88.CFrame
+            function63(tbl87, tbl88, ({
+                ["Target"] = nil,
+                ["ArmSide"] = "Left",
+                ["Noclip"] = false,
+                ["GrabAura"] = false,
+                ["KickAura"] = false,
+                ["LoopKick"] = false,
+                ["LoopKickAll"] = false
+            }).ArmSide)
+            task.wait()
+            function5().CFrame = function5().CFrame 
+        end
+    })
+    tbl59.CreateButton(tbl59, {
+        ["Name"] = "Void",
+        ["Callback"] = function(...)
+            local tbl89 = ({
+                ["Target"] = nil,
+                ["ArmSide"] = "Left",
+                ["Noclip"] = false,
+                ["GrabAura"] = false,
+                ["KickAura"] = false,
+                ["LoopKick"] = false,
+                ["LoopKickAll"] = false
+            }).Target
+            local character7 = tbl89.Character
+            local tbl90 = character7
+            tbl90 = tbl90 and tbl90.FindFirstChild(tbl90, "HumanoidRootPart")
+            tbl89 = function54()
+            function59(tbl89, function5(), ({
+                ["Target"] = nil,
+                ["ArmSide"] = "Left",
+                ["Noclip"] = false,
+                ["GrabAura"] = false,
+                ["KickAura"] = false,
+                ["LoopKick"] = false,
+                ["LoopKickAll"] = false
+            }).ArmSide)
+            task.wait()
+            function63(tbl89, tbl90, ({
+                ["Target"] = nil,
+                ["ArmSide"] = "Left",
+                ["Noclip"] = false,
+                ["GrabAura"] = false,
+                ["KickAura"] = false,
+                ["LoopKick"] = false,
+                ["LoopKickAll"] = false
+            }).ArmSide)
+            task.wait()
+            function5().CFrame = CFrame.new(1e+32, -16, 1e+32)
+            task.wait(1)
+            tbl90 = function6()
+            if tbl90 then tbl90.Sit = false end
+            task.wait(.1)
+            local v48 = function5().CFrame
+            function5().CFrame = v48
+            task.wait()
+            function32(tbl89) 
+        end
+    })
+    tbl59.CreateButton(tbl59, {
+        ["Name"] = "Kick",
+        ["Callback"] = function(...)
+            local tbl91 = ({
+                ["Target"] = nil,
+                ["ArmSide"] = "Left",
+                ["Noclip"] = false,
+                ["GrabAura"] = false,
+                ["KickAura"] = false,
+                ["LoopKick"] = false,
+                ["LoopKickAll"] = false
+            }).Target
+            local character8 = tbl91.Character
+            if character8 then
+                local character9 = tbl91.Character
+                character9 = character9.FindFirstChild(character9, "HumanoidRootPart")
+            end
+            tbl91 = function54()
+            task.wait(0.5)
+            function5().CFrame = character8.CFrame
+            task.wait()
+            function67(tbl91, character8, ({
+                ["Target"] = nil,
+                ["ArmSide"] = "Left",
+                ["Noclip"] = false,
+                ["GrabAura"] = false,
+                ["KickAura"] = false,
+                ["LoopKick"] = false,
+                ["LoopKickAll"] = false
+            }).ArmSide)
+            task.wait(0.5)
+            function5().CFrame = function5().CFrame 
+        end
+    })
+    tbl59.CreateButton(tbl59, {
+        ["Name"] = "Kick All",
+        ["Callback"] = function(...)
+            local tbl94 = function54()
+            if not tbl94 then tbl94 = function55() end
+            local func8 = function6
+            local tbl95 = func8()
+            if tbl95 then
+                local enable2 = not tbl95.Sit
+                if enable2 then
+                    if tbl95 then enable2 = tbl95.FindFirstChild(tbl95, "VehicleSeat") end
+                    func8 = function6
+                    local v50 = tbl95
+                end
+                func8 = function6
+            end
+            if tbl95 then
+                func8 = tbl94.VehicleSeat
+                func8.Sit(func8, tbl95)
+            end
+            task.wait()
+            local tbl93 = tbl
+            tbl94 = function5().CFrame
+            if tbl94 then
+                if tbl93 then tbl93 = func8().Sit end
+                func8 = function5()[tbl93[tbl94]]
+            end
+            if tbl94 then
+                local tbl92 = r15("1W\x1d\xc6\xcc\x1c\x93", 19687072408527)
+                function59(tbl92, function5(), ({
+                    ["Target"] = nil,
+                    ["ArmSide"] = "Left",
+                    ["Noclip"] = false,
+                    ["GrabAura"] = false,
+                    ["KickAura"] = false,
+                    ["LoopKick"] = false,
+                    ["LoopKickAll"] = false
+                })[tbl[tbl92]])
+                tbl92 = players
+                function1 = { tbl92.GetPlayers(tbl92) }
+                local v49 = tbl92[3]
+                for index15, index16 in tbl92[1], ipairs(u(function1)) do
+                    tbl92 = ({
+                        ["OnlyPlayer"] = false,
+                        ["IgnoreFriend"] = false,
+                        ["IgnoreIsInPlot"] = false,
+                        ["AuraRadius"] = 32,
+                        ["AimBotSpeed"] = 5,
+                        ["LagAmount"] = 32,
+                        ["PingAmount"] = 32,
+                        ["KickMethod"] = "Void",
+                        ["DebugMode"] = false,
+                        ["ToggleKey"] = "C"
+                    }).IgnoreIsInPlot
+                    if tbl92 then function38(index16) end
+                    if tbl92 then
+                    else
+                        tbl92 = ({
+                            ["OnlyPlayer"] = false,
+                            ["IgnoreFriend"] = false,
+                            ["IgnoreIsInPlot"] = false,
+                            ["AuraRadius"] = 32,
+                            ["AimBotSpeed"] = 5,
+                            ["LagAmount"] = 32,
+                            ["PingAmount"] = 32,
+                            ["KickMethod"] = "Void",
+                            ["DebugMode"] = false,
+                            ["ToggleKey"] = "C"
+                        }).IgnoreFriend
+                        if tbl92 then function36(index16) end
+                        if tbl92 then
+                        else
+                            tbl92 = index16.Character
+                            if not (tbl92 and tbl92.FindFirstChild(tbl92, "HumanoidRootPart")) then
+                            else
+                                function5().CFrame = index15.CFrame
+                                task.wait(0.25)
+                                function67(tbl93, index15, ({
+                                    ["Target"] = nil,
+                                    ["ArmSide"] = "Left",
+                                    ["Noclip"] = false,
+                                    ["GrabAura"] = false,
+                                    ["KickAura"] = false,
+                                    ["LoopKick"] = false,
+                                    ["LoopKickAll"] = false
+                                }).ArmSide)
+                            end
+                        end
+                    end 
+                end
+                task.wait(.1)
+                tbl93 = function32
+                function5().CFrame = tbl93
+                function32(tbl92)
+            end 
+        end
+    })
+    tbl59.CreateDivider(tbl59)
+    tbl59.CreateToggle(tbl59, {
+        ["Name"] = "Grab Aura",
+        ["CurrentValue"] = false,
+        ["Flag"] = "BlobGrabAura",
+        ["Callback"] = function(function129, ...) end
+    })
+    tbl59.CreateToggle(tbl59, {
+        ["Name"] = "Kick Aura",
+        ["CurrentValue"] = false,
+        ["Flag"] = "BlobKickAura",
+        ["Callback"] = function(function130, ...) end
+    })
+    tbl59.CreateToggle(tbl59, {
+        ["Name"] = "Loop Kick",
+        ["CurrentValue"] = false,
+        ["Flag"] = "BlobLoopKick",
+        ["Callback"] = function(function131, ...) end
+    })
+    tbl59.CreateToggle(tbl59, {
+        ["Name"] = "Loop Kick All",
+        ["CurrentValue"] = false,
+        ["Flag"] = "LoopKickAll",
+        ["Callback"] = function(function132, ...) end
+    })
+    tbl60.CreateInput(tbl60, {
+        ["Name"] = "Target",
+        ["PlaceholderText"] = "Player name",
+        ["RemoveTextAfterFocus"] = false,
+        ["Flag"] = "SnipeTarget",
+        ["Callback"] = function(function133, ...) function40(function133) end
+    })
+    tbl60.CreateButton(tbl60, {
+        ["Name"] = "Bring",
+        ["Callback"] = function(...)
+            local tbl97 = ({
+                ["Target"] = nil,
+                ["LoopVoid"] = false,
+                ["LoopKill"] = false,
+                ["LoopPoison"] = false,
+                ["LoopRagdoll"] = false,
+                ["LoopDeath"] = false
+            }).Target
+            local character10 = tbl97.Character
+            if character10 then
+                local character11 = tbl97.Character
+                character11 = character11.FindFirstChild(character11, "HumanoidRootPart")
+            end
+            local tbl96 = character10
+            local v51 = function5().CFrame
+            function45(tbl96, function(...)
+                task.wait(.01)
+                tbl96.CFrame = v51
+                task.wait(0.5)
+                function25(tbl96)
+                function5().CFrame = v51 
+            end) 
+        end
+    })
+    tbl60.CreateButton(tbl60, {
+        ["Name"] = "Void",
+        ["Callback"] = function(...)
+            local tbl98 = ({
+                ["Target"] = nil,
+                ["LoopVoid"] = false,
+                ["LoopKill"] = false,
+                ["LoopPoison"] = false,
+                ["LoopRagdoll"] = false,
+                ["LoopDeath"] = false
+            }).Target
+            local character12 = tbl98.Character
+            if character12 then
+                local character13 = tbl98.Character
+                character13 = character13.FindFirstChild(character13, "HumanoidRootPart")
+            end
+            local v522 = character12
+            local v53 = function5().CFrame
+            function45(v522, function(...)
+                function9(v522, Vector3.new(0, 10000, 0))
+                function5().CFrame = v53 
+            end) 
+        end
+    })
+    tbl60.CreateButton(tbl60, {
+        ["Name"] = "Kill",
+        ["Callback"] = function(...)
+            local tbl99 = ({
+                ["Target"] = nil,
+                ["LoopVoid"] = false,
+                ["LoopKill"] = false,
+                ["LoopPoison"] = false,
+                ["LoopRagdoll"] = false,
+                ["LoopDeath"] = false
+            }).Target
+            local character14 = tbl99.Character
+            if character14 then
+                local character15 = tbl99.Character
+                character15 = character15.FindFirstChild(character15, "HumanoidRootPart")
+            end
+            local v54 = character14
+            local v55 = function5().CFrame
+            function45(v54, function(...)
+                function17(v54, CFrame.new(4096, -75, 4096))
+                function9(v54, Vector3.new(0, -1000, 0))
+                function5().CFrame = v55 
+            end) 
+        end
+    })
+    tbl60.CreateButton(tbl60, {
+        ["Name"] = "Poison",
+        ["Callback"] = function(...)
+            local tbl100 = ({
+                ["Target"] = nil,
+                ["LoopVoid"] = false,
+                ["LoopKill"] = false,
+                ["LoopPoison"] = false,
+                ["LoopRagdoll"] = false,
+                ["LoopDeath"] = false
+            }).Target
+            local character16 = tbl100.Character
+            if character16 then
+                local character17 = tbl100.Character
+                character17 = character17.FindFirstChild(character17, "HumanoidRootPart")
+            end
+            local v56 = character16
+            local v57 = function5().CFrame
+            function45(v56, function(...)
+                function17(v56, CFrame.new(58, -70, 271))
+                function5().CFrame = v57 
+            end) 
+        end
+    })
+    tbl60.CreateButton(tbl60, {
+        ["Name"] = "Ragdoll",
+        ["Callback"] = function(...)
+            local tbl102 = ({
+                ["Target"] = nil,
+                ["LoopVoid"] = false,
+                ["LoopKill"] = false,
+                ["LoopPoison"] = false,
+                ["LoopRagdoll"] = false,
+                ["LoopDeath"] = false
+            }).Target
+            local character18 = tbl102.Character
+            if character18 then
+                local character19 = tbl102.Character
+                character19 = character19.FindFirstChild(character19, "HumanoidRootPart")
+            end
+            local tbl101 = character18
+            local v58 = function5().CFrame
+            function45(tbl101, function(...)
+                function9(tbl101, Vector3.new(0, -64, 0))
+                task.wait(.1)
+                function5().CFrame = tbl101.CFrame
+                function9(tbl101, Vector3.zero)
+                function5().CFrame = v58 
+            end) 
+        end
+    })
+    tbl60.CreateButton(tbl60, {
+        ["Name"] = "Death",
+        ["Callback"] = function(...)
+            local tbl105 = ({
+                ["Target"] = nil,
+                ["LoopVoid"] = false,
+                ["LoopKill"] = false,
+                ["LoopPoison"] = false,
+                ["LoopRagdoll"] = false,
+                ["LoopDeath"] = false
+            }).Target
+            local character20 = tbl105.Character
+            if character20 then
+                local character21 = tbl105.Character
+                character21 = character21.FindFirstChild(character21, "HumanoidRootPart")
+            end
+            local tbl103 = character20
+            local v59 = function5().CFrame
+            function45(tbl103, function(...)
+                local tbl104 = tbl103.Parent
+                tbl105 = tbl104.FindFirstChildOfClass(tbl104, "Humanoid")
+                if tbl105 then tbl105.ChangeState(tbl105, Enum.HumanoidStateType.Dead) end
+                task.wait(0.5)
+                function25(tbl103)
+                function5().CFrame = v59 
+            end) 
+        end
+    })
+    tbl60.CreateDivider(tbl60)
+    tbl60.CreateToggle(tbl60, {
+        ["Name"] = "Loop Void",
+        ["CurrentValue"] = false,
+        ["Flag"] = "LoopVoid",
+        ["Callback"] = function(function134, ...) end
+    })
+    tbl60.CreateToggle(tbl60, {
+        ["Name"] = "Loop Kill",
+        ["CurrentValue"] = false,
+        ["Flag"] = "LoopKill",
+        ["Callback"] = function(function135, ...) end
+    })
+    tbl60.CreateToggle(tbl60, {
+        ["Name"] = "Loop Poison",
+        ["CurrentValue"] = false,
+        ["Flag"] = "LoopPoison",
+        ["Callback"] = function(function136, ...) end
+    })
+    tbl60.CreateToggle(tbl60, {
+        ["Name"] = "Loop Ragdoll",
+        ["CurrentValue"] = false,
+        ["Flag"] = "LoopRagdoll",
+        ["Callback"] = function(function137, ...) end
+    })
+    tbl60.CreateToggle(tbl60, {
+        ["Name"] = "Loop Death",
+        ["CurrentValue"] = false,
+        ["Flag"] = "LoopDeath",
+        ["Callback"] = function(function138, ...) end
+    })
+    tbl61.CreateButton(tbl61, {
+        ["Name"] = "Burn All",
+        ["Callback"] = function(...)
+            local tbl106 = function30("OvenDarkGray", function5().CFrame)
+            local v60 = tbl106.FindFirstChild(tbl106, "ButtonOven")
+            if v60 then
+                function11(v60)
+                function25(v60)
+            end
+            local tbl107 = "\x15\xe4\xaa\x98A\x02\xe2\x8aM"
+            tbl106 = tbl106.FindFirstChild(tbl106, tbl[r15(tbl107, 258216706168)])
+            if tbl106 then
+                function11(tbl106)
+                tbl107 = players
+                local v622 = tbl107[3]
+                tbl107 = tbl107[1]
+                for v61, index17 in tbl107, ipairs(tbl107.GetPlayers(tbl107)) do
+                    local tbl108 = ({
+                        ["OnlyPlayer"] = false,
+                        ["IgnoreFriend"] = false,
+                        ["IgnoreIsInPlot"] = false,
+                        ["AuraRadius"] = 32,
+                        ["AimBotSpeed"] = 5,
+                        ["LagAmount"] = 32,
+                        ["PingAmount"] = 32,
+                        ["KickMethod"] = "Void",
+                        ["DebugMode"] = false,
+                        ["ToggleKey"] = "C"
+                    }).IgnoreIsInPlot
+                    if tbl108 then function38(index17) end
+                    if tbl108 then
+                    else
+                        tbl108 = ({
+                            ["OnlyPlayer"] = false,
+                            ["IgnoreFriend"] = false,
+                            ["IgnoreIsInPlot"] = false,
+                            ["AuraRadius"] = 32,
+                            ["AimBotSpeed"] = 5,
+                            ["LagAmount"] = 32,
+                            ["PingAmount"] = 32,
+                            ["KickMethod"] = "Void",
+                            ["DebugMode"] = false,
+                            ["ToggleKey"] = "C"
+                        }).IgnoreFriend
+                        if tbl108 then function36(index17) end
+                        if tbl108 then
+                        else
+                            tbl108 = index17.Character
+                            tbl107 = tbl108 and tbl108.FindFirstChild(tbl108, "HumanoidRootPart")
+                            if tbl107 then
+                                task.wait(0.25)
+                                GAME5.CFrame = tbl107.CFrame
+                            end
+                        end
+                    end 
+                end
+            end
+            task.wait(1)
+            function32(tbl106) 
+        end
+    })
+    tbl61.CreateButton(tbl61, {
+        ["Name"] = "Fire All",
+        ["Callback"] = function(...)
+            local tbl109 = function30("Campfire", function5().CFrame)
+            local v63 = tbl109.FindFirstChild(tbl109, "SoundPart")
+            if v63 then
+                function11(v63)
+                local tbl111 = players
+                tbl109 = tbl111[2]
+                tbl111 = tbl111[1]
+                for v66, v67 in ipairs(tbl111.GetPlayers(tbl111)) do
+                    local tbl110 = ({
+                        ["OnlyPlayer"] = false,
+                        ["IgnoreFriend"] = false,
+                        ["IgnoreIsInPlot"] = false,
+                        ["AuraRadius"] = 32,
+                        ["AimBotSpeed"] = 5,
+                        ["LagAmount"] = 32,
+                        ["PingAmount"] = 32,
+                        ["KickMethod"] = "Void",
+                        ["DebugMode"] = false,
+                        ["ToggleKey"] = "C"
+                    }).IgnoreIsInPlot
+                    if tbl110 then local v65 = function38(tbl110) end
+                    if tbl110 then
+                    else
+                        tbl110 = ({
+                            ["OnlyPlayer"] = false,
+                            ["IgnoreFriend"] = false,
+                            ["IgnoreIsInPlot"] = false,
+                            ["AuraRadius"] = 32,
+                            ["AimBotSpeed"] = 5,
+                            ["LagAmount"] = 32,
+                            ["PingAmount"] = 32,
+                            ["KickMethod"] = "Void",
+                            ["DebugMode"] = false,
+                            ["ToggleKey"] = "C"
+                        }).IgnoreFriend
+                        if tbl110 then local v64 = function36(tbl110) end
+                        if tbl110 then
+                        else
+                            tbl110 = tbl110.Character
+                            function1 = tbl110 and tbl110.FindFirstChild(tbl110, "HumanoidRootPart")
+                            if function1 then
+                                task.wait(0.25)
+                                GAME5.CFrame = function1.CFrame
+                            end
+                        end
+                    end 
+                end
+            end
+            task.wait(1)
+            function32(tbl109) 
+        end
+    })
+    tbl61.CreateToggle(tbl61, {
+        ["Name"] = "Loud All",
+        ["CurrentValue"] = false,
+        ["Flag"] = "LoudAll",
+        ["Callback"] = function(function139, ...)
+            local v68 = function139
+            if v68 then
+                local tbl112 = function30("BellBig", function5().CFrame)
+                if tbl112 then
+                    tbl112 = GAME
+                    tbl112 = tbl112.FindFirstChild(tbl112, "SoundPart")
+                    if tbl112 then function11(tbl112) end
+                end
+            else
+                if ({
+                    ["LoudAll"] = false,
+                    ["LoudAllPart"] = nil,
+                    ["Lag"] = false,
+                    ["Ping"] = false,
+                    ["ServerDestroyer"] = false,
+                    ["ServerDestroyerPos"] = nil,
+                    ["ChaosLine"] = false
+                }).LoudAllPart then
+                    function32(({
+                        ["LoudAll"] = false,
+                        ["LoudAllPart"] = nil,
+                        ["Lag"] = false,
+                        ["Ping"] = false,
+                        ["ServerDestroyer"] = false,
+                        ["ServerDestroyerPos"] = nil,
+                        ["ChaosLine"] = false
+                    }).LoudAllPart)
+                end
+            end 
+        end
+    })
+    tbl61.CreateToggle(tbl61, {
+        ["Name"] = "Lag",
+        ["CurrentValue"] = false,
+        ["Flag"] = "Lag",
+        ["Callback"] = function(function140, ...) end
+    })
+    tbl61.CreateToggle(tbl61, {
+        ["Name"] = "Ping",
+        ["CurrentValue"] = false,
+        ["Flag"] = "Ping",
+        ["Callback"] = function(function141, ...) end
+    })
+    tbl61.CreateToggle(tbl61, {
+        ["Name"] = "Server Destroyer",
+        ["CurrentValue"] = false,
+        ["Flag"] = "ServerDestroyer",
+        ["Callback"] = function(function142, ...)
+            local v69 = function142
+            if v69 then function5().CFrame end 
+        end
+    })
+    tbl61.CreateToggle(tbl61, {
+        ["Name"] = "Chaos Line",
+        ["CurrentValue"] = false,
+        ["Flag"] = "ChaosLine",
+        ["Callback"] = function(function143, ...) end
+    })
+    tbl61.CreateButton(tbl61, {
+        ["Name"] = "THE WORLD",
+        ["Callback"] = function(...)
+            function42("rbxassetid://7514417921")
+            task.wait(1)
+            local part = Instance.new("Part", workspace)
+            part.Size = Vector3.one
+            part.Shape = Enum.PartType.Ball
+            part.Material = Enum.Material.ForceField
+            part.Color = Color3.new(0.5, .7, .2)
+            part.CanCollide = false
+            part.CanQuery = false
+            part.CanTouch = false
+            part.Locked = true
+            task.spawn(function(...)
+                local v71 = part
+                local v70 = part.Parent
+                while not v71 do
+                    if v70 then
+                        part.Size = part.Size + Vector3.one / 2
+                        part.CFrame = function5().CFrame
+                        part.Transparency = part.Transparency + .1
+                        function21(4096)
+                        task.wait()
+                    end 
+                end
+                v70 = part.Parent 
+            end) 
+        end
+    })
+    tbl62.CreateSlider(tbl62, {
+        ["Name"] = "Aura Radius",
+        ["Range"] = { 0, 128 },
+        ["Increment"] = 1,
+        ["Suffix"] = "studs",
+        ["CurrentValue"] = 32,
+        ["Flag"] = "AuraRadius",
+        ["Callback"] = function(function144, ...) end
+    })
+    tbl62.CreateButton(tbl62, {
+        ["Name"] = "Infinite Aura Radius",
+        ["Callback"] = function(...) end
+    })
+    tbl62.CreateSlider(tbl62, {
+        ["Name"] = "AimBot Speed",
+        ["Range"] = { 1, 20 },
+        ["Increment"] = 1,
+        ["Suffix"] = "speed",
+        ["CurrentValue"] = 5,
+        ["Flag"] = "AimBotSpeed",
+        ["Callback"] = function(function145, ...) end
+    })
+    tbl62.CreateToggle(tbl62, {
+        ["Name"] = "Ignore Friend",
+        ["CurrentValue"] = false,
+        ["Flag"] = "IgnoreFriend",
+        ["Callback"] = function(function146, ...) end
+    })
+    tbl62.CreateToggle(tbl62, {
+        ["Name"] = "Ignore IsInPlot",
+        ["CurrentValue"] = false,
+        ["Flag"] = "IgnoreIsInPlot",
+        ["Callback"] = function(function147, ...) end
+    })
+    tbl62.CreateToggle(tbl62, {
+        ["Name"] = "Only Player",
+        ["CurrentValue"] = false,
+        ["Flag"] = "OnlyPlayer",
+        ["Callback"] = function(function148, ...) end
+    })
+    tbl62.CreateSlider(tbl62, {
+        ["Name"] = "Lag Amount",
+        ["Range"] = { 0, 4096 },
+        ["Increment"] = 1,
+        ["Suffix"] = "times",
+        ["CurrentValue"] = 32,
+        ["Flag"] = "LagAmount",
+        ["Callback"] = function(function149, ...) end
+    })
+    tbl62.CreateSlider(tbl62, {
+        ["Name"] = "Ping Amount",
+        ["Range"] = { 0, 4096 },
+        ["Increment"] = 1,
+        ["Suffix"] = "times",
+        ["CurrentValue"] = 32,
+        ["Flag"] = "PingAmount",
+        ["Callback"] = function(function150, ...) end
+    })
+    tbl62.CreateDropdown(tbl62, {
+        ["Name"] = "Kick Method",
+        ["Options"] = { "Void", "Float" },
+        ["CurrentOption"] = "Void",
+        ["Flag"] = "KickMethod",
+        ["Callback"] = function(function151, ...) end
+    })
+    tbl62.CreateDropdown(tbl62, {
+        ["Name"] = "SpeedHack Method",
+        ["Options"] = { "CFrame", "Velocity", "Disable" },
+        ["CurrentOption"] = "CFrame",
+        ["Flag"] = "SpeedMethod",
+        ["Callback"] = function(function152, ...) end
+    })
+    tbl62.CreateToggle(tbl62, {
+        ["Name"] = "Auto SpeedHack Method",
+        ["CurrentValue"] = true,
+        ["Flag"] = "AutoSpeedMethod",
+        ["Callback"] = function(function153, ...) end
+    })
+    tbl62.CreateDropdown(tbl62, {
+        ["Name"] = "Fly Method",
+        ["Options"] = { "CFrame", "Velocity", "Disable" },
+        ["CurrentOption"] = "Velocity",
+        ["Flag"] = "FlyMethod",
+        ["Callback"] = function(function154, ...) end
+    })
+    tbl62.CreateKeybind(tbl62, {
+        ["Name"] = "Toggle GUI Keybind",
+        ["CurrentKeybind"] = "C",
+        ["Flag"] = "ToggleKey",
+        ["Callback"] = function(function155, ...) end
+    })
+    tbl62.CreateButton(tbl62, {
+        ["Name"] = "Rejoin",
+        ["Callback"] = function(...)
+            local tbl113 = teleportService
+            tbl113.Teleport(tbl113, GAME.PlaceId, localPlayer) 
+        end
+    })
+    local tbl114 = workspace.ChildAdded
+    tbl114.Connect(tbl114, function(function156, ...)
+        local tbl117 = function156
+        local enable3 = tbl117.Name == "GrabParts"
+        if enable3 then
+            enable3 = tbl117
+            local v81 = enable3.IsA(enable3, "Model")
+        end
+        if enable3 then
+            local tbl126 = tbl117
+            enable3 = tbl126.FindFirstChild(tbl126, "GrabPart")
+            if enable3 then
+                local tbl127 = enable3.FindFirstChild(enable3, "WeldConstraint")
+                if tbl127 then local v80 = tbl127.Part1 end
+            end
+            task.spawn(function(...)
+                local tbl115 = ({
+                    ["AntiGrab"] = false,
+                    ["AntiVoid"] = false,
+                    ["AntiFar"] = false,
+                    ["AntiExplode"] = false,
+                    ["StrAntiGrab"] = false,
+                    ["Extinguisher"] = false,
+                    ["InvisLine"] = false,
+                    ["SuperStrength"] = false,
+                    ["SuperStrengthPower"] = 250,
+                    ["InfLine"] = false,
+                    ["InfLineDist"] = 0,
+                    ["Revenge"] = {
+                        ["Void"] = false,
+                        ["Kill"] = false,
+                        ["Poison"] = false,
+                        ["Ragdoll"] = false,
+                        ["Death"] = false
+                    },
+                    ["AimBot"] = false,
+                    ["AimBotRadius"] = 30,
+                    ["AimBotPart"] = "Torso"
+                }).InfLine
+                if tbl115 then
+                    tbl115 = tbl117
+                    local tbl118 = tbl115.FindFirstChild(tbl115, "DragPart")
+                    if tbl118 then
+                        local tbl116 = tbl118.Clone(tbl118)
+                        tbl116.Parent = tbl117
+                        tbl116.AlignPosition.Enabled = false
+                        tbl118.AlignPosition.Enabled = false
+                        task.spawn(function(...)
+                            while tbl117.Parent do
+                                tbl116.Position = workspace.CurrentCamera.CFrame.Position + workspace.CurrentCamera.CFrame.LookVector * ({
+                                    ["AntiGrab"] = false,
+                                    ["AntiVoid"] = false,
+                                    ["AntiFar"] = false,
+                                    ["AntiExplode"] = false,
+                                    ["StrAntiGrab"] = false,
+                                    ["Extinguisher"] = false,
+                                    ["InvisLine"] = false,
+                                    ["SuperStrength"] = false,
+                                    ["SuperStrengthPower"] = 250,
+                                    ["InfLine"] = false,
+                                    ["InfLineDist"] = 0,
+                                    ["Revenge"] = {
+                                        ["Void"] = false,
+                                        ["Kill"] = false,
+                                        ["Poison"] = false,
+                                        ["Ragdoll"] = false,
+                                        ["Death"] = false
+                                    },
+                                    ["AimBot"] = false,
+                                    ["AimBotRadius"] = 30,
+                                    ["AimBotPart"] = "Torso"
+                                }).InfLineDist
+                                task.wait() 
+                            end 
+                        end)
+                    end
+                end
+                if ({
+                    ["Void"] = false,
+                    ["Kill"] = false,
+                    ["Poison"] = false,
+                    ["Ragdoll"] = false,
+                    ["Death"] = false,
+                    ["Anchor"] = false,
+                    ["Kick"] = false,
+                    ["Noclip"] = false
+                }).Void then
+                    for v73 = 1, 3 do
+                        task.wait()
+                        function11(r91) 
+                    end
+                    function9(r91, Vector3.new(0, 10000, 0))
+                end
+                if ({
+                    ["Void"] = false,
+                    ["Kill"] = false,
+                    ["Poison"] = false,
+                    ["Ragdoll"] = false,
+                    ["Death"] = false,
+                    ["Anchor"] = false,
+                    ["Kick"] = false,
+                    ["Noclip"] = false
+                }).Kill then
+                    for v74 = 1, 3 do
+                        task.wait()
+                        function11(r91) 
+                    end
+                    function17(r91, CFrame.new(4096, -75, 4096))
+                    function9(r91, Vector3.new(0, -1000, 0))
+                end
+                if ({
+                    ["Void"] = false,
+                    ["Kill"] = false,
+                    ["Poison"] = false,
+                    ["Ragdoll"] = false,
+                    ["Death"] = false,
+                    ["Anchor"] = false,
+                    ["Kick"] = false,
+                    ["Noclip"] = false
+                }).Poison then
+                    for v75 = 1, 3 do
+                        task.wait()
+                        function11(r91) 
+                    end
+                    function17(r91, CFrame.new(58, -70, 271))
+                end
+                if ({
+                    ["Void"] = false,
+                    ["Kill"] = false,
+                    ["Poison"] = false,
+                    ["Ragdoll"] = false,
+                    ["Death"] = false,
+                    ["Anchor"] = false,
+                    ["Kick"] = false,
+                    ["Noclip"] = false
+                }).Ragdoll then
+                    for v76 = 1, 3 do
+                        task.wait()
+                        function11(r91) 
+                    end
+                    function9(r91, Vector3.new(0, -256, 0))
+                    task.wait()
+                    function17(r91, r91.CFrame)
+                    function9(r91, Vector3.zero)
+                end
+                if ({
+                    ["Void"] = false,
+                    ["Kill"] = false,
+                    ["Poison"] = false,
+                    ["Ragdoll"] = false,
+                    ["Death"] = false,
+                    ["Anchor"] = false,
+                    ["Kick"] = false,
+                    ["Noclip"] = false
+                }).Anchor then
+                    function19(r91)
+                end
+                if ({
+                    ["Void"] = false,
+                    ["Kill"] = false,
+                    ["Poison"] = false,
+                    ["Ragdoll"] = false,
+                    ["Death"] = false,
+                    ["Anchor"] = false,
+                    ["Kick"] = false,
+                    ["Noclip"] = false
+                }).Death then
+                    for v77 = 1, 3 do
+                        task.wait()
+                        function11(r91) 
+                    end
+                    tbl115 = r91.Parent
+                    local tbl119 = tbl115.FindFirstChildOfClass(tbl115, "Humanoid")
+                    if tbl119 then tbl119.ChangeState(tbl119, Enum.HumanoidStateType.Dead) end
+                    task.wait(0.5)
+                    function25(r91)
+                end
+                if ({
+                    ["Void"] = false,
+                    ["Kill"] = false,
+                    ["Poison"] = false,
+                    ["Ragdoll"] = false,
+                    ["Death"] = false,
+                    ["Anchor"] = false,
+                    ["Kick"] = false,
+                    ["Noclip"] = false
+                }).Kick then
+                    tbl115 = players
+                    local tbl122 = tbl115.GetPlayerFromCharacter(tbl115, r91.Parent)
+                    if tbl122 then
+                        enable3 = tbl122.Character
+                        if enable3 then
+                            local tbl124 = enable3.FindFirstChild(enable3, "HumanoidRootPart")
+                            if tbl124 then
+                                if ({
+                                    ["OnlyPlayer"] = false,
+                                    ["IgnoreFriend"] = false,
+                                    ["IgnoreIsInPlot"] = false,
+                                    ["AuraRadius"] = 32,
+                                    ["AimBotSpeed"] = 5,
+                                    ["LagAmount"] = 32,
+                                    ["PingAmount"] = 32,
+                                    ["KickMethod"] = "Void",
+                                    ["DebugMode"] = false,
+                                    ["ToggleKey"] = "C"
+                                }).KickMethod == "Void" then
+                                    task.wait(0.5)
+                                    function25(r91)
+                                    task.spawn(function(...)
+                                        local tbl120 = tbl122
+                                        if tbl120 then
+                                            tbl120 = b[tbl120]
+                                            if tbl120 then tbl120 = b[tbl120].Parent end
+                                            local tbl123 = tbl120
+                                            local v78 = tbl123[S]
+                                        end
+                                        if tbl120 then
+                                            local tbl121 = b[tbl120].Parent
+                                            tbl120 = tbl121.FindFirstChildOfClass(tbl121, "Humanoid")
+                                            if tbl120 then local enable4 = tbl120.FloorMaterial ~= Enum.Material.Air end
+                                            if tbl120 then
+                                                task.wait()
+                                                function5().CFrame = b[tbl120].CFrame
+                                                task.wait(.1)
+                                                function11(b[tbl120])
+                                                task.wait(.1)
+                                                function17(r91, CFrame.new(1e+25, 1e+25, 1e+25))
+                                                function9(b[tbl120], b[tbl120].AssemblyLinearVelocity * 1e+25)
+                                                task.wait()
+                                                function25(b[tbl120])
+                                                function5().CFrame = function5().CFrame
+                                            end
+                                        end 
+                                    end)
+                                else
+                                    if ({
+                                        ["OnlyPlayer"] = false,
+                                        ["IgnoreFriend"] = false,
+                                        ["IgnoreIsInPlot"] = false,
+                                        ["AuraRadius"] = 32,
+                                        ["AimBotSpeed"] = 5,
+                                        ["LagAmount"] = 32,
+                                        ["PingAmount"] = 32,
+                                        ["KickMethod"] = "Void",
+                                        ["DebugMode"] = false,
+                                        ["ToggleKey"] = "C"
+                                    }).KickMethod == "Float" then
+                                        for v79 = 1, 32 do
+                                            function11(tbl124)
+                                            tbl115 = tbl124.Parent
+                                            local tbl125 = tbl115.FindFirstChildOfClass(tbl115, "Humanoid")
+                                            if tbl125 then
+                                                tbl125.ChangeState(tbl125, Enum.HumanoidStateType.Ragdoll)
+                                                tbl125.Health = 0
+                                            end
+                                            function25(tbl124) 
+                                        end
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+                tbl115 = ({
+                    ["NWOAura"] = false,
+                    ["Control"] = false,
+                    ["ControlTarget"] = nil,
+                    ["NoTyping"] = false,
+                    ["AntiKickDisabler"] = false
+                }).Control
+                if tbl115 then
+                    tbl115 = players
+                    enable3 = not tbl115.GetPlayerFromCharacter(tbl115, r91)
+                    if enable3 then
+                        enable3 = r91.Parent
+                        local v722 = enable3.FindFirstChildOfClass(enable3, "Humanoid")
+                    end
+                    if enable3 then function11(r91.Parent.PrimaryPart) end
+                end 
+            end)
+        end 
+    end)
+    local v822 = 0
+    local v83 = 0
+    local v84 = 0
+    local v85 = 0
+    local v86 = 0
+    local v87 = 0
+    task.spawn(function(...)
+        while true do
+            task.wait()
+            local tbl130 = v822 + .016666666666667
+            v822 = tbl130
+            v83 = v83 + .016666666666667
+            v84 = v84 + .016666666666667
+            v85 = v85 + .016666666666667
+            v86 = v86 + .016666666666667
+            v87 = v87 + .016666666666667
+            local tbl129 = function5()
+            local tbl132 = function6()
+            tbl130 = tbl130
+            CFrame.new(-234, 85, -311)
+            CFrame.new(525, 98, -375)
+            CFrame.new(138, 365, 346)
+            CFrame.new(-325, 109, 337)
+            CFrame.new(584, 141, -100)
+            CFrame.new(-525, 22, -165)
+            CFrame.new(303, 14, 483)
+            CFrame.new(-572, 20, 89)
+            CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153)
+            r15("\xcc\xbb\xfc", x4[1])
+            CFrame[tbl[x4[1]]](-50, -7, -298)
+            r15(x4[1], x4[2])
+            CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+            tbl130 = tbl130
+            if ({
+                ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                ["SpeedHack"] = { ["Value"] = 16 },
+                ["JumppowerHack"] = { ["Value"] = 50 },
+                ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                ["Infjump"] = { ["Value"] = false },
+                ["Fly"] = { ["Value"] = false },
+                ["Noclip"] = { ["Value"] = false },
+                ["FlyMethod"] = "Velocity",
+                ["SpeedMethod"] = "CFrame",
+                ["AutoSpeedMethod"] = true,
+                ["Teleports"] = {
+                    ["Barn"] = CFrame.new(-234, 85, -311),
+                    ["BlueHouse"] = CFrame.new(525, 98, -375),
+                    ["Factory"] = CFrame.new(138, 365, 346),
+                    ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                    ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                    ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                    ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                    ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                    ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                    ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                    [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                }
+            }).CrouchSpeedHack.Loop and not ({
+                ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                ["SpeedHack"] = { ["Value"] = 16 },
+                ["JumppowerHack"] = { ["Value"] = 50 },
+                ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                ["Infjump"] = { ["Value"] = false },
+                ["Fly"] = { ["Value"] = false },
+                ["Noclip"] = { ["Value"] = false },
+                ["FlyMethod"] = "Velocity",
+                ["SpeedMethod"] = "CFrame",
+                ["AutoSpeedMethod"] = true,
+                ["Teleports"] = {
+                    ["Barn"] = CFrame.new(-234, 85, -311),
+                    ["BlueHouse"] = CFrame.new(525, 98, -375),
+                    ["Factory"] = CFrame.new(138, 365, 346),
+                    ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                    ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                    ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                    ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                    ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                    ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                    ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                    [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                }
+            }).Fly then
+                tbl132.WalkSpeed = ({
+                    ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                    ["SpeedHack"] = { ["Value"] = 16 },
+                    ["JumppowerHack"] = { ["Value"] = 50 },
+                    ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                    ["Infjump"] = { ["Value"] = false },
+                    ["Fly"] = { ["Value"] = false },
+                    ["Noclip"] = { ["Value"] = false },
+                    ["FlyMethod"] = "Velocity",
+                    ["SpeedMethod"] = "CFrame",
+                    ["AutoSpeedMethod"] = true,
+                    ["Teleports"] = {
+                        ["Barn"] = CFrame.new(-234, 85, -311),
+                        ["BlueHouse"] = CFrame.new(525, 98, -375),
+                        ["Factory"] = CFrame.new(138, 365, 346),
+                        ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                        ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                        ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                        ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                        ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                        ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                        ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                        [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                    }
+                }).CrouchSpeedHack.Value
+            end
+            if ({
+                ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                ["SpeedHack"] = { ["Value"] = 16 },
+                ["JumppowerHack"] = { ["Value"] = 50 },
+                ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                ["Infjump"] = { ["Value"] = false },
+                ["Fly"] = { ["Value"] = false },
+                ["Noclip"] = { ["Value"] = false },
+                ["FlyMethod"] = "Velocity",
+                ["SpeedMethod"] = "CFrame",
+                ["AutoSpeedMethod"] = true,
+                ["Teleports"] = {
+                    ["Barn"] = CFrame.new(-234, 85, -311),
+                    ["BlueHouse"] = CFrame.new(525, 98, -375),
+                    ["Factory"] = CFrame.new(138, 365, 346),
+                    ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                    ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                    ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                    ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                    ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                    ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                    ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                    [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                }
+            }).JumppowerHack.Loop then
+                tbl132.JumpPower = ({
+                    ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                    ["SpeedHack"] = { ["Value"] = 16 },
+                    ["JumppowerHack"] = { ["Value"] = 50 },
+                    ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                    ["Infjump"] = { ["Value"] = false },
+                    ["Fly"] = { ["Value"] = false },
+                    ["Noclip"] = { ["Value"] = false },
+                    ["FlyMethod"] = "Velocity",
+                    ["SpeedMethod"] = "CFrame",
+                    ["AutoSpeedMethod"] = true,
+                    ["Teleports"] = {
+                        ["Barn"] = CFrame.new(-234, 85, -311),
+                        ["BlueHouse"] = CFrame.new(525, 98, -375),
+                        ["Factory"] = CFrame.new(138, 365, 346),
+                        ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                        ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                        ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                        ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                        ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                        ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                        ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                        [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                    }
+                }).JumppowerHack.Value
+            end
+            function1 = ({
+                ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                ["SpeedHack"] = { ["Value"] = 16 },
+                ["JumppowerHack"] = { ["Value"] = 50 },
+                ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                ["Infjump"] = { ["Value"] = false },
+                ["Fly"] = { ["Value"] = false },
+                ["Noclip"] = { ["Value"] = false },
+                ["FlyMethod"] = "Velocity",
+                ["SpeedMethod"] = "CFrame",
+                ["AutoSpeedMethod"] = true,
+                ["Teleports"] = {
+                    ["Barn"] = CFrame.new(-234, 85, -311),
+                    ["BlueHouse"] = CFrame.new(525, 98, -375),
+                    ["Factory"] = CFrame.new(138, 365, 346),
+                    ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                    ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                    ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                    ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                    ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                    ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                    ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                    [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                }
+            }).Infjump.Value
+            if function1 then
+                function1 = inputService.JumpRequest
+                function1.Connect(function1, function(...)
+                    local tbl133 = tbl132
+                    tbl133.ChangeState(tbl133, Enum.HumanoidStateType.Jumping) 
+                end)
+            end
+            tbl130 = tbl130
+            if ({
+                ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                ["SpeedHack"] = { ["Value"] = 16 },
+                ["JumppowerHack"] = { ["Value"] = 50 },
+                ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                ["Infjump"] = { ["Value"] = false },
+                ["Fly"] = { ["Value"] = false },
+                ["Noclip"] = { ["Value"] = false },
+                ["FlyMethod"] = "Velocity",
+                ["SpeedMethod"] = "CFrame",
+                ["AutoSpeedMethod"] = true,
+                ["Teleports"] = {
+                    ["Barn"] = CFrame.new(-234, 85, -311),
+                    ["BlueHouse"] = CFrame.new(525, 98, -375),
+                    ["Factory"] = CFrame.new(138, 365, 346),
+                    ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                    ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                    ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                    ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                    ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                    ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                    ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                    [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                }
+            }).Freeze.Value and ({
+                ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                ["SpeedHack"] = { ["Value"] = 16 },
+                ["JumppowerHack"] = { ["Value"] = 50 },
+                ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                ["Infjump"] = { ["Value"] = false },
+                ["Fly"] = { ["Value"] = false },
+                ["Noclip"] = { ["Value"] = false },
+                ["FlyMethod"] = "Velocity",
+                ["SpeedMethod"] = "CFrame",
+                ["AutoSpeedMethod"] = true,
+                ["Teleports"] = {
+                    ["Barn"] = CFrame.new(-234, 85, -311),
+                    ["BlueHouse"] = CFrame.new(525, 98, -375),
+                    ["Factory"] = CFrame.new(138, 365, 346),
+                    ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                    ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                    ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                    ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                    ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                    ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                    ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                    [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                }
+            }).Freeze.CFrame then
+                tbl129.CFrame = ({
+                    ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                    ["SpeedHack"] = { ["Value"] = 16 },
+                    ["JumppowerHack"] = { ["Value"] = 50 },
+                    ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                    ["Infjump"] = { ["Value"] = false },
+                    ["Fly"] = { ["Value"] = false },
+                    ["Noclip"] = { ["Value"] = false },
+                    ["FlyMethod"] = "Velocity",
+                    ["SpeedMethod"] = "CFrame",
+                    ["AutoSpeedMethod"] = true,
+                    ["Teleports"] = {
+                        ["Barn"] = CFrame.new(-234, 85, -311),
+                        ["BlueHouse"] = CFrame.new(525, 98, -375),
+                        ["Factory"] = CFrame.new(138, 365, 346),
+                        ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                        ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                        ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                        ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                        ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                        ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                        ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                        [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                    }
+                }).Freeze.CFrame
+            end
+            function2 = r15("\x18\x12a8\xc4", 22092509571119)
+            if ({
+                ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                ["SpeedHack"] = { ["Value"] = 16 },
+                ["JumppowerHack"] = { ["Value"] = 50 },
+                ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                ["Infjump"] = { ["Value"] = false },
+                ["Fly"] = { ["Value"] = false },
+                ["Noclip"] = { ["Value"] = false },
+                ["FlyMethod"] = "Velocity",
+                ["SpeedMethod"] = "CFrame",
+                ["AutoSpeedMethod"] = true,
+                ["Teleports"] = {
+                    ["Barn"] = CFrame.new(-234, 85, -311),
+                    ["BlueHouse"] = CFrame.new(525, 98, -375),
+                    ["Factory"] = CFrame.new(138, 365, 346),
+                    ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                    ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                    ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                    ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                    ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                    ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                    ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                    [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                }
+            }).Noclip[tbl[function2]] then
+                function2 = function4()
+                tbl130 = { function2.GetDescendants(function2) }
+                local v95 = function2[2]
+                local v96 = function2[3]
+                for v94, index18 in ipairs(u(tbl130)) do
+                    if index18.IsA(index18, "BasePart") then index18.CanCollide = false end 
+                end
+            end
+            function2 = tbl
+            function1 = ({
+                ["AntiDetect"] = false,
+                ["AntiRagdoll"] = false,
+                ["AntiTouch"] = false,
+                ["AntiBanana"] = false,
+                ["AutoSlot"] = false,
+                ["Ragdoll"] = false,
+                ["AntiGucci"] = false
+            }).AntiRagdoll and function2.GetState(function2) == Enum.HumanoidStateType.Ragdoll
+            tbl130 = tbl130
+            if function1 then
+                function34()
+                function1 = tbl132
+                function1.ChangeState(function1, Enum.HumanoidStateType.Running)
+            end
+            function2 = r15("MNY\xd1\xc1\x88\x89\xe4\xef", 9097407172748)
+            if ({
+                ["AntiDetect"] = false,
+                ["AntiRagdoll"] = false,
+                ["AntiTouch"] = false,
+                ["AntiBanana"] = false,
+                ["AutoSlot"] = false,
+                ["Ragdoll"] = false,
+                ["AntiGucci"] = false
+            })[tbl[function2]] then
+                function2 = function4()
+                tbl130 = { function2.GetDescendants(function2) }
+                local v98 = function2[2]
+                local v99 = function2[1]
+                for v97, index19 in ipairs(u(tbl130)) do
+                    if index19.IsA(index19, "BasePart") then
+                        index19.Locked = true
+                        index19.CanTouch = false
+                        index19.CanQuery = false
+                    end 
+                end
+            end
+            if ({
+                ["AntiDetect"] = false,
+                ["AntiRagdoll"] = false,
+                ["AntiTouch"] = false,
+                ["AntiBanana"] = false,
+                ["AutoSlot"] = false,
+                ["Ragdoll"] = false,
+                ["AntiGucci"] = false
+            }).AntiBanana then
+                tbl130 = workspace
+                local tbl134 = tbl130[2]
+                local v105 = tbl130[1]
+                for v104, index21 in ipairs(tbl130.GetChildren(tbl130)) do
+                    tbl134 = index21.IsA(index21, "Folder")
+                    if tbl134 then
+                        tbl134 = index21.Name
+                        function2 = tbl134.find(tbl134, "SpawnedInToys")
+                    end
+                    index21 = index21
+                    if tbl134 then
+                        function1 = 30237747721984
+                        function2 = index21.FindFirstChild(index21, tbl[r15("\xd8M\xa7\x16\x17\x08p\xb7\xa3n", function1)])
+                        if function2 then
+                            function1 = function2.GetDescendants
+                            local v100 = { function1(function2) }
+                            local v1022 = function1[3]
+                            local v103 = function1[2]
+                            for v101, index20 in ipairs(u(v100)) do
+                                if index20.IsA(index20, "BasePart") then
+                                    index20.CanQuery = false
+                                    index20.CanTouch = false
+                                end 
+                            end
+                        end
+                    end 
+                end
+            end
+            if ({
+                ["AntiDetect"] = false,
+                ["AntiRagdoll"] = false,
+                ["AntiTouch"] = false,
+                ["AntiBanana"] = false,
+                ["AutoSlot"] = false,
+                ["Ragdoll"] = false,
+                ["AntiGucci"] = false
+            }).Ragdoll then
+                function34()
+                tbl132.PlatformStand = true
+            end
+            if v822 >= 0.5 then
+                if ({
+                    ["AntiDetect"] = false,
+                    ["AntiRagdoll"] = false,
+                    ["AntiTouch"] = false,
+                    ["AntiBanana"] = false,
+                    ["AutoSlot"] = false,
+                    ["Ragdoll"] = false,
+                    ["AntiGucci"] = false
+                }).AntiDetect then
+                    b[sN]()
+                end
+                v822 = 0
+            end
+            if v84 >= 1 then
+                function53()
+                v84 = 0
+            end
+            workspace.CurrentCamera.FieldOfView = ({
+                ["ESP"] = false,
+                ["FOV"] = 70,
+                ["TPS"] = false,
+                ["Spectate"] = nil
+            }).FOV
+            if ({
+                ["AntiGrab"] = false,
+                ["AntiVoid"] = false,
+                ["AntiFar"] = false,
+                ["AntiExplode"] = false,
+                ["StrAntiGrab"] = false,
+                ["Extinguisher"] = false,
+                ["InvisLine"] = false,
+                ["SuperStrength"] = false,
+                ["SuperStrengthPower"] = 250,
+                ["InfLine"] = false,
+                ["InfLineDist"] = 0,
+                ["Revenge"] = {
+                    ["Void"] = false,
+                    ["Kill"] = false,
+                    ["Poison"] = false,
+                    ["Ragdoll"] = false,
+                    ["Death"] = false
+                },
+                ["AimBot"] = false,
+                ["AimBotRadius"] = 30,
+                ["AimBotPart"] = "Torso"
+            }).AntiGrab then
+                local tbl135 = function4()
+                local tbl136 = tbl135.FindFirstChild(tbl135, "Head")
+                if tbl136 then tbl135 = tbl136.FindFirstChild(tbl136, "PartOwner") end
+                tbl130 = tbl130
+                if tbl136 then
+                    tbl129.Anchored = true
+                    tbl135 = repStorage
+                    tbl130 = tbl135.FindFirstChild(tbl135, "CharacterEvents")
+                    tbl135 = repStorage
+                    function2 = tbl135.FindFirstChild(tbl135, "GameCorrectionEvents")
+                    tbl135 = tbl130
+                    if tbl130 then tbl135 = tbl130.FindFirstChild(tbl130, "Struggle") end
+                    if tbl135 then
+                        tbl135 = tbl130.Struggle
+                        tbl135.FireServer(tbl135, localPlayer)
+                    end
+                    tbl135 = function2
+                    if function2 then
+                        tbl135 = function2.FindFirstChild(function2, "StopAllVelocity")
+                    end
+                    if tbl135 then
+                        tbl135 = function2.StopAllVelocity
+                        tbl135.FireServer(tbl135)
+                    end
+                    task.wait()
+                    tbl129.Anchored = false
+                end
+            end
+            if ({
+                ["AntiGrab"] = false,
+                ["AntiVoid"] = false,
+                ["AntiFar"] = false,
+                ["AntiExplode"] = false,
+                ["StrAntiGrab"] = false,
+                ["Extinguisher"] = false,
+                ["InvisLine"] = false,
+                ["SuperStrength"] = false,
+                ["SuperStrengthPower"] = 250,
+                ["InfLine"] = false,
+                ["InfLineDist"] = 0,
+                ["Revenge"] = {
+                    ["Void"] = false,
+                    ["Kill"] = false,
+                    ["Poison"] = false,
+                    ["Ragdoll"] = false,
+                    ["Death"] = false
+                },
+                ["AimBot"] = false,
+                ["AimBotRadius"] = 30,
+                ["AimBotPart"] = "Torso"
+            }).AntiVoid then
+                if tbl129.CFrame.Y < -87.5 then
+                    local tbl137 = workspace.SpawnLocation
+                    tbl129.CFrame = CFrame.new(tbl137.Position + Vector3.new(math.random(-tbl137.Size.X / 2, tbl137.Size.X / 2), math.random(0, tbl137.Size.Y), math.random(-tbl137.Size.v4 / 2, tbl137.Size.v4 / 2)), tbl129.CFrame.LookVector)
+                    tbl129.AssemblyLinearVelocity = Vector3.zero
+                end
+            end
+            if ({
+                ["AntiGrab"] = false,
+                ["AntiVoid"] = false,
+                ["AntiFar"] = false,
+                ["AntiExplode"] = false,
+                ["StrAntiGrab"] = false,
+                ["Extinguisher"] = false,
+                ["InvisLine"] = false,
+                ["SuperStrength"] = false,
+                ["SuperStrengthPower"] = 250,
+                ["InfLine"] = false,
+                ["InfLineDist"] = 0,
+                ["Revenge"] = {
+                    ["Void"] = false,
+                    ["Kill"] = false,
+                    ["Poison"] = false,
+                    ["Ragdoll"] = false,
+                    ["Death"] = false
+                },
+                ["AimBot"] = false,
+                ["AimBotRadius"] = 30,
+                ["AimBotPart"] = "Torso"
+            }).AntiFar then
+                if tbl129.Position.Magnitude > 4096 then
+                    local tbl138 = workspace.SpawnLocation
+                    tbl129.CFrame = CFrame.new(tbl138.Position + Vector3.new(math.random(-tbl138.Size.X / 2, tbl138.Size.X / 2), math.random(0, tbl138.Size.Y), math.random(-tbl138.Size.v4 / 2, tbl138.Size.v4 / 2)), tbl129.CFrame.LookVector)
+                    tbl129.AssemblyLinearVelocity = Vector3.zero
+                end
+            end
+            if v83 >= 0.5 then
+                function3 = function14
+                function2 = function3[3]
+                for v107, index22 in function3[1], ipairs(function3(tbl129.Position, 32)) do
+                    local tbl140 = index22
+                    local tbl139 = tbl130
+                    tbl139 = tbl140.Anchored
+                    if not tbl139 and not tbl139.IsDescendantOf(tbl139, function4()) then
+                        tbl139 = players
+                        tbl139 = tbl139.GetPlayerFromCharacter(tbl139, tbl140.Parent)
+                        tbl130 = tbl130
+                        if ({
+                            ["OnlyPlayer"] = false,
+                            ["IgnoreFriend"] = false,
+                            ["IgnoreIsInPlot"] = false,
+                            ["AuraRadius"] = 32,
+                            ["AimBotSpeed"] = 5,
+                            ["LagAmount"] = 32,
+                            ["PingAmount"] = 32,
+                            ["KickMethod"] = "Void",
+                            ["DebugMode"] = false,
+                            ["ToggleKey"] = "C"
+                        }).IgnoreFriend and tbl139 then
+                        else
+                            tbl130 = tbl130
+                            if ({
+                                ["OnlyPlayer"] = false,
+                                ["IgnoreFriend"] = false,
+                                ["IgnoreIsInPlot"] = false,
+                                ["AuraRadius"] = 32,
+                                ["AimBotSpeed"] = 5,
+                                ["LagAmount"] = 32,
+                                ["PingAmount"] = 32,
+                                ["KickMethod"] = "Void",
+                                ["DebugMode"] = false,
+                                ["ToggleKey"] = "C"
+                            }).OnlyPlayer and not tbl139 then
+                            else
+                                if ({
+                                    ["Void"] = false,
+                                    ["Kill"] = false,
+                                    ["Poison"] = false,
+                                    ["Ragdoll"] = false,
+                                    ["Death"] = false,
+                                    ["Fire"] = false,
+                                    ["Anchor"] = false,
+                                    ["Noclip"] = false
+                                }).Void then
+                                    task.spawn(function(...)
+                                        function11(tbl140)
+                                        function9(tbl140, Vector3.new(0, 10000, 0)) 
+                                    end)
+                                end
+                                if ({
+                                    ["Void"] = false,
+                                    ["Kill"] = false,
+                                    ["Poison"] = false,
+                                    ["Ragdoll"] = false,
+                                    ["Death"] = false,
+                                    ["Fire"] = false,
+                                    ["Anchor"] = false,
+                                    ["Noclip"] = false
+                                }).Kill then
+                                    task.spawn(function(...)
+                                        function11(tbl140)
+                                        function17(tbl140, CFrame.new(4096, -75, 4096))
+                                        function9(tbl140, Vector3.new(0, -1000, 0)) 
+                                    end)
+                                end
+                                if ({
+                                    ["Void"] = false,
+                                    ["Kill"] = false,
+                                    ["Poison"] = false,
+                                    ["Ragdoll"] = false,
+                                    ["Death"] = false,
+                                    ["Fire"] = false,
+                                    ["Anchor"] = false,
+                                    ["Noclip"] = false
+                                }).Poison then
+                                    task.spawn(function(...)
+                                        function11(tbl140)
+                                        function17(tbl140, CFrame.new(58, -70, 271)) 
+                                    end)
+                                end
+                                if ({
+                                    ["Void"] = false,
+                                    ["Kill"] = false,
+                                    ["Poison"] = false,
+                                    ["Ragdoll"] = false,
+                                    ["Death"] = false,
+                                    ["Fire"] = false,
+                                    ["Anchor"] = false,
+                                    ["Noclip"] = false
+                                }).Ragdoll then
+                                    task.spawn(function(...)
+                                        function11(tbl140)
+                                        function9(tbl140, Vector3.new(0, -256, 0))
+                                        task.wait()
+                                        function17(tbl140, tbl140.CFrame)
+                                        function9(tbl140, Vector3.zero) 
+                                    end)
+                                end
+                                if ({
+                                    ["Void"] = false,
+                                    ["Kill"] = false,
+                                    ["Poison"] = false,
+                                    ["Ragdoll"] = false,
+                                    ["Death"] = false,
+                                    ["Fire"] = false,
+                                    ["Anchor"] = false,
+                                    ["Noclip"] = false
+                                }).Death then
+                                    task.spawn(function(...)
+                                        function11(tbl140)
+                                        local tbl141 = tbl140.Parent
+                                        local tbl142 = tbl141.FindFirstChildOfClass(tbl141, "Humanoid")
+                                        if tbl142 then tbl142.ChangeState(tbl142, Enum.HumanoidStateType.Dead) end
+                                        task.wait(0.5)
+                                        function25(tbl140) 
+                                    end)
+                                end
+                                if ({
+                                    ["Void"] = false,
+                                    ["Kill"] = false,
+                                    ["Poison"] = false,
+                                    ["Ragdoll"] = false,
+                                    ["Death"] = false,
+                                    ["Fire"] = false,
+                                    ["Anchor"] = false,
+                                    ["Noclip"] = false
+                                }).Anchor then
+                                    task.spawn(function(...) b[DN](tbl140) end)
+                                end
+                                if ({
+                                    ["Void"] = false,
+                                    ["Kill"] = false,
+                                    ["Poison"] = false,
+                                    ["Ragdoll"] = false,
+                                    ["Death"] = false,
+                                    ["Fire"] = false,
+                                    ["Anchor"] = false,
+                                    ["Noclip"] = false
+                                }).Fire then
+                                    task.spawn(function(...)
+                                        local tbl143 = function30("Campfire", tbl129.CFrame)
+                                        local tbl145 = tbl143
+                                        if tbl145 then
+                                            tbl145 = tbl143
+                                            local v106 = tbl145.FindFirstChild(tbl145, "SoundPart")
+                                        end
+                                        if tbl145 then
+                                            function11(tbl143.SoundPart)
+                                            tbl143.SoundPart.CFrame = tbl140.CFrame
+                                            task.delay(0.5, function(...)
+                                                local tbl144 = { F[29], 53 }
+                                                b[tbl144[29]](tbl143) 
+                                            end)
+                                        end 
+                                    end)
+                                end
+                                if ({
+                                    ["Void"] = false,
+                                    ["Kill"] = false,
+                                    ["Poison"] = false,
+                                    ["Ragdoll"] = false,
+                                    ["Death"] = false,
+                                    ["Fire"] = false,
+                                    ["Anchor"] = false,
+                                    ["Noclip"] = false
+                                }).Noclip then
+                                    task.spawn(function(...)
+                                        function11(tbl140)
+                                        tbl140.CanCollide = false 
+                                    end)
+                                end
+                                tbl130 = tbl130
+                                if ({
+                                    ["NWOAura"] = false,
+                                    ["Control"] = false,
+                                    ["ControlTarget"] = nil,
+                                    ["NoTyping"] = false,
+                                    ["AntiKickDisabler"] = false
+                                }).NWOAura and not tbl139.GetPlayerFromCharacter(tbl139, b[index22].Parent) then
+                                    b[B](tbl140)
+                                end
+                            end
+                        end
+                    end 
+                end
+                v83 = 0
+            end
+            if v85 >= 1 then
+                v85 = 0
+                tbl130 = ({
+                    ["Target"] = nil,
+                    ["LoopVoid"] = false,
+                    ["LoopKill"] = false,
+                    ["LoopPoison"] = false,
+                    ["LoopRagdoll"] = false,
+                    ["LoopDeath"] = false
+                }).Target
+                if tbl130 then function2 = tbl130.Character end
+                tbl130 = tbl130
+                if tbl130 then
+                    function2 = tbl130.Character
+                    local v108 = function2.FindFirstChild(function2, "HumanoidRootPart")
+                    if v108 then
+                        if ({
+                            ["Target"] = nil,
+                            ["LoopVoid"] = false,
+                            ["LoopKill"] = false,
+                            ["LoopPoison"] = false,
+                            ["LoopRagdoll"] = false,
+                            ["LoopDeath"] = false
+                        }).LoopVoid then
+                            b[QN](v108, function(...) function9(v108, Vector3.new(0, 10000, 0)) end)
+                        end
+                        if ({
+                            ["Target"] = nil,
+                            ["LoopVoid"] = false,
+                            ["LoopKill"] = false,
+                            ["LoopPoison"] = false,
+                            ["LoopRagdoll"] = false,
+                            ["LoopDeath"] = false
+                        }).LoopKill then
+                            b[QN](v108, function(...)
+                                function17(v108, CFrame.new(4096, -75, 4096))
+                                function9(v108, Vector3.new(0, -1000, 0)) 
+                            end)
+                        end
+                        if ({
+                            ["Target"] = nil,
+                            ["LoopVoid"] = false,
+                            ["LoopKill"] = false,
+                            ["LoopPoison"] = false,
+                            ["LoopRagdoll"] = false,
+                            ["LoopDeath"] = false
+                        }).LoopPoison then
+                            b[QN](v108, function(...) function17(v108, CFrame.new(58, -70, 271)) end)
+                        end
+                    end
+                end
+            end
+            if v86 >= 1.5 then
+                if ({
+                    ["Target"] = nil,
+                    ["ArmSide"] = "Left",
+                    ["Noclip"] = false,
+                    ["GrabAura"] = false,
+                    ["KickAura"] = false,
+                    ["LoopKick"] = false,
+                    ["LoopKickAll"] = false
+                }).LoopKick and ({
+                    ["Target"] = nil,
+                    ["ArmSide"] = "Left",
+                    ["Noclip"] = false,
+                    ["GrabAura"] = false,
+                    ["KickAura"] = false,
+                    ["LoopKick"] = false,
+                    ["LoopKickAll"] = false
+                }).Target then
+                    tbl130 = ({
+                        ["Target"] = nil,
+                        ["ArmSide"] = "Left",
+                        ["Noclip"] = false,
+                        ["GrabAura"] = false,
+                        ["KickAura"] = false,
+                        ["LoopKick"] = false,
+                        ["LoopKickAll"] = false
+                    }).Target
+                    GAME2 = tbl130.Character
+                    if GAME2 then
+                        GAME2 = tbl130.Character
+                        function2 = GAME2.FindFirstChild(GAME2, "HumanoidRootPart")
+                    end
+                    GAME2 = function54()
+                    if GAME2 then function3 = function54() end
+                    if GAME2 then
+                        task.wait(0.5)
+                        tbl129.CFrame = GAME2.CFrame
+                        task.wait()
+                        function67(GAME2, GAME2, ({
+                            ["Target"] = nil,
+                            ["ArmSide"] = "Left",
+                            ["Noclip"] = false,
+                            ["GrabAura"] = false,
+                            ["KickAura"] = false,
+                            ["LoopKick"] = false,
+                            ["LoopKickAll"] = false
+                        }).ArmSide)
+                        task.wait(0.5)
+                        tbl129.CFrame = tbl129.CFrame
+                    end
+                end
+                if ({
+                    ["Target"] = nil,
+                    ["ArmSide"] = "Left",
+                    ["Noclip"] = false,
+                    ["GrabAura"] = false,
+                    ["KickAura"] = false,
+                    ["LoopKick"] = false,
+                    ["LoopKickAll"] = false
+                }).LoopKickAll then
+                    if not function54() then b[PN]() end
+                    local tbl147 = players
+                    local v110 = tbl147[2]
+                    local v111 = tbl147[3]
+                    for v109, index23 in ipairs(tbl147.GetPlayers(tbl147)) do
+                        if index23 ~= localPlayer then
+                            local tbl146 = ({
+                                ["OnlyPlayer"] = false,
+                                ["IgnoreFriend"] = false,
+                                ["IgnoreIsInPlot"] = false,
+                                ["AuraRadius"] = 32,
+                                ["AimBotSpeed"] = 5,
+                                ["LagAmount"] = 32,
+                                ["PingAmount"] = 32,
+                                ["KickMethod"] = "Void",
+                                ["DebugMode"] = false,
+                                ["ToggleKey"] = "C"
+                            }).IgnoreIsInPlot
+                            if tbl146 then b[SN](tbl146) end
+                            tbl130 = tbl130
+                            if tbl146 then
+                            else
+                                tbl146 = function2
+                                function2 = ({
+                                    ["OnlyPlayer"] = false,
+                                    ["IgnoreFriend"] = false,
+                                    ["IgnoreIsInPlot"] = false,
+                                    ["AuraRadius"] = 32,
+                                    ["AimBotSpeed"] = 5,
+                                    ["LagAmount"] = 32,
+                                    ["PingAmount"] = 32,
+                                    ["KickMethod"] = "Void",
+                                    ["DebugMode"] = false,
+                                    ["ToggleKey"] = "C"
+                                }).IgnoreFriend
+                                if function2 then function3 = b[NN](tbl146) end
+                                tbl130 = function2
+                                if function2 then
+                                else
+                                    tbl146 = tbl130
+                                    function2 = tbl146.Character
+                                    function1 = function2 and function2.FindFirstChild(function2, "HumanoidRootPart")
+                                    tbl130 = tbl146
+                                    if function1 then function54() end
+                                    if function1 then
+                                        task.wait(0.25)
+                                        tbl129.CFrame = function1.CFrame
+                                        task.wait()
+                                        function67(function54(), function1, ({
+                                            ["Target"] = nil,
+                                            ["ArmSide"] = "Left",
+                                            ["Noclip"] = false,
+                                            ["GrabAura"] = false,
+                                            ["KickAura"] = false,
+                                            ["LoopKick"] = false,
+                                            ["LoopKickAll"] = false
+                                        }).ArmSide)
+                                        task.wait(0.25)
+                                        tbl129.CFrame = tbl129.CFrame
+                                    end
+                                end
+                            end
+                        end 
+                    end
+                end
+                v86 = 0
+            end
+            if v87 >= 0.5 then
+                if ({
+                    ["NWOAura"] = false,
+                    ["Control"] = false,
+                    ["ControlTarget"] = nil,
+                    ["NoTyping"] = false,
+                    ["AntiKickDisabler"] = false
+                }).AntiKickDisabler then
+                    local func9 = function14
+                    func9 = func9[1]
+                    local v114 = func9[2]
+                    for v113, index24 in ipairs(func9(tbl129.Position, 30)) do
+                        tbl130 = tbl130
+                        if index24.IsA(index24, "BasePart") and index24.Name == "StickyPart" then
+                            function3 = function26()
+                            if function3 then
+                                function1 = not index24.IsDescendantOf(index24, function3)
+                            end
+                            if function3 then
+                                function1 = index24.Parent
+                                function2 = function1
+                                if function1 then
+                                    local v1122 = function1.FindFirstChild(function1, "SoundPart")
+                                end
+                                tbl130 = function1
+                                if function1 then function11(function1.SoundPart) end
+                            end
+                        end 
+                    end
+                end
+                v87 = 0
+            end
+            tbl130 = tbl130
+            if ({
+                ["NWOAura"] = false,
+                ["Control"] = false,
+                ["ControlTarget"] = nil,
+                ["NoTyping"] = false,
+                ["AntiKickDisabler"] = false
+            }).Control and ({
+                ["NWOAura"] = false,
+                ["Control"] = false,
+                ["ControlTarget"] = nil,
+                ["NoTyping"] = false,
+                ["AntiKickDisabler"] = false
+            }).ControlTarget then
+                local tbl148 = "\xdc\x8a\xf3\x11\xe3\xef%\xf3\xe2\xe0\x1f"
+                local tbl150 = tbl
+                tbl148 = ({
+                    ["NWOAura"] = false,
+                    ["Control"] = false,
+                    ["ControlTarget"] = nil,
+                    ["NoTyping"] = false,
+                    ["AntiKickDisabler"] = false
+                }).ControlTarget[tbl150[r15(tbl148, 11570211640587)]]
+                if tbl148 then
+                    tbl129.CFrame = tbl148.CFrame + Vector3.new(0, -10, 0)
+                    local tbl149 = tbl148.Parent
+                    workspace.CurrentCamera.CameraSubject = tbl149.FindFirstChildOfClass(tbl149, "Humanoid")
+                    tbl148 = function4()
+                    function3 = { tbl148.GetDescendants(tbl148) }
+                    function1 = tbl148[3]
+                    for v115, index25 in tbl148[1], ipairs(u(function3)) do
+                        if index25.IsA(index25, "BasePart") then index25.CanCollide = false end 
+                    end
+                end
+            end
+            if ({
+                ["LoudAll"] = false,
+                ["LoudAllPart"] = nil,
+                ["Lag"] = false,
+                ["Ping"] = false,
+                ["ServerDestroyer"] = false,
+                ["ServerDestroyerPos"] = nil,
+                ["ChaosLine"] = false
+            }).Lag then
+                function21(({
+                    ["OnlyPlayer"] = false,
+                    ["IgnoreFriend"] = false,
+                    ["IgnoreIsInPlot"] = false,
+                    ["AuraRadius"] = 32,
+                    ["AimBotSpeed"] = 5,
+                    ["LagAmount"] = 32,
+                    ["PingAmount"] = 32,
+                    ["KickMethod"] = "Void",
+                    ["DebugMode"] = false,
+                    ["ToggleKey"] = "C"
+                }).LagAmount)
+            end
+            if ({
+                ["LoudAll"] = false,
+                ["LoudAllPart"] = nil,
+                ["Lag"] = false,
+                ["Ping"] = false,
+                ["ServerDestroyer"] = false,
+                ["ServerDestroyerPos"] = nil,
+                ["ChaosLine"] = false
+            }).Ping then
+                function23(({
+                    ["OnlyPlayer"] = false,
+                    ["IgnoreFriend"] = false,
+                    ["IgnoreIsInPlot"] = false,
+                    ["AuraRadius"] = 32,
+                    ["AimBotSpeed"] = 5,
+                    ["LagAmount"] = 32,
+                    ["PingAmount"] = 32,
+                    ["KickMethod"] = "Void",
+                    ["DebugMode"] = false,
+                    ["ToggleKey"] = "C"
+                }).PingAmount)
+            end
+            if ({
+                ["LoudAll"] = false,
+                ["LoudAllPart"] = nil,
+                ["Lag"] = false,
+                ["Ping"] = false,
+                ["ServerDestroyer"] = false,
+                ["ServerDestroyerPos"] = nil,
+                ["ChaosLine"] = false
+            }).ChaosLine then
+                for v118 = 1, 2 do
+                    function3 = {}
+                    local tbl152 = players
+                    function2 = tbl152[1]
+                    local v116 = tbl152[2]
+                    for v117, index26 in ipairs(tbl152.GetPlayers(tbl152)) do
+                        if index26 ~= localPlayer then table.insert({}, index26) end 
+                    end
+                    if #function3 > 0 then
+                        local tbl151 = function3[math.random(#function3)]
+                        local character22 = tbl151.Character
+                        if character22 then
+                            local character23 = tbl151.Character
+                            function2 = character23.FindFirstChild(character23, "HumanoidRootPart")
+                        end
+                        tbl130 = tbl130
+                        if character22 then b[FN](character22) end
+                    end 
+                end
+            end
+            GAME2 = ({
+                ["LoudAll"] = false,
+                ["LoudAllPart"] = nil,
+                ["Lag"] = false,
+                ["Ping"] = false,
+                ["ServerDestroyer"] = false,
+                ["ServerDestroyerPos"] = nil,
+                ["ChaosLine"] = false
+            }).LoudAll and ({
+                ["LoudAll"] = false,
+                ["LoudAllPart"] = nil,
+                ["Lag"] = false,
+                ["Ping"] = false,
+                ["ServerDestroyer"] = false,
+                ["ServerDestroyerPos"] = nil,
+                ["ChaosLine"] = false
+            }).LoudAllPart
+            tbl130 = tbl130
+            if GAME2 then
+                GAME2 = ({
+                    ["LoudAll"] = false,
+                    ["LoudAllPart"] = nil,
+                    ["Lag"] = false,
+                    ["Ping"] = false,
+                    ["ServerDestroyer"] = false,
+                    ["ServerDestroyerPos"] = nil,
+                    ["ChaosLine"] = false
+                }).LoudAllPart
+                if GAME2.FindFirstChild(GAME2, "SoundPart") then
+                    function3 = players
+                    function1 = function3[3]
+                    local tbl154 = function3[2]
+                    for v119, index27 in ipairs(function3.GetPlayers(function3)) do
+                        if index27 ~= localPlayer then
+                            local enable5 = false
+                            if enable5 then b[SN](index27) end
+                            if enable5 then
+                            else
+                                tbl154 = index27.Character
+                                local tbl153 = tbl154 and tbl154.FindFirstChild(tbl154, "HumanoidRootPart")
+                                if tbl153 then
+                                    function17(tbl153.FindFirstChild(tbl153, z), tbl153.CFrame)
+                                    task.wait(.1)
+                                end
+                            end
+                        end 
+                    end
+                end
+            end
+            if ({
+                ["LoudAll"] = false,
+                ["LoudAllPart"] = nil,
+                ["Lag"] = false,
+                ["Ping"] = false,
+                ["ServerDestroyer"] = false,
+                ["ServerDestroyerPos"] = nil,
+                ["ChaosLine"] = false
+            }).ServerDestroyer then
+                GAME2 = "Left"
+                for v129 = 1, 4 do
+                    local v127 = ({
+                        ["LoudAll"] = false,
+                        ["LoudAllPart"] = nil,
+                        ["Lag"] = false,
+                        ["Ping"] = false,
+                        ["ServerDestroyer"] = false,
+                        ["ServerDestroyerPos"] = nil,
+                        ["ChaosLine"] = false
+                    }).ServerDestroyerPos
+                    local tbl159 = function54()
+                    if not tbl159 then b[PN]() end
+                    local v128 = tbl130
+                    function2 = not tbl132.Sit and tbl159
+                    tbl130 = v128
+                    if function2 then
+                        function2 = tbl159.VehicleSeat
+                        function2.Sit(function2, tbl132)
+                    end
+                    if tbl159 then function2 = tbl132.Sit end
+                    tbl130 = tbl130
+                    if tbl159 then
+                        local tbl155 = tbl155
+                        tbl130 = tbl155
+                        local tbl156 = players
+                        tbl156 = tbl[r15("\xa6\xc7\x96\x0e", function3)] == "Left" and "Right" or "Left"
+                        tbl155 = {}
+                        local v120 = tbl156[3]
+                        for v121, index28 in tbl156[1], ipairs(tbl156.GetPlayers(tbl156)) do
+                            table.insert(tbl155, index28) 
+                        end
+                        for index29 = #tbl155, 2, -1 do
+                            local randomNum = math.random(index29)
+                            tbl155[index29] = tbl155[randomNum]
+                            tbl155[randomNum] = tbl155[index29] 
+                        end
+                        local v1222 = tbl156[2]
+                        local v123 = tbl156[1]
+                        for v126, index30 in ipairs(v1222) do
+                            if index30 ~= localPlayer then
+                                local v124 = ({
+                                    ["OnlyPlayer"] = false,
+                                    ["IgnoreFriend"] = false,
+                                    ["IgnoreIsInPlot"] = false,
+                                    ["AuraRadius"] = 32,
+                                    ["AimBotSpeed"] = 5,
+                                    ["LagAmount"] = 32,
+                                    ["PingAmount"] = 32,
+                                    ["KickMethod"] = "Void",
+                                    ["DebugMode"] = false,
+                                    ["ToggleKey"] = "C"
+                                }).IgnoreFriend
+                                if v124 then b[NN](v124) end
+                                if v124 then
+                                else
+                                    v124 = tbl157
+                                    local tbl157 = ({
+                                        ["OnlyPlayer"] = false,
+                                        ["IgnoreFriend"] = false,
+                                        ["IgnoreIsInPlot"] = false,
+                                        ["AuraRadius"] = 32,
+                                        ["AimBotSpeed"] = 5,
+                                        ["LagAmount"] = 32,
+                                        ["PingAmount"] = 32,
+                                        ["KickMethod"] = "Void",
+                                        ["DebugMode"] = false,
+                                        ["ToggleKey"] = "C"
+                                    }).IgnoreIsInPlot
+                                    if tbl157 then local v125 = b[SN](tbl157) end
+                                    v123 = tbl157
+                                    if tbl157 then
+                                    else
+                                        tbl157 = v123
+                                        tbl157 = tbl157.Character
+                                        local tbl158 = tbl157 and tbl157.FindFirstChild(tbl157, "HumanoidRootPart")
+                                        v123 = tbl157
+                                        if tbl158 then
+                                            local enable6 = tbl158.Position.Magnitude < 4096 and tbl158.CFrame.Y >= -95
+                                        end
+                                        if tbl158 then
+                                            tbl129.CFrame = tbl158.CFrame
+                                            task.wait()
+                                            function59(function54(), tbl158, function2)
+                                            task.wait()
+                                            tbl157 = ({
+                                                ["LoudAll"] = false,
+                                                ["LoudAllPart"] = nil,
+                                                ["Lag"] = false,
+                                                ["Ping"] = false,
+                                                ["ServerDestroyer"] = false,
+                                                ["ServerDestroyerPos"] = nil,
+                                                ["ChaosLine"] = false
+                                            }).ServerDestroyerPos
+                                            tbl129.CFrame = tbl157
+                                            function9(tbl129, Vector3.zero)
+                                        end
+                                    end
+                                end
+                            end 
+                        end
+                        function32(v120)
+                        task.wait(.1)
+                    end 
+                end
+            end
+            GAME2 = {
+                ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                ["SpeedHack"] = { ["Value"] = 16 },
+                ["JumppowerHack"] = { ["Value"] = 50 },
+                ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                ["Infjump"] = { ["Value"] = false },
+                ["Fly"] = { ["Value"] = false },
+                ["Noclip"] = { ["Value"] = false },
+                ["FlyMethod"] = "Velocity",
+                ["SpeedMethod"] = "CFrame",
+                ["AutoSpeedMethod"] = true,
+                ["Teleports"] = {
+                    ["Barn"] = CFrame.new(-234, 85, -311),
+                    ["BlueHouse"] = CFrame.new(525, 98, -375),
+                    ["Factory"] = CFrame.new(138, 365, 346),
+                    ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                    ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                    ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                    ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                    ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                    ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                    ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                    [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                }
+            }
+            local v130 = tbl
+            local v131 = "Fly"
+            if GAME2[v131] then
+                GAME2 = workspace.CurrentCamera
+                local v1322 = GAME2.CFrame.LookVector
+                local v133 = GAME2.CFrame.RightVector
+                if tbl38.v2 then GAME2 = Vector3.zero + v1322 end
+                if tbl38.v4 then GAME2 = Vector3.zero - v133 end
+                if Vector3.zero.Magnitude > 0 then
+                    GAME2 = Vector3.zero.Unit * ({
+                        ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                        ["SpeedHack"] = { ["Value"] = 16 },
+                        ["JumppowerHack"] = { ["Value"] = 50 },
+                        ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                        ["Infjump"] = { ["Value"] = false },
+                        ["Fly"] = { ["Value"] = false },
+                        ["Noclip"] = { ["Value"] = false },
+                        ["FlyMethod"] = "Velocity",
+                        ["SpeedMethod"] = "CFrame",
+                        ["AutoSpeedMethod"] = true,
+                        ["Teleports"] = {
+                            ["Barn"] = CFrame.new(-234, 85, -311),
+                            ["BlueHouse"] = CFrame.new(525, 98, -375),
+                            ["Factory"] = CFrame.new(138, 365, 346),
+                            ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                            ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                            ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                            ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                            ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                            ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                            ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                            [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                        }
+                    }).SpeedHack.Value
+                end
+                if ({
+                    ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                    ["SpeedHack"] = { ["Value"] = 16 },
+                    ["JumppowerHack"] = { ["Value"] = 50 },
+                    ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                    ["Infjump"] = { ["Value"] = false },
+                    ["Fly"] = { ["Value"] = false },
+                    ["Noclip"] = { ["Value"] = false },
+                    ["FlyMethod"] = "Velocity",
+                    ["SpeedMethod"] = "CFrame",
+                    ["AutoSpeedMethod"] = true,
+                    ["Teleports"] = {
+                        ["Barn"] = CFrame.new(-234, 85, -311),
+                        ["BlueHouse"] = CFrame.new(525, 98, -375),
+                        ["Factory"] = CFrame.new(138, 365, 346),
+                        ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                        ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                        ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                        ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                        ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                        ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                        ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                        [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                    }
+                }).FlyMethod == "Velocity" then
+                    if r65 then r65.Velocity = Vector3.zero end
+                else
+                    if ({
+                        ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                        ["SpeedHack"] = { ["Value"] = 16 },
+                        ["JumppowerHack"] = { ["Value"] = 50 },
+                        ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                        ["Infjump"] = { ["Value"] = false },
+                        ["Fly"] = { ["Value"] = false },
+                        ["Noclip"] = { ["Value"] = false },
+                        ["FlyMethod"] = "Velocity",
+                        ["SpeedMethod"] = "CFrame",
+                        ["AutoSpeedMethod"] = true,
+                        ["Teleports"] = {
+                            ["Barn"] = CFrame.new(-234, 85, -311),
+                            ["BlueHouse"] = CFrame.new(525, 98, -375),
+                            ["Factory"] = CFrame.new(138, 365, 346),
+                            ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                            ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                            ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                            ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                            ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                            ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                            ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                            [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                        }
+                    }).FlyMethod == "CFrame" then
+                        if Vector3.zero.Magnitude > 0 then
+                            tbl129.CFrame = tbl129.CFrame + Vector3.zero * .016666666666667
+                        end
+                    end
+                end
+            end
+            tbl130 = tbl130
+            if ({
+                ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                ["SpeedHack"] = { ["Value"] = 16 },
+                ["JumppowerHack"] = { ["Value"] = 50 },
+                ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                ["Infjump"] = { ["Value"] = false },
+                ["Fly"] = { ["Value"] = false },
+                ["Noclip"] = { ["Value"] = false },
+                ["FlyMethod"] = "Velocity",
+                ["SpeedMethod"] = "CFrame",
+                ["AutoSpeedMethod"] = true,
+                ["Teleports"] = {
+                    ["Barn"] = CFrame.new(-234, 85, -311),
+                    ["BlueHouse"] = CFrame.new(525, 98, -375),
+                    ["Factory"] = CFrame.new(138, 365, 346),
+                    ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                    ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                    ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                    ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                    ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                    ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                    ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                    [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                }
+            }).SpeedMethod == "CFrame" and not ({
+                ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                ["SpeedHack"] = { ["Value"] = 16 },
+                ["JumppowerHack"] = { ["Value"] = 50 },
+                ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                ["Infjump"] = { ["Value"] = false },
+                ["Fly"] = { ["Value"] = false },
+                ["Noclip"] = { ["Value"] = false },
+                ["FlyMethod"] = "Velocity",
+                ["SpeedMethod"] = "CFrame",
+                ["AutoSpeedMethod"] = true,
+                ["Teleports"] = {
+                    ["Barn"] = CFrame.new(-234, 85, -311),
+                    ["BlueHouse"] = CFrame.new(525, 98, -375),
+                    ["Factory"] = CFrame.new(138, 365, 346),
+                    ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                    ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                    ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                    ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                    ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                    ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                    ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                    [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                }
+            }).Fly then
+                GAME2 = workspace.CurrentCamera
+                local v89 = Vector3.new(GAME2.CFrame.LookVector.X, 0, GAME2.CFrame.LookVector.v4)
+                local v90 = Vector3.new(GAME2.CFrame.RightVector.X, 0, GAME2.CFrame.RightVector.v4)
+                if tbl38.v2 then v90 = Vector3.zero + v89 end
+                if tbl38.v4 then v90 = Vector3.zero - v90 end
+                local tbl128 = r15("\xf6\xae\xecd\xc4\xe1B:\xd2", 7305804189002)
+                if Vector3.zero[tbl[tbl128]] > 0 then
+                    local v88 = tbl129.Position + Vector3.zero.Unit * ({
+                        ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                        ["SpeedHack"] = { ["Value"] = 16 },
+                        ["JumppowerHack"] = { ["Value"] = 50 },
+                        ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                        ["Infjump"] = { ["Value"] = false },
+                        ["Fly"] = { ["Value"] = false },
+                        ["Noclip"] = { ["Value"] = false },
+                        ["FlyMethod"] = "Velocity",
+                        ["SpeedMethod"] = "CFrame",
+                        ["AutoSpeedMethod"] = true,
+                        ["Teleports"] = {
+                            ["Barn"] = CFrame.new(-234, 85, -311),
+                            ["BlueHouse"] = CFrame.new(525, 98, -375),
+                            ["Factory"] = CFrame.new(138, 365, 346),
+                            ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                            ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                            ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                            ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                            ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                            ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                            ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                            [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                        }
+                    }).SpeedHack.Value * .016666666666667
+                    tbl128 = tbl129.CFrame
+                    tbl129.CFrame = tbl128.Lerp(tbl128, CFrame.new(v88, v88 + Vector3.new(tbl129.CFrame.LookVector.X, 0, tbl129.CFrame.LookVector.v4)), .016666666666667 * 10)
+                end
+            else
+                GAME2 = tbl130
+                tbl130 = GAME2
+                if ({
+                    ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                    ["SpeedHack"] = { ["Value"] = 16 },
+                    ["JumppowerHack"] = { ["Value"] = 50 },
+                    ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                    ["Infjump"] = { ["Value"] = false },
+                    ["Fly"] = { ["Value"] = false },
+                    ["Noclip"] = { ["Value"] = false },
+                    ["FlyMethod"] = "Velocity",
+                    ["SpeedMethod"] = "CFrame",
+                    ["AutoSpeedMethod"] = true,
+                    ["Teleports"] = {
+                        ["Barn"] = CFrame.new(-234, 85, -311),
+                        ["BlueHouse"] = CFrame.new(525, 98, -375),
+                        ["Factory"] = CFrame.new(138, 365, 346),
+                        ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                        ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                        ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                        ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                        ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                        ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                        ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                        [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                    }
+                }).SpeedMethod == "Velocity" and not ({
+                    ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                    ["SpeedHack"] = { ["Value"] = 16 },
+                    ["JumppowerHack"] = { ["Value"] = 50 },
+                    ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                    ["Infjump"] = { ["Value"] = false },
+                    ["Fly"] = { ["Value"] = false },
+                    ["Noclip"] = { ["Value"] = false },
+                    ["FlyMethod"] = "Velocity",
+                    ["SpeedMethod"] = "CFrame",
+                    ["AutoSpeedMethod"] = true,
+                    ["Teleports"] = {
+                        ["Barn"] = CFrame.new(-234, 85, -311),
+                        ["BlueHouse"] = CFrame.new(525, 98, -375),
+                        ["Factory"] = CFrame.new(138, 365, 346),
+                        ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                        ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                        ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                        ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                        ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                        ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                        ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                        [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                    }
+                }).Fly then
+                    GAME2 = Vector3.zero
+                    GAME2 = workspace.CurrentCamera
+                    local tbl131 = Vector3.new(GAME2.CFrame.LookVector.X, 0, GAME2.CFrame.LookVector.v4)
+                    local v93 = Vector3.new(tbl131.CFrame.RightVector.X, 0, tbl131.CFrame.RightVector.v4)
+                    if tbl38.v2 then tbl131 = Vector3.zero + tbl131 end
+                    if tbl38.v4 then tbl131 = Vector3.zero - v93 end
+                    if tbl131.Magnitude > 0 then
+                        tbl131 = Vector3.zero.Unit * ({
+                            ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                            ["SpeedHack"] = { ["Value"] = 16 },
+                            ["JumppowerHack"] = { ["Value"] = 50 },
+                            ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                            ["Infjump"] = { ["Value"] = false },
+                            ["Fly"] = { ["Value"] = false },
+                            ["Noclip"] = { ["Value"] = false },
+                            ["FlyMethod"] = "Velocity",
+                            ["SpeedMethod"] = "CFrame",
+                            ["AutoSpeedMethod"] = true,
+                            ["Teleports"] = {
+                                ["Barn"] = CFrame.new(-234, 85, -311),
+                                ["BlueHouse"] = CFrame.new(525, 98, -375),
+                                ["Factory"] = CFrame.new(138, 365, 346),
+                                ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                                ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                                ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                                ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                                ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                                ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                                ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                                [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                            }
+                        }).SpeedHack.Value
+                        tbl129.AssemblyLinearVelocity = Vector3.new(tbl131.X, tbl129.AssemblyLinearVelocity.Y, tbl131.v4)
+                    else
+                        tbl129.AssemblyLinearVelocity = Vector3.new(0, tbl129.AssemblyLinearVelocity.Y, 0)
+                    end
+                end
+                tbl130 = tbl130
+                if ({
+                    ["NWOAura"] = false,
+                    ["Control"] = false,
+                    ["ControlTarget"] = nil,
+                    ["NoTyping"] = false,
+                    ["AntiKickDisabler"] = false
+                }).Control and ({
+                    ["NWOAura"] = false,
+                    ["Control"] = false,
+                    ["ControlTarget"] = nil,
+                    ["NoTyping"] = false,
+                    ["AntiKickDisabler"] = false
+                }).ControlTarget then
+                    GAME2 = ({
+                        ["NWOAura"] = false,
+                        ["Control"] = false,
+                        ["ControlTarget"] = nil,
+                        ["NoTyping"] = false,
+                        ["AntiKickDisabler"] = false
+                    }).ControlTarget.PrimaryPart
+                    if GAME2 then
+                        GAME2 = Vector3.zero
+                        local camera = workspace.CurrentCamera
+                        local v91 = Vector3.new(camera.CFrame.LookVector.X, 0, camera.CFrame.LookVector.v4)
+                        local v92 = Vector3.new(camera.CFrame.RightVector.X, 0, camera.CFrame.RightVector.v4)
+                        if tbl38.v2 then camera = Vector3.zero + v91 end
+                        if tbl38.v4 then camera = Vector3.zero - v92 end
+                        if camera.Magnitude > 0 then
+                            camera = Vector3.zero.Unit * ({
+                                ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+                                ["SpeedHack"] = { ["Value"] = 16 },
+                                ["JumppowerHack"] = { ["Value"] = 50 },
+                                ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+                                ["Infjump"] = { ["Value"] = false },
+                                ["Fly"] = { ["Value"] = false },
+                                ["Noclip"] = { ["Value"] = false },
+                                ["FlyMethod"] = "Velocity",
+                                ["SpeedMethod"] = "CFrame",
+                                ["AutoSpeedMethod"] = true,
+                                ["Teleports"] = {
+                                    ["Barn"] = CFrame.new(-234, 85, -311),
+                                    ["BlueHouse"] = CFrame.new(525, 98, -375),
+                                    ["Factory"] = CFrame.new(138, 365, 346),
+                                    ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                                    ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                                    ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                                    ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                                    ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                                    ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                                    ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                                    [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+                                }
+                            }).SpeedHack.Value
+                            camera.AssemblyLinearVelocity = Vector3.new(camera.X, camera.AssemblyLinearVelocity.Y, camera.v4)
+                        else
+                            camera.AssemblyLinearVelocity = Vector3.new(0, camera.AssemblyLinearVelocity.Y, 0)
+                        end
+                    end
+                end
+            end 
+        end 
+    end)
+    tbl114 = localPlayer.CharacterAdded
+    tbl114.Connect(tbl114, function(function157, ...)
+        local v134 = function157
+        task.wait(0.5)
+        if ({
+            ["CrouchSpeedHack"] = { ["Value"] = 16, ["Loop"] = false },
+            ["SpeedHack"] = { ["Value"] = 16 },
+            ["JumppowerHack"] = { ["Value"] = 50 },
+            ["Freeze"] = { ["Value"] = false, ["CFrame"] = nil },
+            ["Infjump"] = { ["Value"] = false },
+            ["Fly"] = { ["Value"] = false },
+            ["Noclip"] = { ["Value"] = false },
+            ["FlyMethod"] = "Velocity",
+            ["SpeedMethod"] = "CFrame",
+            ["AutoSpeedMethod"] = true,
+            ["Teleports"] = {
+                ["Barn"] = CFrame.new(-234, 85, -311),
+                ["BlueHouse"] = CFrame.new(525, 98, -375),
+                ["Factory"] = CFrame.new(138, 365, 346),
+                ["GlassHouse"] = CFrame.new(-325, 109, 337),
+                ["JapaneseHouse"] = CFrame.new(584, 141, -100),
+                ["PinkRoofHouse"] = CFrame.new(-525, 22, -165),
+                ["SpookyHouse"] = CFrame.new(303, 14, 483),
+                ["TudorHouse"] = CFrame.new(-572, 20, 89),
+                ["TrainCave"] = CFrame[tbl[r15("\xcc\xbb\xfc", x4[1])]](571, 48, -153),
+                ["SmallSecretCave"] = CFrame[tbl[x4[1]]](-50, -7, -298),
+                [tbl[r15(x4[1], x4[2])]] = CFrame[x4[1][x4[3]]](-130, x4[1], x4[2])
+            }
+        }).Fly then
+            function52()
+            task.wait(.1)
+            function51()
+        end 
+    end)
+    enable1.Notify(enable1, {
+        ["Title"] = "Noob hub",
+        ["Content"] = "Loaded! Press " .. ({
+            ["OnlyPlayer"] = false,
+            ["IgnoreFriend"] = false,
+            ["IgnoreIsInPlot"] = false,
+            ["AuraRadius"] = 32,
+            ["AimBotSpeed"] = 5,
+            ["LagAmount"] = 32,
+            ["PingAmount"] = 32,
+            ["KickMethod"] = "Void",
+            ["DebugMode"] = false,
+            ["ToggleKey"] = "C"
+        }).ToggleKey .. " to toggle GUI",
+        ["Duration"] = 5
+    })
+end
