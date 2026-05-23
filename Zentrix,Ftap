@@ -1,0 +1,1546 @@
+     local GAME = GAME
+        local players = GAME.GetService(GAME, "Players")
+        local GAME = GAME
+        local inputService = GAME.GetService(GAME, "UserInputService")
+        local GAME2 = GAME
+        local runService = GAME2.GetService(GAME2, "RunService")
+        local GAME3 = GAME
+        local tweenService = GAME3.GetService(GAME3, "TweenService")
+        local GAME4 = GAME
+        local localPlayer = players.LocalPlayer
+        local v72 = GAME4.GetService(GAME4, "Workspace").CurrentCamera
+        local v82 = 500
+        local v92 = 220
+        local enable2 = true
+        local enable3 = false
+        local enable4 = false
+        local enable5 = false
+        local enable6 = false
+        local enable7 = false
+        local enable8 = false
+        local tbl4 = {
+            "looks legit",
+            "higher that legit",
+            "very strong",
+            " superman ahhh fling",
+            "nearly max..",
+            "super duper far"
+        }
+        local v102 = 6
+        local tbl5 = { 500, 2500, 30000, 40000, 100000, 500000 }
+        local tbl6 = {}
+        
+        local function function2(...)
+            local tbl8 = pcall(function(...)
+                local screenGui = Instance.new("ScreenGui")
+                screenGui.Name = "ZentrixStartup"
+                local GAME5 = GAME
+                screenGui.Parent = GAME5.GetService(GAME5, "CoreGui")
+                screenGui.IgnoreGuiInset = true
+                local frame = Instance.new("Frame")
+                frame.Size = UDim2.new(2, 0, 2, 0)
+                frame.Position = UDim2.new(-0.5, 0, -0.5, 0)
+                frame.BackgroundColor3 = Color3.fromRGB(15, 15, 20)
+                frame.BorderSizePixel = 0
+                frame.Parent = screenGui
+                screenGui = Instance.new("UIGradient")
+                screenGui.Color = ColorSequence.new({
+                    ColorSequenceKeypoint.new(0, Color3.fromRGB(20, 20, 30)),
+                    ColorSequenceKeypoint.new(1, Color3.fromRGB(10, 10, 15))
+                })
+                screenGui.Rotation = 45
+                screenGui.Parent = frame
+                for v132 = 1, 25 do
+                    local frame = Instance.new("Frame")
+                    frame.Size = UDim2.new(0, math.random(2, 6), 0, math.random(2, 6))
+                    frame.Position = UDim2.new(math.random(), 0, math.random(), 0)
+                    frame.BackgroundColor3 = Color3.fromHSV(math.random(), .8, 1)
+                    frame.BorderSizePixel = 0
+                    local frame2 = Instance.new("Frame")
+                    frame.Parent = frame2
+                    spawn(function(...)
+                        frame2 = frame
+                        local v112 = frame.Parent
+                        while not frame2 do
+                            if v112 then
+                                if not pcall(function(...)
+                                    local tbl7 = tweenService
+                                    tbl7 = tbl7.Create(tbl7, frame, TweenInfo.new(math.random(4, 8), Enum.EasingStyle.Sine), {
+                                        ["Position"] = UDim2.new(math.random(), 0, math.random(), 0),
+                                        ["BackgroundColor3"] = Color3.fromHSV(math.random(), .8, 1)
+                                    })
+                                    tbl7.Play(tbl7) 
+                                end) then
+                                    break
+                                else
+                                    wait(math.random(4, 8))
+                                end
+                            end 
+                        end
+                        local v122 = tbl3
+                        v112 = frame.Parent 
+                    end) 
+                end
+                local frame = Instance.new("Frame")
+                frame.Size = UDim2.new(0, 600, 0, 450)
+                frame.Position = UDim2.new(0.5, -300, 0.5, -225)
+                frame.BackgroundTransparency = 1
+                frame.Parent = screenGui
+                local textLabel = Instance.new("TextLabel")
+                textLabel.Size = UDim2.new(1, 0, 0, 80)
+                textLabel.Position = UDim2.new(0, 0, 0, 50)
+                textLabel.BackgroundTransparency = 1
+                textLabel.Text = "Zentrix"
+                textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+                textLabel.TextSize = 70
+                textLabel.Font = Enum.Font.GothamBold
+                textLabel.TextTransparency = 1
+                textLabel.Parent = frame
+                screenGui = Instance.new("TextLabel")
+                screenGui.Size = UDim2.new(1, 0, 0, 40)
+                screenGui.Position = UDim2.new(0, 0, 0, 140)
+                screenGui.BackgroundTransparency = 1
+                screenGui.Text = "made by CabralDev"
+                screenGui.TextColor3 = Color3.fromRGB(200, 200, 255)
+                screenGui.TextSize = 24
+                screenGui.Font = Enum.Font.Gotham
+                screenGui.TextTransparency = 1
+                screenGui.Parent = frame
+                local textButton = Instance.new("TextButton")
+                textButton.Size = UDim2.new(0, 500, 0, 60)
+                textButton.Position = UDim2.new(0.5, -250, 0, 200)
+                textButton.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
+                textButton.BorderSizePixel = 0
+                textButton.BackgroundTransparency = 1
+                textButton.Text = ""
+                textButton.Parent = frame
+                local textLabel2 = Instance.new("TextLabel")
+                textLabel2.Size = UDim2.new(1, 0, 1, 0)
+                textLabel2.BackgroundTransparency = 1
+                textLabel2.Text = "Discord: https://discord.gg/pRDMSfkP6K (click to copy)"
+                textLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
+                textLabel2.TextSize = 20
+                textLabel2.Font = Enum.Font.GothamBold
+                textLabel2.TextTransparency = 1
+                textLabel2.Parent = textButton
+                textLabel = textButton.MouseButton1Click
+                textLabel.Connect(textLabel, function(...)
+                    pcall(function(...)
+                        setclipboard("https://discord.gg/pRDMSfkP6K")
+                        textLabel2.Text = "copied to clipboard!"
+                        textButton.BackgroundColor3 = Color3.fromRGB(67, 181, 129)
+                        wait(2)
+                        textLabel2.Text = "Discord: https://discord.gg/pRDMSfkP6K (click to copy)"
+                        textButton.BackgroundColor3 = Color3.fromRGB(88, 101, 242) 
+                    end) 
+                end)
+                local textLabel3 = Instance.new("TextLabel")
+                textLabel3.Size = UDim2.new(1, 0, 0, 100)
+                textLabel3.Position = UDim2.new(0, 0, 0, 270)
+                textLabel3.BackgroundTransparency = 1
+                textLabel3.Text = "- perfect anti-fling\n- 6 power levels\n- advanced esp with health\n- smooth performance"
+                textLabel3.TextColor3 = Color3.fromRGB(150, 255, 150)
+                textLabel3.TextSize = 16
+                textLabel3.Font = Enum.Font.Gotham
+                textLabel3.TextTransparency = 1
+                textLabel3.Parent = frame
+                local frame3 = Instance.new("Frame")
+                frame3.Size = UDim2.new(0, 400, 0, 6)
+                frame3.Position = UDim2.new(0.5, -200, 1, -50)
+                frame3.BackgroundColor3 = Color3.fromRGB(30, 30, 40)
+                frame3.BorderSizePixel = 0
+                frame3.Parent = frame
+                local frame4 = Instance.new("Frame")
+                frame4.Size = UDim2.new(0, 0, 1, 0)
+                frame4.BackgroundColor3 = Color3.fromRGB(0, 255, 150)
+                frame4.BorderSizePixel = 0
+                frame4.Parent = frame3
+                textLabel = tweenService
+                textLabel = textLabel.Create(textLabel, textLabel, TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), { ["TextTransparency"] = 0 })
+                textLabel.Play(textLabel)
+                wait(0.5)
+                textLabel = tweenService
+                textLabel = textLabel.Create(textLabel, screenGui, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { ["TextTransparency"] = 0 })
+                textLabel.Play(textLabel)
+                wait(0.5)
+                textLabel = tweenService
+                textLabel = textLabel.Create(textLabel, textButton, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { ["BackgroundTransparency"] = .2 })
+                textLabel.Play(textLabel)
+                textLabel = tweenService
+                textLabel = textLabel.Create(textLabel, textLabel2, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { ["TextTransparency"] = 0 })
+                textLabel.Play(textLabel)
+                wait(0.5)
+                textLabel = tweenService
+                textLabel = textLabel.Create(textLabel, textLabel3, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { ["TextTransparency"] = 0 })
+                textLabel.Play(textLabel)
+                textLabel = tweenService
+                textLabel = textLabel.Create(textLabel, frame4, TweenInfo.new(2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { ["Size"] = UDim2.new(1, 0, 1, 0) })
+                textLabel.Play(textLabel)
+                wait(3)
+                textLabel = tweenService
+                textLabel = textLabel.Create(textLabel, frame4, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { ["BackgroundTransparency"] = 1 })
+                textLabel.Play(textLabel)
+                textLabel = tweenService
+                textLabel = textLabel.Create(textLabel, frame, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { ["Position"] = UDim2.new(0.5, -300, -0.5, -225) })
+                textLabel.Play(textLabel)
+                wait(1)
+                if screenGui then
+                    screenGui.Destroy(screenGui)
+                end 
+            end)
+            if not tbl8 then
+                print("startup animation failed: " .. tostring(tbl8[2]))
+            end 
+        end
+        
+        spawn(function(...)
+            function2() 
+        end)
+        
+        local function function8(function3, ...)
+            local tbl9 = function3
+            if not tbl9 or (not tbl9.Character or not 75.FindFirstChild(75, "HumanoidRootPart")) then
+                
+            end
+            pcall(function(...)
+                local character = tbl9.Character
+                local rootPart2 = character.HumanoidRootPart
+                local folder = Instance.new("Folder")
+                folder.Name = "ESP_" .. tbl9.Name
+                folder.Parent = v72
+                local billboard = Instance.new("BillboardGui")
+                billboard.Name = "DistanceDisplay"
+                billboard.Size = UDim2.new(0, 200, 0, 80)
+                billboard.StudsOffset = Vector3.new(0, 3, 0)
+                billboard.AlwaysOnTop = true
+                local rootPart = character.HumanoidRootPart
+                billboard.Parent = rootPart
+                character = Instance.new("TextLabel")
+                character.Size = UDim2.new(1, 0, 0, 20)
+                character.BackgroundTransparency = 1
+                character.Text = tbl9.Name
+                character.TextColor3 = Color3.fromRGB(255, 255, 255)
+                character.TextSize = 18
+                character.Font = Enum.Font.GothamBold
+                character.TextStrokeTransparency = 0.5
+                character.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+                character.Visible = enable5
+                character.Parent = billboard
+                local textLabel = Instance.new("TextLabel")
+                textLabel.Size = UDim2.new(1, 0, 0, 18)
+                textLabel.Position = UDim2.new(0, 0, 0, 20)
+                textLabel.BackgroundTransparency = 1
+                textLabel.Text = "0m"
+                textLabel.TextColor3 = Color3.fromRGB(100, 255, 100)
+                textLabel.TextSize = 16
+                textLabel.Font = Enum.Font.GothamBold
+                textLabel.TextStrokeTransparency = 0.5
+                textLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+                textLabel.Visible = enable6
+                textLabel.Parent = billboard
+                GAME4 = Instance.new("TextLabel")
+                GAME4.Size = UDim2.new(1, 0, 0, 18)
+                GAME4.Position = UDim2.new(0, 0, 0, 38)
+                GAME4.BackgroundTransparency = 1
+                GAME4.Text = "100 HP"
+                GAME4.TextColor3 = Color3.fromRGB(0, 255, 0)
+                GAME4.TextSize = 16
+                GAME4.Font = Enum.Font.GothamBold
+                GAME4.TextStrokeTransparency = 0.5
+                GAME4.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+                GAME4.Visible = enable7
+                GAME4.Parent = billboard
+                local frame = Instance.new("Frame")
+                frame.Size = UDim2.new(.8, 0, 0, 4)
+                frame.Position = UDim2.new(.1, 0, 0, 58)
+                frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+                frame.BorderSizePixel = 0
+                frame.Visible = enable7
+                frame.Parent = billboard
+                local frame5 = Instance.new("Frame")
+                frame5.Size = UDim2.new(1, 0, 1, 0)
+                frame5.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+                frame5.BorderSizePixel = 0
+                frame5.Parent = frame
+                textLabel = Instance.new("SelectionBox")
+                textLabel.Name = "BoundingBox"
+                textLabel.Adornee = billboard
+                textLabel.Color3 = Color3.fromRGB(0, 255, 100)
+                textLabel.LineThickness = .1
+                textLabel.Transparency = .3
+                textLabel.Visible = enable4
+                textLabel.Parent = folder
+                local attachment = Instance.new("Attachment")
+                attachment.Name = "TracerAttachment"
+                attachment.Parent = billboard
+                frame5 = Instance.new("Beam")
+                frame5.Name = "TracerBeam"
+                frame5.Color = ColorSequence.new(Color3.fromRGB(255, 255, 255))
+                frame5.Width0 = .1
+                frame5.Width1 = .1
+                frame5.Transparency = NumberSequence.new(0.5)
+                frame5.FaceCamera = true
+                frame5.Visible = enable8
+                frame5.Parent = folder
+                attachment = Instance.new("Attachment")
+                attachment.Name = "CameraAttachment"
+                attachment.Parent = v72
+                frame5.Attachment0 = attachment
+                frame5.Attachment1 = attachment
+                
+                local function function5(function4, function6, function7, ...)
+                    function5 = function4
+                    local tbl10 = function6
+                    local enable9 = not function5
+                    if enable9 then
+                        if textLabel then return end
+                        enable9 = Instance.new("Attachment")
+                        local v142 = function4
+                        enable9.Parent = v142
+                        tbl10 = Instance.new("Attachment")
+                        v142 = function6
+                        tbl10.Parent = v142
+                        enable9 = Instance.new("Beam")
+                        v142 = function7
+                        enable9.Name = v142
+                        enable9.Attachment0 = enable9
+                        enable9.Attachment1 = tbl10
+                        enable9.Color = ColorSequence.new(Color3.fromRGB(255, 100, 100))
+                        enable9.Width0 = .1
+                        enable9.Width1 = .1
+                        enable9.Transparency = NumberSequence.new(.3)
+                        enable9.FaceCamera = true
+                        enable9.Parent = folder
+                        return enable9, enable9, tbl10
+                    else
+                        local enable10 = not tbl10
+                    end 
+                end
+                
+                local v152 = function5.FindFirstChild(function5, "Head")
+                local v162 = function5.FindFirstChild(function5, "Torso") or function5.FindFirstChild(function5, "UpperTorso")
+                local v172 = function5.FindFirstChild(function5, "Left Arm") or function5.FindFirstChild(function5, "LeftUpperArm")
+                local v182 = function5.FindFirstChild(function5, "Right Arm") or function5.FindFirstChild(function5, "RightUpperArm")
+                local v192 = function5.FindFirstChild(function5, "Left Leg") or function5.FindFirstChild(function5, "LeftUpperLeg")
+                local v202 = function5.FindFirstChild(function5, "Right Leg") or function5.FindFirstChild(function5, "RightUpperLeg")
+                if v152 then
+                    textLabel = function5.FindFirstChild(function5, "Torso") or function5.FindFirstChild(function5, "UpperTorso")
+                end
+                if v152 then
+                    function5(v152, v162, "HeadToTorso")
+                end
+                if v162 then
+                    textLabel = function5.FindFirstChild(function5, "Left Arm") or function5.FindFirstChild(function5, "LeftUpperArm")
+                end
+                if v162 then
+                    function5(v162, v172, "TorsoToLeftArm")
+                end
+                if v162 then
+                    textLabel = function5.FindFirstChild(function5, "Right Arm") or function5.FindFirstChild(function5, "RightUpperArm")
+                end
+                if v162 then
+                    function5(v162, v182, "TorsoToRightArm")
+                end
+                if v162 then
+                    textLabel = function5.FindFirstChild(function5, "Left Leg") or function5.FindFirstChild(function5, "LeftUpperLeg")
+                end
+                if v162 then
+                    function5(v162, v192, "TorsoToLeftLeg")
+                end
+                if v162 then
+                    textLabel = function5.FindFirstChild(function5, r) or function5.FindFirstChild(function5, "RightUpperLeg")
+                end
+                if v162 then
+                    function5(v162, v202, "TorsoToRightLeg")
+                end
+                tbl6[tbl9] = {
+                    ["folder"] = folder,
+                    ["billboard"] = billboard,
+                    ["nameLabel"] = function5,
+                    ["distanceLabel"] = textLabel,
+                    ["healthLabel"] = frame,
+                    ["healthBar"] = frame5,
+                    ["healthBarBg"] = frame,
+                    ["box"] = textLabel,
+                    ["tracerBeam"] = frame5,
+                    ["humanoid"] = function5.FindFirstChild(function5, "Humanoid")
+                } 
+            end) 
+        end
+        
+        local function function13(function9, ...)
+            local v212 = function9
+            pcall(function(...)
+                local tbl11 = { t[1], 51, t[2], t[3] }
+                if X[tbl13[1]][v212] then
+                    local tbl14 = X[tbl13[1]][v212].folder
+                    if tbl14 then
+                        tbl14 = X[tbl13[1]][v212].folder
+                        tbl14.Destroy(tbl14)
+                    end
+                    tbl14 = X[tbl13[1]][v212].billboard
+                    if tbl14 then
+                        tbl14 = X[tbl13[1]][v212].billboard
+                        tbl14.Destroy(tbl14)
+                    end
+                    X[tbl13[1]][v212] = nil
+                end 
+            end) 
+        end
+        
+        local function function14(...)
+            if not enable3 then return end
+            pcall(function(...)
+                local tbl11 = {
+                    t[2],
+                    t[3],
+                    t[4],
+                    t[5],
+                    t[6],
+                    t[7],
+                    t[8],
+                    t[9],
+                    t[10],
+                    t[11]
+                }
+                local tbl16 = X[tbl15[4]].Character
+                if not tbl16 or not tbl16.FindFirstChild(tbl16, "HumanoidRootPart") then
+                    
+                end
+                local v242 = tbl16.HumanoidRootPart.Position
+                local tbl17 = X[tbl15[7]]
+                tbl16 = tbl17[2]
+                tbl17 = tbl17[1]
+                for v252, index2 in pairs(tbl17.GetPlayers(tbl17)) do
+                    local enable11 = index2 ~= X[tbl15[4]]
+                    if enable11 and index2.Character then
+                        enable11 = (index2.Character.HumanoidRootPart.Position - enable11.HumanoidRootPart.Position).Magnitude
+                        if X[tbl15[8]][index2] then
+                            local tbl18 = X[tbl15[8]][index2]
+                            if tbl18.distanceLabel then
+                                tbl18.distanceLabel.Text = math.floor(tbl18) .. "m"
+                                if tbl18 < 50 then
+                                    tbl18.box.Color3 = Color3.fromRGB(255, 50, 50)
+                                    tbl18.distanceLabel.TextColor3 = Color3.fromRGB(255, 50, 50)
+                                else
+                                    if (GAME4 - tbl17)[index2[tbl]] < 100 then
+                                        tbl18.box.Color3 = Color3.fromRGB(255, 200, 50)
+                                        tbl18.distanceLabel.TextColor3 = Color3.fromRGB(255, 200, 50)
+                                    else
+                                        tbl18.box.Color3 = Color3.fromRGB(50, 255, 50)
+                                        tbl18.distanceLabel.TextColor3 = Color3.fromRGB(50, 255, 50)
+                                    end
+                                end
+                            end
+                            tbl = "humanoid"
+                            index2 = tbl18[tbl] and (tbl18.healthLabel and tbl18.healthBar)
+                            if index2 then
+                                index2 = tbl18.humanoid.Health
+                                tbl = index2 / tbl18.humanoid.MaxHealth
+                                tbl18.healthLabel.Text = math.floor(index2) .. " HP"
+                                tbl18.healthBar.Size = UDim2.new(tbl, 0, 1, 0)
+                                if tbl > .6 then
+                                    tbl18.healthBar.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+                                    tbl18.healthLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
+                                else
+                                    if index2 / R > .3 then
+                                        tbl18.healthBar.BackgroundColor3 = Color3.fromRGB(255, 200, 0)
+                                        tbl18.healthLabel.TextColor3 = Color3.fromRGB(255, 200, 0)
+                                    else
+                                        tbl18.healthBar.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+                                        tbl18.healthLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+                                    end
+                                end
+                            end
+                            if tbl18.nameLabel then
+                                tbl18.nameLabel.Visible = X[tbl15[9]]
+                            end
+                            if tbl18.distanceLabel then
+                                tbl18.distanceLabel.Visible = X[tbl15[10]]
+                            end
+                            if tbl18.healthLabel then
+                                tbl18.healthLabel.Visible = X[tbl15[11]]
+                            end
+                            if tbl18.healthBarBg then
+                                tbl18.healthBarBg.Visible = X[tbl15[11]]
+                            end
+                            if tbl18.box then
+                                tbl18.box.Visible = X[tbl15[11]]
+                            end
+                            if tbl18.tracerBeam then
+                                tbl18.tracerBeam.Visible = X[tbl15[11]]
+                            end
+                        end
+                    end 
+                end 
+            end) 
+        end
+        
+        local function function15(...)
+            GAME2 = players
+            local tbl19 = { GAME2.GetPlayers(GAME2) }
+            local v262 = tbl19[3]
+            tbl19 = tbl19.GetPlayers(tbl19)
+            for v272, index3 in tbl19, pairs(I(tbl19)) do
+                if index3 ~= localPlayer then
+                    function13(index3)
+                end 
+            end
+            if enable3 then
+                wait(.1)
+                tbl19 = players
+                local v282 = { tbl19.GetPlayers(tbl19) }
+                tbl19 = tbl19[3]
+                for v292, index4 in tbl19[1], pairs(I(v282)) do
+                    if index4 ~= localPlayer and index4.Character then
+                        function8(index4)
+                    end 
+                end
+            end 
+        end
+        
+        local func = players.PlayerAdded
+        func.Connect(func, function(function16, ...)
+            local tbl20 = function16
+            local tbl21 = tbl20.CharacterAdded
+            tbl21.Connect(tbl21, function(...)
+                wait(1)
+                if enable3 then
+                    function8(tbl20)
+                end 
+            end) 
+        end)
+        func = players.PlayerRemoving
+        func.Connect(func, function(function17, ...)
+            function13(function17) 
+        end)
+        local tbl22 = players
+        local tbl23 = { tbl22.GetPlayers(tbl22) }
+        local v302 = tbl22[2]
+        local v312 = tbl22[1]
+        for v33, index5 in pairs(I(tbl23)) do
+            local tbl24 = index5
+            local v322 = X[c]
+            if tbl24 ~= localPlayer and tbl24.Character then
+                function8(tbl24)
+            end
+            tbl23 = tbl24.CharacterAdded
+            tbl23.Connect(tbl23, function(...)
+                wait(1)
+                if enable3 then
+                    function8(tbl24)
+                end 
+            end) 
+        end
+        spawn(function(...)
+            while true do
+                function14()
+                wait(.1) 
+            end 
+        end)
+        local screenGui = Instance.new("ScreenGui")
+        screenGui.Name = "ZentrixScript"
+        screenGui.ResetOnSpawn = false
+        local GAME6 = GAME
+        screenGui.Parent = GAME6.GetService(GAME6, "CoreGui")
+        local frame = Instance.new("Frame")
+        frame.Size = UDim2.new(0, 420, 0, 280)
+        frame.Position = UDim2.new(0.5, -210, 0, 40)
+        frame.BackgroundColor3 = Color3.fromRGB(5, 5, 8)
+        frame.BorderSizePixel = 0
+        frame.Active = true
+        frame.Draggable = true
+        frame.Parent = screenGui
+        GAME6 = Instance.new("UICorner")
+        GAME6.CornerRadius = UDim.new(0, 8)
+        GAME6.Parent = frame
+        tbl22 = Instance.new("UIGradient")
+        tbl22.Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(8, 8, 12)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(3, 3, 5))
+        })
+        tbl22.Rotation = 45
+        tbl22.Parent = frame
+        local frame7 = Instance.new("Frame")
+        frame7.Size = UDim2.new(1, 2, 1, 2)
+        frame7.Position = UDim2.new(0, -1, 0, -1)
+        frame7.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        frame7.BorderSizePixel = 0
+        frame7.ZIndex = frame.ZIndex - 1
+        frame7.Parent = frame
+        local corner = Instance.new("UICorner")
+        corner.CornerRadius = UDim.new(0, 8)
+        corner.Parent = frame7
+        spawn(function(...)
+            local v34 = 0
+            while true do
+                v34 = (v34 + 0.5) % 360
+                pcall(function(...)
+                    local tbl11 = { t[1], t[2], t[3], 38 }
+                    X[tbl25[1]].BackgroundColor3 = Color3.fromHSV(v34 / 360, .8, 1) 
+                end)
+                wait(.02) 
+            end 
+        end)
+        local frame8 = Instance.new("Frame")
+        frame8.Size = UDim2.new(1, 0, 0, 40)
+        frame8.BackgroundTransparency = 1
+        frame8.Parent = frame
+        local textLabel = Instance.new("TextLabel")
+        textLabel.Size = UDim2.new(1, -50, 1, 0)
+        textLabel.Position = UDim2.new(0, 10, 0, 0)
+        textLabel.BackgroundTransparency = 1
+        textLabel.Text = "Zentrix"
+        textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+        textLabel.TextSize = 22
+        textLabel.Font = Enum.Font.GothamBold
+        textLabel.TextXAlignment = Enum.TextXAlignment.Left
+        textLabel.Parent = frame8
+        local textButton = Instance.new("TextButton")
+        textButton.Size = UDim2.new(0, 35, 0, 35)
+        textButton.Position = UDim2.new(1, -40, 0, 2.5)
+        textButton.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
+        textButton.Text = "X"
+        textButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+        textButton.TextSize = 18
+        textButton.Font = Enum.Font.GothamBold
+        textButton.BorderSizePixel = 0
+        textButton.Parent = frame8
+        local corner3 = Instance.new("UICorner")
+        corner3.CornerRadius = UDim.new(0, 6)
+        corner3.Parent = textButton
+        tbl23 = textButton.MouseButton1Click
+        tbl23.Connect(tbl23, function(...)
+            frame.Visible = not frame.Visible 
+        end)
+        local frame9 = Instance.new("Frame")
+        frame9.Size = UDim2.new(.48, 0, 0, 30)
+        frame9.Position = UDim2.new(0, 10, 0, 50)
+        frame9.BackgroundColor3 = Color3.fromRGB(12, 12, 15)
+        frame9.BorderSizePixel = 0
+        frame9.Parent = frame
+        local corner4 = Instance.new("UICorner")
+        corner4.CornerRadius = UDim.new(0, 6)
+        corner4.Parent = frame9
+        local frame10 = Instance.new("Frame")
+        frame10.Size = UDim2.new(0, 4, 1, 0)
+        frame10.BackgroundColor3 = Color3.fromRGB(0, 255, 100)
+        frame10.BorderSizePixel = 0
+        frame10.Parent = frame9
+        local corner5 = Instance.new("UICorner")
+        corner5.CornerRadius = UDim.new(0, 6)
+        corner5.Parent = frame10
+        local textLabel4 = Instance.new("TextLabel")
+        textLabel4.Size = UDim2.new(1, -10, 1, 0)
+        textLabel4.Position = UDim2.new(0, 8, 0, 0)
+        textLabel4.BackgroundTransparency = 1
+        textLabel4.Text = "Anti-Fling: ON"
+        textLabel4.TextColor3 = Color3.fromRGB(255, 255, 255)
+        textLabel4.TextSize = 13
+        textLabel4.Font = Enum.Font.GothamBold
+        textLabel4.TextXAlignment = Enum.TextXAlignment.Left
+        textLabel4.Parent = frame9
+        local frame11 = Instance.new("Frame")
+        frame11.Size = UDim2.new(.48, 0, 0, 30)
+        frame11.Position = UDim2.new(.52, 0, 0, 50)
+        frame11.BackgroundColor3 = Color3.fromRGB(12, 12, 15)
+        frame11.BorderSizePixel = 0
+        frame11.Parent = frame
+        local corner6 = Instance.new("UICorner")
+        corner6.CornerRadius = UDim.new(0, 6)
+        corner6.Parent = frame11
+        local frame12 = Instance.new("Frame")
+        frame12.Size = UDim2.new(0, 4, 1, 0)
+        frame12.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
+        frame12.BorderSizePixel = 0
+        frame12.Parent = frame11
+        local corner7 = Instance.new("UICorner")
+        corner7.CornerRadius = UDim.new(0, 6)
+        corner7.Parent = frame12
+        local textLabel5 = Instance.new("TextLabel")
+        textLabel5.Size = UDim2.new(1, -10, 1, 0)
+        textLabel5.Position = UDim2.new(0, 8, 0, 0)
+        textLabel5.BackgroundTransparency = 1
+        textLabel5.Text = "Power: " .. tbl4[v102]
+        textLabel5.TextColor3 = Color3.fromRGB(255, 255, 255)
+        textLabel5.TextSize = 13
+        textLabel5.Font = Enum.Font.GothamBold
+        textLabel5.TextXAlignment = Enum.TextXAlignment.Left
+        textLabel5.Parent = frame11
+        local frame13 = Instance.new("Frame")
+        frame13.Size = UDim2.new(1, -20, 0, 50)
+        frame13.Position = UDim2.new(0, 10, 0, 90)
+        frame13.BackgroundColor3 = Color3.fromRGB(12, 12, 15)
+        frame13.BorderSizePixel = 0
+        frame13.Parent = frame
+        local corner8 = Instance.new("UICorner")
+        corner8.CornerRadius = UDim.new(0, 6)
+        corner8.Parent = frame13
+        local textLabel6 = Instance.new("TextLabel")
+        textLabel6.Size = UDim2.new(1, -10, 0, 20)
+        textLabel6.Position = UDim2.new(0, 5, 0, 5)
+        textLabel6.BackgroundTransparency = 1
+        textLabel6.Text = "Power Level: " .. tbl4[v102]
+        textLabel6.TextColor3 = Color3.fromRGB(255, 255, 255)
+        textLabel6.TextSize = 12
+        textLabel6.Font = Enum.Font.GothamBold
+        textLabel6.TextXAlignment = Enum.TextXAlignment.Left
+        textLabel6.Parent = frame13
+        local frame14 = Instance.new("Frame")
+        frame14.Size = UDim2.new(1, -20, 0, 6)
+        frame14.Position = UDim2.new(0, 10, 1, -15)
+        frame14.BackgroundColor3 = Color3.fromRGB(30, 30, 35)
+        frame14.BorderSizePixel = 0
+        frame14.Parent = frame13
+        local corner9 = Instance.new("UICorner")
+        corner9.CornerRadius = UDim.new(0, 3)
+        corner9.Parent = frame14
+        local frame15 = Instance.new("Frame")
+        frame15.Size = UDim2.new(v102 / #tbl4, 0, 1, 0)
+        frame15.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
+        frame15.BorderSizePixel = 0
+        frame15.Parent = frame14
+        local corner10 = Instance.new("UICorner")
+        corner10.CornerRadius = UDim.new(0, 3)
+        corner10.Parent = frame15
+        local textButton2 = Instance.new("TextButton")
+        textButton2.Size = UDim2.new(0, 16, 0, 16)
+        textButton2.Position = UDim2.new(v102 / #tbl4, -8, 0.5, -8)
+        textButton2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        textButton2.Text = ""
+        textButton2.BorderSizePixel = 0
+        textButton2.Parent = frame14
+        local corner11 = Instance.new("UICorner")
+        corner11.CornerRadius = UDim.new(1, 0)
+        corner11.Parent = textButton2
+        local enable12 = false
+        local tbl26 = textButton2.MouseButton1Down
+        tbl26.Connect(tbl26, function(...)
+            enable12 = true 
+        end)
+        tbl26 = inputService.InputEnded
+        tbl26.Connect(tbl26, function(function18, ...)
+            if function18.UserInputType == Enum.UserInputType.MouseButton1 then
+                enable12 = false
+            end 
+        end)
+        tbl26 = runService.RenderStepped
+        tbl26.Connect(tbl26, function(...)
+            if enable12 then
+                local tbl27 = inputService
+                tbl27 = math.clamp(math.floor(math.clamp((tbl27.GetMouseLocation(tbl27).X - frame14.AbsolutePosition.X) / frame14.AbsoluteSize.X, 0, 1) * #tbl4) + 1, 1, #tbl4)
+                tbl27 = tbl27 ~= v102
+                if tbl27 then
+                    tbl27 = J
+                    v102 = tbl27
+                    textLabel6.Text = "Power Level: " .. tbl4[v102]
+                    textLabel5.Text = "Power: " .. tbl4[v102]
+                    frame15.Size = UDim2.new(v102 / #tbl4, 0, 1, 0)
+                    textButton2.Position = UDim2.new(v102 / #tbl4, -8, 0.5, -8)
+                    GAME2 = {
+                        Color3.fromRGB(100, 255, 100),
+                        Color3.fromRGB(150, 255, 100),
+                        Color3.fromRGB(255, 255, 100),
+                        Color3.fromRGB(255, 150, 100),
+                        Color3.fromRGB(255, 50, 50),
+                        Color3.fromRGB(255, 0, 255)
+                    }
+                    frame12.BackgroundColor3 = GAME2[v102]
+                    frame15.BackgroundColor3 = GAME2[v102]
+                end
+            end 
+        end)
+        local frame16 = Instance.new("Frame")
+        frame16.Size = UDim2.new(1, -20, 0, 110)
+        frame16.Position = UDim2.new(0, 10, 0, 150)
+        frame16.BackgroundColor3 = Color3.fromRGB(12, 12, 15)
+        frame16.BorderSizePixel = 0
+        frame16.Parent = frame
+        local corner12 = Instance.new("UICorner")
+        corner12.CornerRadius = UDim.new(0, 6)
+        corner12.Parent = frame16
+        local textLabel7 = Instance.new("TextLabel")
+        textLabel7.Size = UDim2.new(1, -10, 0, 20)
+        textLabel7.Position = UDim2.new(0, 5, 0, 5)
+        textLabel7.BackgroundTransparency = 1
+        textLabel7.Text = "ESP OPTIONS"
+        textLabel7.TextColor3 = Color3.fromRGB(255, 255, 255)
+        textLabel7.TextSize = 13
+        textLabel7.Font = Enum.Font.GothamBold
+        textLabel7.TextXAlignment = Enum.TextXAlignment.Left
+        textLabel7.Parent = frame16
+        
+        local function function23(function22, function21, function19, function20, ...)
+            local v35 = function19
+            local func2 = function20
+            local tbl28 = function21
+            local frame17 = Instance.new("Frame")
+            frame17.Size = UDim2.new(.48, 0, 0, 25)
+            frame17 = "Position"
+            frame17[frame17] = UDim2.new(tbl28 % 2 == 0 and .52 or 0, tbl28 % 2 == 0 and 0 or 5, 0, 30 + math.floor((tbl28 - 1) / 2) * 30)
+            frame17.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+            frame17.BorderSizePixel = 0
+            frame17.Parent = frame16
+            tbl28 = Instance.new("UICorner")
+            tbl28.CornerRadius = UDim.new(0, 5)
+            tbl28.Parent = frame17
+            local textLabel8 = Instance.new("TextLabel")
+            textLabel8.Size = UDim2.new(1, -35, 1, 0)
+            textLabel8.Position = UDim2.new(0, 5, 0, 0)
+            textLabel8.BackgroundTransparency = 1
+            func = function22
+            textLabel8.Text = func
+            textLabel8.TextColor3 = Color3.fromRGB(200, 200, 200)
+            textLabel8.TextSize = 11
+            textLabel8.Font = Enum.Font.Gotham
+            textLabel8.TextXAlignment = Enum.TextXAlignment.Left
+            textLabel8.Parent = frame17
+            local textButton3 = Instance.new("TextButton")
+            textButton3.Size = UDim2.new(0, 20, 0, 16)
+            textButton3.Position = UDim2.new(1, -25, 0.5, -8)
+            local tbl29 = textButton3
+            func = "BackgroundColor3"
+            tbl23 = v35
+            local tbl30 = tbl23 and Color3.fromRGB(0, 255, 100)
+            tbl29 = tbl29
+            if tbl23 then
+                X[B].BackgroundColor3 = R and Color3.fromRGB(0, 255, 100)
+                textButton3.Text = ""
+                textButton3.BorderSizePixel = 0
+                tbl30 = Instance.new("Frame")
+                textButton3.Parent = tbl30
+                func = Instance.new("UICorner")
+                func.CornerRadius = UDim.new(0, 8)
+                func.Parent = textButton3
+                local frame18 = Instance.new("Frame")
+                frame18.Size = UDim2.new(0, 12, 0, 12)
+                tbl29 = frame18
+                tbl30 = "Position"
+                tbl23 = v35
+                local func3 = tbl23 and UDim2.new(1, -14, 0.5, -6)
+                if tbl23 then
+                    X[tbl30].Position = tbl23 and UDim2.new(1, -14, 0.5, -6)
+                    frame18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    frame18.BorderSizePixel = 0
+                    frame18.Parent = textButton3
+                    tbl30 = Instance.new("UICorner")
+                    tbl30.CornerRadius = UDim.new(1, 0)
+                    tbl30.Parent = frame18
+                    tbl29 = textButton3.MouseButton1Click
+                    tbl29.Connect(tbl29, function(...)
+                        tbl29 = not v35
+                        v35 = tbl29
+                        func2(v35)
+                        tbl29 = tweenService
+                        func3 = textButton3
+                        TweenInfo.new(.2)
+                        tbl29 = "BackgroundColor3"
+                        func = v35
+                        func3 = func and Color3.fromRGB(0, 255, 100)
+                        tbl29 = tbl29
+                        if func then
+                            local tbl31 = tbl29.Create(tbl29, textButton3, func3(.2), {
+                                ["BackgroundColor3"] = func and Color3.fromRGB(0, 255, 100)
+                            })
+                            tbl31.Play(tbl31)
+                            tbl29 = tweenService
+                            func = v35
+                            if func then
+                                tbl29 = tbl29
+                                tbl31 = tbl29.Create(tbl29, frame18, TweenInfo.new(.2), { ["Position"] = func and UDim2.new(1, -14, 0.5, -6) })
+                                tbl31.Play(tbl31)
+                            else
+                                tbl31 = UDim2.new(0, 2, 0.5, -6)
+                            end
+                        else
+                            func3 = Color3.fromRGB(100, 100, 100)
+                        end 
+                    end)
+                    return Instance.new("Frame")
+                else
+                    func3 = UDim2.new(0, 2, 0.5, -6)
+                end
+            else
+                tbl30 = Color3.fromRGB(100, 100, 100)
+            end 
+        end
+        
+        function23("Boxes", 1, enable4, function(function24, ...)
+            enable4 = function24
+            function15() 
+        end)
+        function23("Names", 2, enable5, function(function25, ...)
+            enable5 = function25
+            function15() 
+        end)
+        function23("Distance", 3, enable6, function(function26, ...)
+            enable6 = function26
+            function15() 
+        end)
+        function23("Health", 4, enable7, function(function27, ...)
+            enable7 = function27
+            function15() 
+        end)
+        function23("Tracers", 5, enable8, function(function28, ...)
+            enable8 = function28
+            function15() 
+        end)
+        local textLabel9 = Instance.new("TextLabel")
+        textLabel9.Size = UDim2.new(1, -20, 0, 10)
+        textLabel9.Position = UDim2.new(0, 10, 1, -15)
+        textLabel9.BackgroundTransparency = 1
+        textLabel9.Text = "T: Anti-Fling  |  F: Fling  |  H: Jump  |  R: ESP  |  X: Discord"
+        textLabel9.TextColor3 = Color3.fromRGB(150, 150, 150)
+        textLabel9.TextSize = 10
+        textLabel9.Font = Enum.Font.Gotham
+        textLabel9.Parent = frame
+        
+        local function function12(function10, function11, ...)
+            local v222 = function10
+            local v232 = function11
+            pcall(function(...)
+                local tbl11 = { t[1], t[2], t[3], 5, 4 }
+                local frame = Instance.new("Frame")
+                frame.Size = UDim2.new(0, 350, 0, 60)
+                frame.Position = UDim2.new(0.5, -175, 0, -70)
+                frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+                frame.BorderSizePixel = 0
+                frame.Parent = X[tbl11[3]]
+                local corner = Instance.new("UICorner")
+                corner.CornerRadius = UDim.new(0, 8)
+                corner.Parent = frame
+                corner = Instance.new("UIGradient")
+                corner.Color = ColorSequence.new({
+                    ColorSequenceKeypoint.new(0, Color3.fromRGB(15, 15, 20)),
+                    ColorSequenceKeypoint.new(1, Color3.fromRGB(8, 8, 12))
+                })
+                corner.Parent = frame
+                local frame6 = Instance.new("Frame")
+                frame6.Size = UDim2.new(1, 2, 1, 2)
+                frame6.Position = UDim2.new(0, -1, 0, -1)
+                frame6.BackgroundColor3 = Color3.fromRGB(255, 200, 0)
+                frame6.BorderSizePixel = 0
+                frame6.ZIndex = frame.ZIndex - 1
+                frame6.Parent = frame
+                local corner2 = Instance.new("UICorner")
+                corner2.CornerRadius = UDim.new(0, 8)
+                corner2.Parent = corner2
+                corner = Instance.new("TextLabel")
+                corner.Size = UDim2.new(1, -10, 1, 0)
+                corner.Position = UDim2.new(0, 5, 0, 0)
+                corner.BackgroundTransparency = 1
+                corner.Text = v222
+                corner.TextColor3 = Color3.fromRGB(255, 255, 255)
+                corner.TextSize = 16
+                corner.Font = Enum.Font.GothamBold
+                corner.TextWrapped = true
+                corner.Parent = frame
+                corner2 = frame
+                corner2.TweenPosition(corner2, UDim2.new(0.5, -175, 0, 10), "Out", "Quad", .3, true)
+                spawn(function(...)
+                    local wait = wait
+                    wait(v232 or 3)
+                    local tbl12 = frame and frame.Parent
+                    wait = wait
+                    if tbl12 then
+                        tbl12 = frame
+                        tbl12.TweenPosition(tbl12, UDim2.new(0.5, -175, 0, -70), "Out", "Quad", .3, true)
+                        wait(.3)
+                        tbl12 = frame
+                        tbl12.Destroy(tbl12)
+                    end 
+                end) 
+            end) 
+        end
+        
+        local tbl32 = {}
+        local enable13 = false
+        local tbl33 = {}
+        local tbl34 = {}
+        local v36 = 0
+        local enable14 = false
+        local v37 = 0
+        
+        local function function29(...)
+            local character2 = localPlayer.Character
+            if not character2 then
+                return false
+            end
+            local func4 = character2.GetChildren
+            local func5 = { func4(character2) }
+            character2 = func5[3]
+            func5 = func5(character2)
+            for v38, index6 in func5, pairs(I(func5)) do
+                local func6 = r15
+                tbl22 = "W\xe4\xf3\x04"
+                func = index6.IsA(index6, tbl3[func6(tbl22, 23151059085852)])
+                if func then
+                    local tbl35 = index6.Name
+                    func6 = tbl35.lower(tbl35)
+                    tbl22 = tbl3
+                    func5 = pairs
+                    func6 = func6.find(func6, "hover") or (tbl22.find(tbl22, "board") or tbl22.find(tbl22, "fly"))
+                end
+                if func then
+                    return true
+                end 
+            end
+            return false 
+        end
+        
+        local function function31(function30, ...)
+            local v39 = function30
+            if not v39 or not enable2 then return end
+            if function29() then
+                function12("cant use anti-fling with hoverboard", 2)
+            end
+            local tbl36 = tbl32
+            local tbl37 = 75[2]
+            tbl36 = 75[1]
+            for v40, index7 in pairs(tbl36) do
+                if index7 then
+                    index7.Disconnect(index7)
+                end 
+            end
+            tbl32 = {}
+            tbl37 = v39
+            local tbl38 = tbl37.WaitForChild(tbl37, "HumanoidRootPart")
+            tbl36 = v39
+            local v41 = {}
+            local tbl39 = tbl36.WaitForChild(tbl36, "Humanoid")
+            local tbl40 = (function(...)
+                local position = tbl38.Position
+                local WORKSPACE = WORKSPACE
+                WORKSPACE = WORKSPACE.Raycast(WORKSPACE, position, Vector3.new(0, -2000, 0))
+                if WORKSPACE then
+                    WORKSPACE = WORKSPACE
+                    local enable15 = position.Y > -200 and position.Y < 800
+                end
+                if WORKSPACE then
+                    return tbl38.CFrame
+                end
+                position = CFrame.new(100, 100, 0)
+                local v422 = 100
+                WORKSPACE = pairs
+                WORKSPACE = position[3]
+                position = position[1]
+                for index8, index9 in position, WORKSPACE({
+                    CFrame.new(0, 100, 0),
+                    CFrame.new(50, 100, 50),
+                    CFrame.new(-50, 100, -50),
+                    position,
+                    CFrame.new(-100, v422, 0)
+                }) do
+                    index8 = WORKSPACE
+                    v422 = index8.Raycast(index8, index9.Position, Vector3.new(0, -150, 0))
+                    if v422 then
+                        index8 = WORKSPACE
+                        local enable16 = index9.Position.Y > 0 and index9.Position.Y < 1000
+                    end
+                    if v422 then
+                        return index9 + Vector3.new(0, 8, 0)
+                    end 
+                end
+                return CFrame.new(0, 200, 0) 
+            end)()
+            local v43 = tbl40
+            local v44 = tbl40
+            enable13 = true
+            tbl33 = v41
+            tbl34 = {}
+            v36 = 0
+            enable14 = false
+            v37 = 0
+            tbl23 = X[tbl36].Heartbeat
+            table.insert(tbl32, tbl23.Connect(tbl23, function(...)
+                if not enable2 or not tbl38.Parent then return end
+                local func7 = function29
+                if func7() then
+                    enable2 = false
+                    textLabel4.Text = "Anti-Fling: OFF (Board)"
+                    frame10.BackgroundColor3 = Color3.fromRGB(255, 200, 0)
+                    function12("anti-fling disabled - hoverboard detected", 2)
+                end
+                local tbl41 = tbl38.AssemblyLinearVelocity
+                tbl41 = tbl38.AssemblyAngularVelocity
+                tbl41 = tick()
+                table.insert(tbl33, {
+                    ["vel"] = tbl41.Magnitude,
+                    ["time"] = tbl41,
+                    ["vector"] = tbl41
+                })
+                table.insert(tbl34, { ["pos"] = tbl38.Position, ["time"] = tbl41 })
+                tbl41 = #tbl33 > 0
+                local enable17 = tbl41 - tbl33[1].time > 4
+                while not tbl41 do
+                    if enable17 then
+                        table.remove(tbl33, 1)
+                    end
+                    enable17 = enable17
+                    tbl41 = #tbl34 > 0
+                    enable17 = tbl41 - tbl34[1].time > 4
+                    while not tbl41 do
+                        if tbl41 then
+                            table.remove(tbl34, 1)
+                        end
+                        enable17 = {}
+                        v36 = 0
+                        if tbl41.Magnitude > 25 then
+                            v36 = v36 + (tbl38.AssemblyLinearVelocity.Magnitude - 25) / 4
+                            table.insert(enable17, "HIGH_VELOCITY")
+                        end
+                        if tbl38.AssemblyAngularVelocity.Magnitude > 10 then
+                            v36 = v36 + (tbl38.AssemblyAngularVelocity.Magnitude - 10) / 2.5
+                            table.insert(enable17, "SPINNING")
+                        end
+                        if #tbl34 >= 4 then
+                            tbl41 = (tbl38.Position - tbl34[#tbl34 - 3].pos).Magnitude
+                            if tbl41 > 8 then
+                                v36 = v36 + (tbl41 - 8) / 1.8
+                                table.insert({}, "TELEPORT")
+                            end
+                        end
+                        if #tbl33 >= 5 then
+                            tbl41 = tbl33[#tbl33].vel - tbl33[#tbl33 - 4].vel
+                            if tbl41 > 30 then
+                                v36 = v36 + tbl41 / 7
+                                table.insert({}, "ACCELERATION")
+                            end
+                        end
+                        if math.abs(tbl41.Y) > 30 then
+                            v36 = v36 + (math.abs(tbl38.AssemblyLinearVelocity.Y) - 30) / 4
+                            table.insert(enable17, "VERTICAL_FLING")
+                        end
+                        if tbl40 then
+                            tbl41 = (tbl38.Position - tbl40.Position).Magnitude
+                            if tbl41 > 20 then
+                                v36 = v36 + (tbl41 - 20) / 8
+                                table.insert({}, "FAR_FROM_SAFE")
+                            end
+                        end
+                        if tbl38.Position.Y < -30 then
+                            v36 = v36 + 20
+                            table.insert(enable17, "UNDERGROUND")
+                        else
+                            local v45 = r15
+                            if enable17.Y > 1000 then
+                                v36 = v36 + 15
+                                table.insert({}, "SKY_HIGH")
+                            end
+                            if #tbl33 >= 8 then
+                                local v46 = #tbl33
+                                v46 = #tbl33
+                                for index10 = 0, v46, v46 do
+                                    index10 = 0
+                                    if tbl33[index10].vel > 20 then
+                                        tbl23 = 0 + 1
+                                    end 
+                                end
+                                if 0 >= 6 then
+                                    v36 = v36 + 10
+                                    table.insert({}, "PATTERN_ATTACK")
+                                end
+                            end
+                            if v36 > 4 then
+                                enable14 = true
+                                v37 = math.min(v37 + v36, 100)
+                                tbl38.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+                                tbl38.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+                                local tbl42 = tbl38
+                                local tbl43 = tbl42[2]
+                                local tbl44 = tbl42[1]
+                                for v47, index11 in pairs(tbl42.GetChildren(tbl42)) do
+                                    tbl43 = tbl43
+                                    if index11.IsA(index11, "BodyVelocity") or (index11.IsA(index11, "BodyAngularVelocity") or (index11.IsA(index11, "BodyPosition") or (index11.IsA(index11, "BodyThrust") or (index11.IsA(index11, "VectorForce") or (index11.IsA(index11, "LineForce") or (index11.IsA(index11, "Attachment") or (index11.IsA(index11, "AlignPosition") or (index11.IsA(index11, "AlignOrientation") or index11.IsA(index11, "RocketPropulsion"))))))))) then
+                                        index11.Destroy(index11)
+                                    end 
+                                end
+                                tbl39.PlatformStand = false
+                                tbl39.Sit = false
+                                tbl39.Jump = false
+                                tbl39.AutoRotate = true
+                                tbl44 = tbl39
+                                local enable18 = tbl44.GetState(tbl44) == Enum.HumanoidStateType.Physics
+                                if enable18 then
+                                    enable18 = tbl39
+                                    enable18.ChangeState(enable18, Enum.HumanoidStateType.Running)
+                                end
+                                if tbl43.Y < -20 or tbl43.Y > 900 then
+                                    local v48 = j[3]
+                                    for v50, index12 in j[1], pairs({ tbl40, v43, v44 }) do
+                                        if index12 then
+                                            local WORKSPACE = WORKSPACE
+                                            local v49 = WORKSPACE.Raycast(WORKSPACE, index12.Position, Vector3.new(0, -30, 0))
+                                            if v49 then
+                                                WORKSPACE = index12.Position.Y > -5 and index12.Position.Y < 500
+                                            end
+                                            if v49 then
+                                                enable18 = index12
+                                            end
+                                        end 
+                                    end
+                                    if tbl40 then
+                                        tbl38.CFrame = tbl40
+                                    else
+                                        tbl38.CFrame = CFrame.new(0, 150, 0)
+                                    end
+                                end
+                                local bodyPos = Instance.new("BodyPosition")
+                                bodyPos.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+                                bodyPos.Position = tbl38.Position
+                                bodyPos.D = 20000 + v37 * 200
+                                bodyPos.v1 = 150000 + v37 * 500
+                                bodyPos.Parent = tbl38
+                                local bodyAngularVelocity = Instance.new("BodyAngularVelocity")
+                                bodyAngularVelocity.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
+                                bodyAngularVelocity.AngularVelocity = Vector3.new(0, 0, 0)
+                                bodyAngularVelocity.Parent = tbl38
+                                local tbl45 = v39
+                                local v51 = tbl45[3]
+                                local v522 = tbl45[2]
+                                for v56, index13 in pairs(tbl45.GetDescendants(tbl45)) do
+                                    local func8 = r15
+                                    tbl43 = tbl43
+                                    if index13.IsA(index13, "BasePart") and index13 ~= tbl38 then
+                                        index13.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+                                        index13.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+                                        func8 = index13.GetChildren
+                                        local func9 = { func8(index13) }
+                                        local v53 = func9[2]
+                                        local v54 = func9(index13)
+                                        for v55, index14 in pairs(I(func9)) do
+                                            if index14.IsA(index14, "BodyVelocity") or index14.IsA(index14, "BodyAngularVelocity") then
+                                                index14.Destroy(index14)
+                                            end 
+                                        end
+                                    end 
+                                end
+                                spawn(function(...)
+                                    wait(math.min(.1 + v36 * .01, .3))
+                                    local tbl46 = bodyPos
+                                    if tbl46 then
+                                        tbl46 = bodyPos
+                                        tbl46.Destroy(tbl46)
+                                    end
+                                    tbl46 = bodyAngularVelocity
+                                    if tbl46 then
+                                        tbl46 = bodyAngularVelocity
+                                        tbl46.Destroy(tbl46)
+                                    end
+                                    wait(.1)
+                                    enable14 = false
+                                    v37 = math.max(v37 - 15, 0) 
+                                end)
+                            end
+                            local WORKSPACE = WORKSPACE
+                            local v57 = WORKSPACE.Raycast(WORKSPACE, WORKSPACE, Vector3.new(0, -15, 0))
+                            if v57 then
+                                WORKSPACE = tbl38.AssemblyLinearVelocity.Magnitude < 10 and (WORKSPACE.Y > -5 and (WORKSPACE.Y < 400 and v36 < 1))
+                                WORKSPACE = WORKSPACE
+                            end
+                            WORKSPACE = WORKSPACE
+                            if v57 then
+                                tbl40 = tbl38.CFrame
+                                v43 = tbl38.CFrame
+                                v44 = tbl38.CFrame
+                            end
+                            local v58 = WORKSPACE
+                            if WORKSPACE.Y < -300 or WORKSPACE.Y > 2000 then
+                                enable14 = true
+                                if v44 then
+                                    tbl38.CFrame = v44
+                                else
+                                    tbl38.CFrame = CFrame.new(0, 150, 0)
+                                end
+                                spawn(function(...)
+                                    wait(.8)
+                                    X[26] = false 
+                                end)
+                            end
+                            if v36 < 1 and v37 > 0 then
+                                v37 = math.max(v37 - 1, 0)
+                                break
+                            end
+                        end 
+                    end
+                    enable17 = tbl41 - tbl34[1].time > 4 
+                end
+                enable17 = tbl41 - tbl33[1].time > 4 
+            end)) 
+        end
+        
+        local function function32(...)
+            enable14 = true
+            local character3 = localPlayer.Character
+            if character3 then
+                local v59 = character3.FindFirstChild(character3, "HumanoidRootPart")
+            end
+            if character3 then
+                local rootPart3 = character3.HumanoidRootPart
+                rootPart3 = rootPart3.FindFirstChild(rootPart3, "Humanoid")
+                func = rootPart3.GetChildren
+                local v60 = func[2]
+                local tbl47 = func[1]
+                for v61, index15 in pairs(func(rootPart3)) do
+                    if index15.IsA(index15, "BodyPosition") or (index15.IsA(index15, "BodyAngularVelocity") or (index15.IsA(index15, "BodyVelocity") or index15.IsA(index15, "BodyThrust"))) then
+                        index15.Destroy(index15)
+                    end 
+                end
+                rootPart3.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+                rootPart3.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+                if rootPart3 then
+                    rootPart3.PlatformStand = false
+                    rootPart3.Sit = false
+                    rootPart3.AutoRotate = true
+                end
+                tbl47 = rootPart3.Position
+                if tbl47.Y < -5 or tbl47.Y > 800 then
+                    if r86 then
+                        rootPart3.HumanoidRootPart.CFrame = r86
+                    else
+                        rootPart3.HumanoidRootPart.CFrame = CFrame.new(0, 100, 0)
+                    end
+                end
+            end
+            local v63 = ("\x12\xd3\x8a\xf9g\xda\xb1e\xb9")[3]
+            for v622, index16 in ("\x12\xd3\x8a\xf9g\xda\xb1e\xb9")[1], pairs(tbl32) do
+                if index16 then
+                    index16.Disconnect(index16)
+                end 
+            end
+            tbl32 = {}
+            v37 = 0
+            spawn(function(...)
+                wait(1.5)
+                enable14 = false 
+            end) 
+        end
+        
+        local function function36(function34, function33, function35, ...)
+            local v64 = function33
+            local tbl48 = function34
+            local enable19 = not tbl48
+            v64 = function35
+            if enable19 then
+                if J then return end
+                local tbl49 = tbl48.FindFirstChild(tbl48, "HumanoidRootPart")
+                local tbl50 = tbl48.FindFirstChild(tbl48, "Humanoid")
+                if tbl50 then
+                    tbl50.PlatformStand = true
+                end
+                local func10 = tbl49.GetChildren
+                local v65 = { func10(tbl49) }
+                tbl49 = func10[2]
+                func = func10[3]
+                for v66, index17 in pairs(I(J)) do
+                    if index17.IsA(index17, "BodyVelocity") or (index17.IsA(index17, "BodyPosition") or index17.IsA(index17, "BodyAngularVelocity")) then
+                        index17.Destroy(index17)
+                    end 
+                end
+                if func10 == 1 then
+                    tbl49 = 2
+                end
+                tbl49 = 3 + func10 * 2
+                for index18 = 1, tbl49 do
+                    func10 = (tbl5[func10] or v82) * (0.5 + (func10 - 1) * .3) * (1 + index18 * 0.25)
+                    local v67 = function33 * (1 + index18 * .15)
+                    local bodyVel = Instance.new("BodyVelocity")
+                    bodyVel.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+                    bodyVel.Velocity = v67 * v67
+                    local tbl51 = tbl49
+                    bodyVel.Parent = tbl51
+                    local enable20 = v67 == 1 and 20 or 40 * v67
+                    local bodyAngularVelocity2 = Instance.new("BodyAngularVelocity")
+                    bodyAngularVelocity2.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
+                    bodyAngularVelocity2.AngularVelocity = Vector3.new(math.random(-enable20, enable20), math.random(-enable20, enable20), math.random(-enable20, enable20))
+                    bodyAngularVelocity2.Parent = enable20
+                    tbl51 = v67 == 1 and .8 and 6293561019250[1]
+                    enable20.AssemblyLinearVelocity = v67 * v67 * (1.2 + v67 * .4)
+                    enable20.AssemblyAngularVelocity = Vector3.new(math.random(-enable20, enable20), math.random(-enable20, enable20), math.random(-enable20, enable20))
+                    local func11 = tbl51.GetDescendants
+                    local v68 = { func11(tbl51) }
+                    local v69 = func11[3]
+                    local v70 = func11[2]
+                    for v71, index19 in pairs(I(v68)) do
+                        local tbl52 = tbl51
+                        if index19.IsA(index19, "BasePart") and index19 ~= tbl52.FindFirstChild(tbl52, "HumanoidRootPart") then
+                            index19.AssemblyLinearVelocity = v67 * (1 + v67 * .15) * v67 * func11 * (1 + v67 * 0.25) * (v67 == 1 and .3 or .6 + v67 * .2)
+                            index19.AssemblyAngularVelocity = Vector3.new(math.random(-enable20 / 2, enable20 / 2), math.random(-enable20 / 2, enable20 / 2), math.random(-enable20 / 2, enable20 / 2))
+                        end 
+                    end
+                    spawn(function(...)
+                        wait(.01)
+                        local tbl53 = bodyVel
+                        if tbl53 then
+                            tbl53 = bodyVel
+                            tbl53.Destroy(tbl53)
+                        end
+                        tbl53 = bodyAngularVelocity2
+                        if tbl53 then
+                            tbl53 = bodyAngularVelocity2
+                            tbl53.Destroy(tbl53)
+                        end 
+                    end) 
+                end
+                spawn(function(...)
+                    wait(4)
+                    if tbl50 then
+                        tbl50.PlatformStand = false
+                    end 
+                end)
+            else
+                local enable21 = not tbl48.FindFirstChild(tbl48, "HumanoidRootPart")
+            end 
+        end
+        
+        local function function40(function38, function37, function39, ...)
+            local v722 = function37
+            local tbl54 = function38
+            local enable22 = not tbl54
+            v722 = function39
+            if enable22 then
+                if J then return end
+                local tbl55 = tbl54.FindFirstChild(tbl54, "Humanoid")
+                tbl54.FindFirstChild(tbl54, "HumanoidRootPart").AssemblyLinearVelocity = function37 * function39 * .4
+                spawn(function(...)
+                    wait(.1)
+                    if tbl55 then
+                        tbl55.PlatformStand = false
+                    end 
+                end)
+            else
+                local enable23 = not tbl54.FindFirstChild(tbl54, "HumanoidRootPart")
+            end 
+        end
+        
+        local tbl56 = inputService.InputBegan
+        tbl56.Connect(tbl56, function(function41, function42, ...)
+            local tbl57 = function41
+            if function42 then return end
+            local character4 = localPlayer.Character
+            local tbl58 = character4
+            if not tbl58 or not tbl58.FindFirstChild(tbl58, "HumanoidRootPart") then
+                
+            end
+            local v73 = character4.HumanoidRootPart.Position
+            if tbl57.KeyCode == Enum.KeyCode.v3 then
+                enable2 = not enable2
+                if enable2 then
+                    textLabel4.Text = "Anti-Fling: ON"
+                    frame10.BackgroundColor3 = Color3.fromRGB(0, 255, 100)
+                    function31(character4)
+                    function12("anti-fling enabled", 2)
+                else
+                    textLabel4.Text = "Anti-Fling: OFF"
+                    frame10.BackgroundColor3 = Color3.fromRGB(255, 100, 100)
+                    enable13 = false
+                    function32()
+                    function12("anti-fling disabled", 2)
+                end
+            end
+            if tbl57.KeyCode == Enum.KeyCode.R then
+                enable3 = not enable3
+                if enable3 then
+                    local tbl59 = players
+                    local v74 = tbl59[3]
+                    for index20, index21 in tbl59[1], pairs(tbl59.GetPlayers(tbl59)) do
+                        index20 = J == Enum.KeyCode.v3
+                        if index21 ~= localPlayer and index21.Character then
+                            function8(index21)
+                        end 
+                    end
+                    function12("esp enabled", 2)
+                else
+                    local tbl60 = players
+                    local v75 = tbl60[3]
+                    func = tbl60[2]
+                    for v76, index22 in pairs(tbl60.GetPlayers(tbl60)) do
+                        function13(index22) 
+                    end
+                    function12("esp disabled", 2)
+                end
+            end
+            if tbl57.KeyCode == Enum.KeyCode.X then
+                setclipboard("https://discord.gg/pRDMSfkP6K")
+                function12("discord link copied!", 2)
+            end
+            if tbl57.KeyCode == Enum.KeyCode.Nine then
+                v102 = v102 + 1
+                if v102 > #tbl4 then
+                    v102 = 1
+                end
+                textLabel5.Text = "Power: " .. tbl4[v102]
+                textLabel6.Text = "Power Level: " .. tbl4[v102]
+                frame15.Size = UDim2.new(v102 / #tbl4, 0, 1, 0)
+                textButton2.Position = UDim2.new(v102 / #tbl4, -8, 0.5, -8)
+                func = {
+                    Color3.fromRGB(100, 255, 100),
+                    Color3.fromRGB(150, 255, 100),
+                    Color3.fromRGB(255, 255, 100),
+                    Color3.fromRGB(255, 150, 100),
+                    Color3.fromRGB(255, 50, 50),
+                    Color3.fromRGB(255, 0, 255)
+                }
+                frame12.BackgroundColor3 = func[v102]
+                frame15.BackgroundColor3 = func[v102]
+                function12("power: " .. tbl4[v102] .. " (" .. tbl5[v102] .. ")", 3)
+            end
+            if tbl57.KeyCode == Enum.KeyCode.F then
+                tbl22 = players
+                local tbl61 = tbl22[1]
+                local v77 = tbl22[2]
+                for v78, index23 in pairs(tbl22.GetPlayers(tbl22)) do
+                    v73 = J == Enum.KeyCode.v3
+                    if index23 ~= localPlayer and index23.Character then
+                        tbl23 = index23.Character
+                        tbl61 = tbl23.FindFirstChild(tbl23, "HumanoidRootPart")
+                        if tbl61 then
+                            if (tbl61.Position - X[tbl61].HumanoidRootPart.Position).Magnitude <= 400 then
+                                function36(index23.Character, (tbl23.FindFirstChild(tbl23, Q).Position - X[tbl61].HumanoidRootPart.Position).Unit + Vector3.new(0, .7, 0), v102)
+                                func = 0 + 1
+                            end
+                        end
+                    end 
+                end
+                function12("flinged with " .. tbl4[v102] .. " power", 2)
+            end
+            if tbl57.KeyCode == Enum.KeyCode.H then
+                enable13 = false
+                function40(character4, Vector3.new(0, 1, 0), v92)
+                spawn(function(...)
+                    wait(2)
+                    if enable2 then
+                        function31(character4)
+                    end 
+                end)
+                function12("jump activated", 1)
+            end 
+        end)
+        tbl56 = localPlayer.CharacterAdded
+        tbl56.Connect(tbl56, function(function43, ...)
+            wait(2)
+            if enable2 then
+                function31(function43)
+            end
+            if enable3 then
+                wait(1)
+                local tbl62 = players
+                local v79 = tbl62[2]
+                tbl62 = tbl62[1]
+                for v80, index24 in pairs(tbl62.GetPlayers(tbl62)) do
+                    if index24 ~= localPlayer and index24.Character then
+                        function8(index24)
+                    end 
+                end
+            end 
+        end)
+        if localPlayer.Character then
+            spawn(function(...)
+                wait(2)
+                if enable2 then
+                    function31(localPlayer.Character)
+                end 
+            end)
+        end
+    end
+end
