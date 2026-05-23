@@ -1,125 +1,1189 @@
-    local GAME2 = GAME
-    local v22 = loadstring(GAME2.HttpGet(GAME2, "https://raw.githubusercontent.com/BlizTBr/scripts/main/Orion%20X"))()
-    local tbl = v22
-    GAME2 = tbl.MakeWindow(tbl, {
-        ["Name"] = "k hub Key System",
-        ["HidePremium"] = false,
-        ["IntroEnabled"] = false,
-        ["SaveConfig"] = false,
-        ["ConfigFolder"] = "Key(Syna)"
-    })
-    tbl = GAME
-    tbl.GetService(tbl, "HttpService")
-    local GAME = GAME
-    GAME = GAME.GetService(GAME, "Players").LocalPlayer
-    local v32 = "SavedKey"
-    local v42 = ""
-    
-    local function function1(...)
-        local pcall = pcall
-        GAME = {
-            pcall(function(...)
-                pcall = GAME
-                return pcall.HttpGet(pcall, b[w[1]]) 
-            end)
-        }
-        local tbl2 = pcall(function(...)
-            pcall = GAME
-            return pcall.HttpGet(pcall, b[w[1]]) 
-        end)
-        if tbl2 then tbl2 = tbl2[2] end
-        return tbl2 or nil 
-    end
-    
-    local function function3(function2, ...) writefile(v32, function2) end
-    
-    local function function4(...)
-        wait(1.5)
-        local tbl3 = v22
-        tbl3.Destroy(tbl3)
-        local GAME3 = GAME
-        loadstring(GAME3.HttpGet(GAME3, "https://raw.githubusercontent.com/makkurokurosukescript/Ftap.K.hub/refs/heads/main/.gitignore", true))() 
-    end
-    
-    local function function6(function5, ...)
-        local v5 = function5
-        local v62 = function1()
-        local enable1 = not v62
-        if enable1 then
-            enable1 = v22
-            enable1.MakeNotification(enable1, {
-                ["Name"] = "Error",
-                ["Content"] = "Failed to retrieve key from ",
-                ["Image"] = "rbxassetid://4483345998",
-                ["Time"] = 5
-            })
-        end
-        enable1 = v5 == v62
-        if enable1 then
-            function3(v5)
-            enable1 = v22
-            enable1.MakeNotification(enable1, {
-                ["Name"] = "Correct Key",
-                ["Content"] = "Script loading",
-                ["Image"] = "rbxassetid://4483345998",
-                ["Time"] = 5
-            })
-            task.wait(1)
-            function4()
-        else
-            enable1 = v22
-            enable1.MakeNotification(enable1, {
-                ["Name"] = "Incorrect Key",
-                ["Content"] = "Please Try again",
-                ["Image"] = "rbxassetid://4483345998",
-                ["Time"] = 5
-            })
-        end 
-    end
-    
-    enable2 = GAME2.MakeTab(GAME2, {
-        ["Name"] = "Login",
-        ["Icon"] = "",
-        ["PremiumOnly"] = false
-    })
-    GAME = GAME2.MakeTab(GAME2, {
-        ["Name"] = "info",
-        ["Icon"] = "rbxassetid://4483345998",
-        ["PremiumOnly"] = false
-    })
-    enable2.AddSection(enable2, { ["Name"] = "Login" })
-    enable2.AddParagraph(enable2, "How to Get key", "1. discord join k hub key")
-    enable2.AddTextbox(enable2, {
-        ["Name"] = "Enter Key",
-        ["Default"] = "",
-        ["TextDisappear"] = false,
-        ["Callback"] = function(function7, ...) v42 = function7 end
-    })
-    enable2.AddButton(enable2, {
-        ["Name"] = "Check Key",
-        ["Callback"] = function(...)
-            if v42 and v42 ~= "" then
-                function6(v42)
-            else
-                local tbl4 = v22
-                tbl4.MakeNotification(tbl4, {
-                    ["Name"] = "Error",
-                    ["Content"] = "Please enter a key",
-                    ["Image"] = "rbxassetid://4483345998",
-                    ["Time"] = 5
-                })
-            end 
-        end
-    })
-    enable2.AddButton(enable2, {
-        ["Name"] = "Get Key",
-        ["Callback"] = function(...) setclipboard("https://discord.gg/GssY5fqfqP") end
-    })
-    GAME.AddSection(GAME, { ["Name"] = "script Update" })
-    GAME.AddParagraph(GAME, "2025/12/03", "\xe8\x89\xb2\xe3\x82\x93\xe3\x81\xaa\xe6\xa9\x9f\xe8\x83\xbd\xe3\x82\x92\xe8\xbf\xbd\xe5\x8a\xa0\xe3\x81\x97\xe3\x81\x9f")
-    GAME.AddParagraph(GAME, "2025/12/06", "k hub \xe9\x85\x8d\xe5\xb8\x83")
-    GAME.AddSection(GAME, { ["Name"] = "Developer" })
-    GAME.AddParagraph(GAME, "Owner", "\xe3\x81\x8f\xe3\x82\x8d\xe3\x81\x99\xe3\x81\x91")
-    GAME.AddParagraph(GAME, "Sub Owner", "\xe8\xaa\xb0\xe3\x81\x8b\xe3\x81\x95\xe3\x82\x93")
-    GAME.AddParagraph(GAME, "Group", "\xe8\xaa\xb0\xe3\x81\x8b\xe3\x81\x95\xe3\x82\x93")
+game:IsLoaded()
+task.wait()
+game:IsLoaded()
+local 14 =loadstring(game:HttpGet("https://raw.githubusercontent.com/BlizTBr/scripts/main/Orion%20X"))()
+game:GetService("Players")
+local LocalPlayer19 =game:GetService("Players")["LocalPlayer"]
+local ReplicatedStorage23 =game:GetService("ReplicatedStorage")
+game:GetService("Debris")
+game:GetService("Lighting")
+local UserInputService29 =game:GetService("UserInputService")
+task.wait()
+local 35 =LocalPlayer19["CharacterAdded"]:Connect(function(...)
+local 36_vararg1, 36_vararg2, 36_vararg3, 36_vararg4, 36_vararg5, 36_vararg6, 36_vararg7, 36_vararg8, 36_vararg9, 36_vararg10 = ...
+end)
+local GrabEvents40 =ReplicatedStorage23:WaitForChild("GrabEvents", 10)
+local MenuToys42 =ReplicatedStorage23:WaitForChild("MenuToys", 10)
+local CharacterEvents44 =ReplicatedStorage23:WaitForChild("CharacterEvents", 10)
+GrabEvents40:WaitForChild("SetNetworkOwner", 5)
+CharacterEvents44:WaitForChild("Struggle", 5)
+GrabEvents40:WaitForChild("CreateGrabLine", 5)
+GrabEvents40:WaitForChild("DestroyGrabLine", 5)
+MenuToys42:WaitForChild("DestroyToy", 5)
+local RagdollRemote56 =CharacterEvents44:WaitForChild("RagdollRemote", 5)
+_G["str"]=450
+_G["bDly"]=0.001
+_G["kF"]=150
+_G["uRS"]=5
+_G["uH"]=10
+Color3["new"](1, 0, 0)
+Color3["new"](0, 0, 1)
+Color3["new"](0, 1, 0)
+Color3["new"](1, 1, 0)
+_G["FutherExtend"]=false
+local 69 =Instance["new"]("ScreenGui")
+69["ResetOnSpawn"] =false
+69["Name"] ="FurtherExtendGUI"
+69["Parent"] =LocalPlayer19["PlayerGui"]
+local 73 =Instance["new"]("ImageButton")
+73["Size"] =UDim2["new"](0, 45, 0, 45)
+73["Position"] =UDim2["new"](1, -70, 1, -259)
+73["Image"] ="rbxassetid://97166444"
+73["BackgroundTransparency"] =1
+73["ImageTransparency"] =0.2
+73["Visible"] =false
+73["ImageColor3"] =Color3["fromRGB"](142, 142, 142)
+73["Parent"] =69
+local 81 =Instance["new"]("ImageLabel")
+81["Size"] =UDim2["new"](1, 0, 1, 0)
+81["Image"] ="rbxassetid://9603831913"
+81["BackgroundTransparency"] =1
+81["Parent"] =73
+local 85 =Instance["new"]("ImageButton")
+85["Size"] =UDim2["new"](0, 45, 0, 45)
+85["Position"] =UDim2["new"](1, -70, 1, -211)
+85["Image"] ="rbxassetid://97166444"
+85["BackgroundTransparency"] =1
+85["ImageTransparency"] =0.2
+85["Visible"] =false
+85["ImageColor3"] =Color3["fromRGB"](142, 142, 142)
+85["Parent"] =69
+local 93 =Instance["new"]("ImageLabel")
+93["Size"] =UDim2["new"](1, 0, 1, 0)
+93["Image"] ="rbxassetid://9603826756"
+93["BackgroundTransparency"] =1
+93["Parent"] =85
+local 98 =UserInputService29["InputBegan"]:Connect(function(...)
+end)
+local 103 =UserInputService29["InputEnded"]:Connect(function(...)
+local 104_vararg1, 104_vararg2, 104_vararg3, 104_vararg4, 104_vararg5, 104_vararg6, 104_vararg7, 104_vararg8, 104_vararg9, 104_vararg10 = ...
+(104_vararg1["UserInputType"]==Enum["UserInputType"]["MouseButton2"])
+(104_vararg1["UserInputType"]==Enum["UserInputType"]["Touch"])
+end)
+for 116, 116_2 in pairs(workspace:GetDescendants()) do
+116_2:IsA("Part")
 end
+fenv["buttonClicked"] = function(...)
+end
+fenv["buttonClickedDE"] = function(...)
+end
+fenv["toggleButtonState"] = function(...)
+73["Visible"] =false
+73["Active"] =false
+85["Visible"] =false
+85["Active"] =false
+end
+local 129 =workspace["ChildAdded"]:Connect(function(...)
+local 130_vararg1, 130_vararg2, 130_vararg3, 130_vararg4, 130_vararg5, 130_vararg6, 130_vararg7, 130_vararg8, 130_vararg9, 130_vararg10 = ...
+end)
+local 135 =workspace["ChildRemoved"]:Connect(function(...)
+local 136_vararg1, 136_vararg2, 136_vararg3, 136_vararg4, 136_vararg5, 136_vararg6, 136_vararg7, 136_vararg8, 136_vararg9, 136_vararg10 = ...
+end)
+local 141 =73["InputBegan"]:Connect(function(...)
+end)
+local 146 =73["InputEnded"]:Connect(function(...)
+local 147_vararg1, 147_vararg2, 147_vararg3, 147_vararg4, 147_vararg5, 147_vararg6, 147_vararg7, 147_vararg8, 147_vararg9, 147_vararg10 = ...
+(147_vararg1["UserInputType"]==Enum["UserInputType"]["Touch"])
+end)
+local 156 =85["InputBegan"]:Connect(function(...)
+end)
+local 161 =85["InputEnded"]:Connect(function(...)
+local 162_vararg1, 162_vararg2, 162_vararg3, 162_vararg4, 162_vararg5, 162_vararg6, 162_vararg7, 162_vararg8, 162_vararg9, 162_vararg10 = ...
+(162_vararg1["UserInputType"]==Enum["UserInputType"]["Touch"])
+end)
+local 171 =UserInputService29["InputChanged"]:Connect(function(...)
+local 172_vararg1, 172_vararg2, 172_vararg3, 172_vararg4, 172_vararg5, 172_vararg6, 172_vararg7, 172_vararg8, 172_vararg9, 172_vararg10 = ...
+(172_vararg1["UserInputType"]==Enum["UserInputType"]["MouseWheel"])
+end)
+local 180 =LocalPlayer19["CharacterAdded"]:Connect(function(...)
+local Character182 =LocalPlayer19["Character"]
+getsenv(:WaitForChild("GrabbingScript", 5))
+end)
+local 190 =task["spawn"](function(...)
+local Character192 =LocalPlayer19["Character"]
+getsenv(:WaitForChild("GrabbingScript", 5))
+end)
+local 200 =workspace["ChildAdded"]:Connect(function(...)
+local 201_vararg1, 201_vararg2, 201_vararg3, 201_vararg4, 201_vararg5, 201_vararg6, 201_vararg7, 201_vararg8, 201_vararg9, 201_vararg10 = ...
+end)
+local 206 =workspace["ChildAdded"]:Connect(function(...)
+local 207_vararg1, 207_vararg2, 207_vararg3, 207_vararg4, 207_vararg5, 207_vararg6, 207_vararg7, 207_vararg8, 207_vararg9, 207_vararg10 = ...
+end)
+fenv["executeTractorSpawn"] = function(...)
+36_vararg1:WaitForChild("HumanoidRootPart")
+local Humanoid214 =36_vararg1:WaitForChild("Humanoid")
+workspace["FallenPartsDestroyHeight"] =0/0
+MenuToys42["SpawnToyRemoteFunction"]:InvokeServer("TractorGreen", CFrame["new"](9000000000, 9000000000, 9000000000, 0.505097806, -0.358538955, 0.78506434, 0.0000177621841, 0.909631014, 0.415417165, -0.863062143, -0.209812373, 0.459458977), Vector3["new"](9000000000, 9000000000, 9000000000))
+wait(0.1)
+local Seat230 =workspace:FindFirstChild(LocalPlayer19["Name"] .. "SpawnedInToys"):FindFirstChild("TractorGreen"):FindFirstChildWhichIsA("Seat")
+Seat230["Anchored"] =true
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+RagdollRemote56:FireServer(36_vararg1["HumanoidRootPart"], 0)
+wait(0.004166666666666667)
+Seat230:Sit(Humanoid214)
+error("D:\\new deobf\\23\\deobf bot\\25ms\\./httplog2:628: <25ms: infinitelooperror>")
+end
+local 380 =14:MakeWindow({
+  ["ConfigFolder"] = "FTAP",
+  ["HidePremium"] = false,
+  ["Name"] = "FTAP K HUB beta",
+  ["SaveConfig"] = true,
+})
+local 382 =380:MakeTab({
+  ["PremiumOnly"] = false,
+  ["Name"] = "line",
+  ["Icon"] = "rbxassetid://7734022107",
+})
+local 384 =382:AddSection({
+  ["Name"] = "Silent Aim",
+})
+local 388 =382:AddSlider({
+  ["Min"] = 0,
+  ["Color"] = Color3["fromRGB"](255, 255, 255),
+  ["Name"] = "Reach Distance",
+  ["ValueName"] = "studs",
+  ["Max"] = 50,
+  ["Increment"] = 1,
+  ["Callback"] = function(...)
+end,
+  ["Default"] = 30,
+})
+local 392 =382:AddToggle({
+  ["Callback"] = function(...)
+end,
+  ["Name"] = "Silent Aim",
+  ["Default"] = false,
+})
+local 396 =382:AddSection({
+  ["Name"] = "LINE Straight",
+})
+local 398 =382:AddToggle({
+  ["Callback"] = function(...)
+end,
+  ["Name"] = "Enable Straight",
+  ["Default"] = false,
+})
+local 402 =382:AddSlider({
+  ["Min"] = 50,
+  ["Name"] = "Power",
+  ["Max"] = 500,
+  ["Increment"] = 10,
+  ["Callback"] = function(...)
+end,
+  ["Default"] = 200,
+})
+382:AddLabel("Low = Stable | High = Strong")
+local 408 =382:AddSection({
+  ["Name"] = "Further Extend",
+})
+local 410 =382:AddToggle({
+  ["Callback"] = function(...)
+end,
+  ["Name"] = "Enable Further Extend",
+  ["Default"] = false,
+})
+local 416 =382:AddSlider({
+  ["Min"] = 3,
+  ["Color"] = Color3["fromRGB"](255, 255, 255),
+  ["Name"] = "Increase Amount",
+  ["ValueName"] = "studs",
+  ["Max"] = 25,
+  ["Increment"] = 1,
+  ["Callback"] = function(...)
+end,
+  ["Default"] = 3,
+})
+382:AddLabel("Use Mouse Wheel or Mobile Buttons")
+382:AddLabel("to extend/shorten grab distance")
+local 424 =382:AddToggle({
+  ["Callback"] = function(...)
+local 425_vararg1, 425_vararg2, 425_vararg3, 425_vararg4, 425_vararg5, 425_vararg6, 425_vararg7, 425_vararg8, 425_vararg9, 425_vararg10 = ...
+LocalPlayer19:FindFirstChild("FartherReach")
+local FartherReach428 =LocalPlayer19["FartherReach"]
+FartherReach428["Value"] =425_vararg1
+end,
+  ["Name"] = "FartherReach Visual",
+  ["Default"] = false,
+})
+local 432 =382:AddSection({
+  ["Name"] = "Custom Gradient",
+})
+local 434 =382:AddSlider({
+  ["Min"] = 2,
+  ["Name"] = "Gradient Layers",
+  ["Max"] = 10,
+  ["Increment"] = 1,
+  ["Callback"] = function(...)
+end,
+  ["Default"] = 2,
+})
+local 440 =382:AddColorpicker({
+  ["Callback"] = function(...)
+end,
+  ["Name"] = "Color 1",
+  ["Default"] = Color3["new"](1, 0, 0),
+})
+local 446 =382:AddColorpicker({
+  ["Callback"] = function(...)
+end,
+  ["Name"] = "Color 2",
+  ["Default"] = Color3["new"](0, 0, 1),
+})
+local 452 =382:AddColorpicker({
+  ["Callback"] = function(...)
+end,
+  ["Name"] = "Color 3",
+  ["Default"] = Color3["new"](0, 1, 0),
+})
+local 458 =382:AddColorpicker({
+  ["Callback"] = function(...)
+end,
+  ["Name"] = "Color 4",
+  ["Default"] = Color3["new"](1, 1, 0),
+})
+local 462 =382:AddToggle({
+  ["Callback"] = function(...)
+error("line 6: attempt to compare number <= table")
+end,
+  ["Name"] = "Enable Custom Gradient",
+  ["Default"] = false,
+})
+local 465 =382:AddSection({
+  ["Name"] = "Line Color Presets",
+})
+local 467 =382:AddButton({
+  ["Name"] = "Rainbow",
+  ["Callback"] = function(...)
+end,
+})
+local 476 =382:AddButton({
+  ["Name"] = "Fire (Red-Orange-Yellow)",
+  ["Callback"] = function(...)
+
+end,
+})
+local 479 =382:AddButton({
+  ["Name"] = "Ocean (Blue-Cyan-Teal)",
+  ["Callback"] = function(...)
+
+end,
+})
+local 482 =382:AddButton({
+  ["Name"] = "Sunset (Purple-Pink-Orange)",
+  ["Callback"] = function(...)
+
+end,
+})
+local 485 =382:AddButton({
+  ["Name"] = "Neon (Cyan-Magenta)",
+  ["Callback"] = function(...)
+
+end,
+})
+local 488 =382:AddButton({
+  ["Name"] = "Galaxy (Purple-Blue-Pink)",
+  ["Callback"] = function(...)
+
+end,
+})
+local 491 =382:AddButton({
+  ["Name"] = "Toxic (Green-Yellow)",
+  ["Callback"] = function(...)
+
+end,
+})
+local 494 =382:AddButton({
+  ["Name"] = "Blood (Dark Red-Crimson)",
+  ["Callback"] = function(...)
+
+end,
+})
+local 497 =382:AddButton({
+  ["Name"] = "Ice (White-Light Blue)",
+  ["Callback"] = function(...)
+
+end,
+})
+local 500 =382:AddButton({
+  ["Name"] = "Gold (Yellow-Orange)",
+  ["Callback"] = function(...)
+
+end,
+})
+local 503 =382:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Rainbow Loop",
+  ["Default"] = false,
+})
+local 506 =380:MakeTab({
+  ["PremiumOnly"] = false,
+  ["Name"] = "anti",
+  ["Icon"] = "rbxassetid://4483345998",
+})
+local 508 =506:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Anti Grab",
+  ["Default"] = false,
+})
+local 511 =506:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Anti Grab Glitch",
+  ["Default"] = false,
+})
+local 514 =506:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Anti Fling",
+  ["Default"] = false,
+})
+local 517 =506:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Anti Void",
+  ["Default"] = false,
+})
+local 520 =380:MakeTab({
+  ["PremiumOnly"] = false,
+  ["Name"] = "Auto",
+  ["Icon"] = "rbxassetid://4483345998",
+})
+local 522 =520:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Auto Collect Toys",
+  ["Default"] = false,
+})
+local 525 =380:MakeTab({
+  ["PremiumOnly"] = false,
+  ["Name"] = "All",
+  ["Icon"] = "rbxassetid://4483345998",
+})
+local 527 =525:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Auto Grab All",
+  ["Default"] = false,
+})
+local 530 =525:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Auto Fling All",
+  ["Default"] = false,
+})
+local 533 =380:MakeTab({
+  ["PremiumOnly"] = false,
+  ["Name"] = "Grab",
+  ["Icon"] = "rbxassetid://4483345998",
+})
+local 535 =533:AddSlider({
+  ["Min"] = 100,
+  ["Name"] = "Throw Power",
+  ["Max"] = 2000,
+  ["Increment"] = 50,
+  ["Callback"] = function(...)
+
+end,
+  ["Default"] = 450,
+})
+local 538 =533:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Poison Grab",
+  ["Default"] = false,
+})
+local 541 =533:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Kill Grab",
+  ["Default"] = false,
+})
+local 544 =533:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Heaven Grab",
+  ["Default"] = false,
+})
+local 547 =533:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Noclip Grab",
+  ["Default"] = false,
+})
+local 550 =533:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "TP Grab",
+  ["Default"] = false,
+})
+local 553 =533:AddDropdown({
+  ["Callback"] = function(...)
+
+end,
+  ["Options"] = {
+  [1] = "Spawn",
+  [2] = "Crazy",
+},
+  ["Name"] = "TP Type",
+  ["Default"] = "Spawn",
+})
+local 556 =533:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Enable Throw",
+  ["Default"] = false,
+})
+local 559 =533:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "UFO Grab",
+  ["Default"] = false,
+})
+local 562 =533:AddSlider({
+  ["Min"] = 5,
+  ["Name"] = "UFO Height",
+  ["Max"] = 30,
+  ["Increment"] = 1,
+  ["Callback"] = function(...)
+
+end,
+  ["Default"] = 10,
+})
+local 565 =533:AddSlider({
+  ["Min"] = 1,
+  ["Name"] = "UFO Rotation",
+  ["Max"] = 20,
+  ["Increment"] = 1,
+  ["Callback"] = function(...)
+
+end,
+  ["Default"] = 5,
+})
+local 568 =533:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Invisible Line",
+  ["Default"] = false,
+})
+local 571 =380:MakeTab({
+  ["PremiumOnly"] = false,
+  ["Name"] = "Aura",
+  ["Icon"] = "rbxassetid://4483345998",
+})
+local 573 =571:AddSlider({
+  ["Min"] = 5,
+  ["Name"] = "Aura Radius",
+  ["Max"] = 100,
+  ["Callback"] = function(...)
+
+end,
+  ["Default"] = 20,
+})
+local 576 =571:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Grab Aura",
+  ["Default"] = false,
+})
+local 579 =571:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Delete Aura",
+  ["Default"] = false,
+})
+local 582 =571:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Fling Aura",
+  ["Default"] = false,
+})
+local 585 =571:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Teleport Aura",
+  ["Default"] = false,
+})
+local 588 =571:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Void Aura",
+  ["Default"] = false,
+})
+local 591 =571:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Ragdoll Aura",
+  ["Default"] = false,
+})
+local 594 =571:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Poison Aura",
+  ["Default"] = false,
+})
+local 597 =571:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Fire Aura",
+  ["Default"] = false,
+})
+local 600 =571:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Air Suspend Aura",
+  ["Default"] = false,
+})
+local 603 =571:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Bring Aura",
+  ["Default"] = false,
+})
+local 606 =571:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "AURA",
+  ["Default"] = false,
+})
+local 609 =571:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Spin Aura",
+  ["Default"] = false,
+})
+local 612 =571:AddSlider({
+  ["Min"] = 1,
+  ["Name"] = "Spin Speed",
+  ["Max"] = 50,
+  ["Increment"] = 1,
+  ["Callback"] = function(...)
+
+end,
+  ["Default"] = 10,
+})
+local 615 =571:AddDropdown({
+  ["Callback"] = function(...)
+
+end,
+  ["Options"] = {
+  [1] = "Clockwise",
+  [2] = "Counter-Clockwise",
+},
+  ["Name"] = "Spin Direction",
+  ["Default"] = "Clockwise",
+})
+local 618 =571:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Sex Aura",
+  ["Default"] = false,
+})
+local 621 =571:AddSlider({
+  ["Min"] = 1,
+  ["Name"] = "Sex Aura Speed",
+  ["Max"] = 50,
+  ["Increment"] = 1,
+  ["Callback"] = function(...)
+
+end,
+  ["Default"] = 5,
+})
+local 624 =571:AddDropdown({
+  ["Callback"] = function(...)
+
+end,
+  ["Options"] = {
+  [1] = "Forward",
+  [2] = "Backward",
+  [3] = "Left",
+  [4] = "Right",
+},
+  ["Name"] = "Sex Aura Direction",
+  ["Default"] = "Forward",
+})
+local 627 =571:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Whitelist Friends",
+  ["Default"] = false,
+})
+local 630 =380:MakeTab({
+  ["PremiumOnly"] = false,
+  ["Name"] = "Blobman",
+  ["Icon"] = "rbxassetid://4483345998",
+})
+local 632 =630:AddSection({
+  ["Name"] = "Individual Control",
+})
+local 635 =task["spawn"](function(...)
+
+end)
+local 638 =630:AddDropdown({
+  ["Callback"] = function(...)
+
+end,
+  ["Options"] = {},
+  ["Name"] = "Left Player",
+  ["Default"] = "",
+})
+local 641 =630:AddButton({
+  ["Name"] = "Left Bring",
+  ["Callback"] = function(...)
+
+end,
+})
+local 645 =task["spawn"](function(...)
+
+end)
+local 647 =630:AddDropdown({
+  ["Callback"] = function(...)
+
+end,
+  ["Options"] = {},
+  ["Name"] = "Right Player",
+  ["Default"] = "",
+})
+local 650 =630:AddButton({
+  ["Name"] = "Right Bring",
+  ["Callback"] = function(...)
+
+end,
+})
+local 653 =630:AddSection({
+  ["Name"] = "Duo Control",
+})
+local 655 =task["spawn"](function(...)
+
+end)
+local 658 =630:AddDropdown({
+  ["Callback"] = function(...)
+
+end,
+  ["Options"] = {},
+  ["Name"] = "Duo Player",
+  ["Default"] = "",
+})
+local 661 =630:AddButton({
+  ["Name"] = "Duo Bring",
+  ["Callback"] = function(...)
+
+end,
+})
+local 664 =630:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Duo Loop",
+  ["Default"] = false,
+})
+local 667 =630:AddSection({
+  ["Name"] = "Mass Control",
+})
+local 669 =630:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Auto Duo Nearest",
+  ["Default"] = false,
+})
+local 672 =630:AddButton({
+  ["Name"] = "Bring All",
+  ["Callback"] = function(...)
+
+end,
+})
+local 675 =630:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Server Crash",
+  ["Default"] = false,
+})
+local 678 =630:AddSlider({
+  ["Min"] = 0.001,
+  ["Name"] = "Delay",
+  ["Max"] = 1,
+  ["Increment"] = 0.001,
+  ["Callback"] = function(...)
+
+end,
+  ["Default"] = 0.001,
+})
+local 681 =380:MakeTab({
+  ["PremiumOnly"] = false,
+  ["Name"] = "Character",
+  ["Icon"] = "rbxassetid://4483345998",
+})
+local 683 =681:AddSlider({
+  ["Min"] = 16,
+  ["Name"] = "Walk Speed",
+  ["Max"] = 500,
+  ["Callback"] = function(...)
+
+end,
+  ["Default"] = 16,
+})
+local 686 =681:AddSlider({
+  ["Min"] = 50,
+  ["Name"] = "Jump Power",
+  ["Max"] = 500,
+  ["Callback"] = function(...)
+
+end,
+  ["Default"] = 50,
+})
+local 689 =681:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Infinite Jump",
+  ["Default"] = false,
+})
+local 692 =681:AddButton({
+  ["Name"] = "Sit",
+  ["Callback"] = function(...)
+
+end,
+})
+local 695 =681:AddButton({
+  ["Name"] = "Force Third Person",
+  ["Callback"] = function(...)
+
+end,
+})
+local 698 =681:AddButton({
+  ["Name"] = "Force First Person",
+  ["Callback"] = function(...)
+
+end,
+})
+local 701 =681:AddButton({
+  ["Name"] = "Reset Character",
+  ["Callback"] = function(...)
+
+end,
+})
+local 704 =380:MakeTab({
+  ["PremiumOnly"] = false,
+  ["Name"] = "Teleport",
+  ["Icon"] = "rbxassetid://4483345998",
+})
+Vector3["new"](2, -7, -4)
+Vector3["new"](-492, -7, -164)
+Vector3["new"](-532, -7, 95)
+Vector3["new"](255, -7, 465)
+Vector3["new"](558, 123, -76)
+Vector3["new"](511, 83, -344)
+Vector3["new"](-244, 80, 293)
+Vector3["new"](-197, 59, -285)
+Vector3["new"](-433, 230, 516)
+Vector3["new"](394, 163, 278)
+Vector3["new"](71, 346, 330)
+local 728 =704:AddButton({
+  ["Name"] = "Snow Mountain",
+  ["Callback"] = function(...)
+
+end,
+})
+local 731 =704:AddButton({
+  ["Name"] = "Big House",
+  ["Callback"] = function(...)
+
+end,
+})
+local 734 =704:AddButton({
+  ["Name"] = "Purple House",
+  ["Callback"] = function(...)
+
+end,
+})
+local 737 =704:AddButton({
+  ["Name"] = "Yellow House",
+  ["Callback"] = function(...)
+
+end,
+})
+local 740 =704:AddButton({
+  ["Name"] = "Floating Island",
+  ["Callback"] = function(...)
+
+end,
+})
+local 743 =704:AddButton({
+  ["Name"] = "Chinese House",
+  ["Callback"] = function(...)
+
+end,
+})
+local 746 =704:AddButton({
+  ["Name"] = "Farm",
+  ["Callback"] = function(...)
+
+end,
+})
+local 749 =704:AddButton({
+  ["Name"] = "Mountain",
+  ["Callback"] = function(...)
+
+end,
+})
+local 752 =704:AddButton({
+  ["Name"] = "Green House",
+  ["Callback"] = function(...)
+
+end,
+})
+local 755 =704:AddButton({
+  ["Name"] = "Blue House",
+  ["Callback"] = function(...)
+
+end,
+})
+local 758 =704:AddButton({
+  ["Name"] = "Spawn",
+  ["Callback"] = function(...)
+
+end,
+})
+local 761 =704:AddSection({
+  ["Name"] = "Player Teleport",
+})
+local 764 =task["spawn"](function(...)
+
+end)
+local 766 =704:AddDropdown({
+  ["Callback"] = function(...)
+
+end,
+  ["Options"] = {},
+  ["Name"] = "Select Player",
+  ["Default"] = "",
+})
+local 769 =704:AddDropdown({
+  ["Callback"] = function(...)
+
+end,
+  ["Options"] = {
+  [1] = "Front",
+  [2] = "Back",
+  [3] = "Left",
+  [4] = "Right",
+  [5] = "Above",
+  [6] = "Below",
+},
+  ["Name"] = "Direction",
+  ["Default"] = "Front",
+})
+local 773 =704:AddSlider({
+  ["Min"] = 1,
+  ["Name"] = "Distance (studs)",
+  ["Max"] = 20,
+  ["Increment"] = 1,
+  ["Callback"] = function(...)
+
+end,
+  ["Default"] = 3,
+})
+local 776 =704:AddButton({
+  ["Name"] = "Teleport to Player",
+  ["Callback"] = function(...)
+
+end,
+})
+local 779 =380:MakeTab({
+  ["PremiumOnly"] = false,
+  ["Name"] = "Visual",
+  ["Icon"] = "rbxassetid://4483345998",
+})
+local 781 =779:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Fullbright",
+  ["Default"] = false,
+})
+local 784 =779:AddSlider({
+  ["Min"] = 70,
+  ["Name"] = "FOV",
+  ["Max"] = 120,
+  ["Callback"] = function(...)
+
+end,
+  ["Default"] = 70,
+})
+local 789 =779:AddSlider({
+  ["Min"] = 60,
+  ["Color"] = Color3["fromRGB"](255, 255, 255),
+  ["Name"] = "fps",
+  ["ValueName"] = "fps",
+  ["Max"] = 600,
+  ["Increment"] = 1,
+  ["Callback"] = function(...)
+
+end,
+  ["Default"] = 120,
+})
+local 792 =779:AddSlider({
+  ["Min"] = 20,
+  ["Name"] = "ESP Icon Size",
+  ["Max"] = 100,
+  ["Increment"] = 2.5,
+  ["Callback"] = function(...)
+
+end,
+  ["Default"] = 37.5,
+})
+local 795 =779:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "ESP Players",
+  ["Default"] = false,
+})
+local 798 =380:MakeTab({
+  ["PremiumOnly"] = false,
+  ["Name"] = "Keybinds",
+  ["Icon"] = "rbxassetid://11710306232",
+})
+local 802 =798:AddBind({
+  ["Callback"] = function(...)
+
+end,
+  ["Hold"] = false,
+  ["Name"] = "TP to Mouse",
+  ["Default"] = Enum["KeyCode"]["Q"],
+})
+local 807 =798:AddBind({
+  ["Callback"] = function(...)
+
+end,
+  ["Hold"] = false,
+  ["Name"] = "Grab Nearest",
+  ["Default"] = Enum["KeyCode"]["E"],
+})
+local 812 =798:AddBind({
+  ["Callback"] = function(...)
+
+end,
+  ["Hold"] = false,
+  ["Name"] = "Fling Nearest",
+  ["Default"] = Enum["KeyCode"]["R"],
+})
+local 817 =798:AddBind({
+  ["Callback"] = function(...)
+
+end,
+  ["Hold"] = false,
+  ["Name"] = "Delete Nearest",
+  ["Default"] = Enum["KeyCode"]["T"],
+})
+local 822 =798:AddBind({
+  ["Callback"] = function(...)
+
+end,
+  ["Hold"] = false,
+  ["Name"] = "Bring All",
+  ["Default"] = Enum["KeyCode"]["B"],
+})
+local 827 =798:AddBind({
+  ["Callback"] = function(...)
+
+end,
+  ["Hold"] = false,
+  ["Name"] = "Fling All",
+  ["Default"] = Enum["KeyCode"]["V"],
+})
+local 830 =380:MakeTab({
+  ["PremiumOnly"] = false,
+  ["Name"] = "Settings",
+  ["Icon"] = "rbxassetid://4483345998",
+})
+local 832 =830:AddToggle({
+  ["Callback"] = function(...)
+
+end,
+  ["Name"] = "Whitelist Friends",
+  ["Default"] = false,
+})
+local 835 =830:AddButton({
+  ["Name"] = "Destroy UI",
+  ["Callback"] = function(...)
+
+end,
+})
+local 841 =830:AddButton({
+  ["Name"] = "Rejoin Game",
+  ["Callback"] = function(...)
+
+end,
+})
+local 844 =830:AddButton({
+  ["Name"] = "Server Hop",
+  ["Callback"] = function(...)
+
+end,
+})
+14["Themes"]["CustomRainbow"] ={
+  ["Main"] = Color3["fromRGB"](20, 20, 25),
+  ["TextDark"] = Color3["fromRGB"](180, 180, 200),
+  ["Text"] = Color3["fromRGB"](255, 255, 255),
+  ["Stroke"] = Color3["fromRGB"](255, 50, 150),
+  ["Divider"] = Color3["fromRGB"](200, 100, 200),
+  ["Second"] = Color3["fromRGB"](30, 30, 35),
+}
+14["Themes"]["Ocean"] ={
+  ["Main"] = Color3["fromRGB"](10, 25, 40),
+  ["TextDark"] = Color3["fromRGB"](120, 170, 220),
+  ["Text"] = Color3["fromRGB"](200, 230, 255),
+  ["Stroke"] = Color3["fromRGB"](50, 150, 255),
+  ["Divider"] = Color3["fromRGB"](30, 100, 180),
+  ["Second"] = Color3["fromRGB"](15, 35, 55),
+}
+14["Themes"]["Sunset"] ={
+  ["Main"] = Color3["fromRGB"](40, 20, 30),
+  ["TextDark"] = Color3["fromRGB"](200, 150, 130),
+  ["Text"] = Color3["fromRGB"](255, 200, 180),
+  ["Stroke"] = Color3["fromRGB"](255, 150, 100),
+  ["Divider"] = Color3["fromRGB"](200, 100, 80),
+  ["Second"] = Color3["fromRGB"](50, 30, 40),
+}
+local 885 =spawn(function(...)
+
+end)
+local 887 =spawn(function(...)
+
+end)
+local 891 =game:GetService("RunService")["RenderStepped"]:Connect(function(...)
+
+end)
+local 893 =hookmetamethod(game, "__namecall", function(...)
+
+end)
+14:Init()
+task.wait(0.5)
