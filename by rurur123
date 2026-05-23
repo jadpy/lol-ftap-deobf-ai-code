@@ -1,0 +1,1117 @@
+local v47 = 0
+local GAME = GAME
+local tbl91 = GAME.GetService(GAME, "RunService").Heartbeat
+tbl91.Connect(tbl91, function(...) v47 = v47 + 1 end)
+tbl91 = v47 >= 2
+task.wait()
+if v47 >= 2 then
+    J.Disconnect(J)
+    
+    local function function63(...)
+        local WORKSPACE = WORKSPACE
+        local tbl5 = WORKSPACE.FindFirstChild(WORKSPACE, "GrabParts")
+        if tbl5 then
+            WORKSPACE = WORKSPACE
+            tbl5 = WORKSPACE.FindFirstChild(WORKSPACE, "GrabParts")
+            tbl5.Destroy(tbl5)
+        end
+        task.wait(.5)
+        WORKSPACE = GAME
+        local contextAction = WORKSPACE.GetService(WORKSPACE, "ContextActionService")
+        WORKSPACE = GAME
+        WORKSPACE = GAME
+        local replicatedFirstService = WORKSPACE.GetService(WORKSPACE, "ReplicatedFirst")
+        WORKSPACE = GAME
+        local repStorage = WORKSPACE.GetService(WORKSPACE, "ReplicatedStorage")
+        repStorage = GAME
+        local runService = repStorage.GetService(repStorage, "RunService")
+        repStorage = GAME
+        local inputService = repStorage.GetService(repStorage, "UserInputService")
+        local tbl6 = repStorage.GetService(repStorage, "Players").LocalPlayer
+        repStorage = tbl6
+        local v22 = repStorage.WaitForChild(repStorage, "PlayerScripts")
+        repStorage = tbl6
+        local tbl7 = repStorage.WaitForChild(repStorage, "PlayerGui")
+        local tbl8 = v22
+        local tbl4 = require(tbl8.WaitForChild(tbl8, "CASButtonModule"))
+        local tbl9 = v22
+        local tbl10 = require(tbl9.WaitForChild(tbl9, "RaycastModule"))
+        repStorage = tbl7.WaitForChild(tbl7, "ControlsGui")
+        local v13 = repStorage.WaitForChild(repStorage, "ActionEvent")
+        local v32 = repStorage.GrabEvents.SetNetworkOwner
+        local v42 = repStorage.GrabEvents.DestroyGrabLine
+        local v52 = repStorage.GrabEvents.ExtendGrabLine
+        local tbl11 = repStorage.GamepassEvents.CheckForGamepass
+        repStorage = v22
+        replicatedFirstService = repStorage.WaitForChild(repStorage, "CharacterAndBeamMove")
+        local v62 = replicatedFirstService.WaitForChild(replicatedFirstService, "GrabNotifyEvent")
+        
+        local function function9(function6, function8, function7, ...)
+            local v72 = function6
+            { repStorage(v72) }
+            for v82, index in pairs(v(v72)) do
+                if index.Name == function8 and function7 == nil then
+                    return index
+                end 
+            end
+            return nil 
+        end
+        
+        local function function11(function10, ...)
+            repStorage = SCRIPT
+            local tbl13 = function10
+            local tbl12 = repStorage.FindFirstChild(repStorage, tbl13)
+            if tbl12 then tbl13 = tbl12.IsA(tbl12, "BindableEvent") end
+            if tbl12 then return tbl12 end
+            tbl13 = function9(v22, tbl13, "BindableEvent")
+            if tbl13 then tbl13 = tbl13.IsA(tbl13, "BindableEvent") end
+            if tbl13 then return tbl13 end
+            tbl12 = Instance.new("BindableEvent")
+            tbl12.Name = tbl13
+            tbl12.Parent = SCRIPT
+            return tbl12 
+        end
+        
+        repStorage = tbl6
+        repStorage.WaitForChild(repStorage, "InOwnedPlot")
+        repStorage = WORKSPACE
+        replicatedFirstService = repStorage.WaitForChild(repStorage, "PlotItems")
+        replicatedFirstService.WaitForChild(replicatedFirstService, "PlayersInPlots")
+        local enable3 = false
+        local enable1 = false
+        local enable4 = false
+        local tbl14 = tbl7.WaitForChild(tbl7, "Crosshairs")
+        local tbl15 = tbl14.WaitForChild(tbl14, "CrosshairsFrame")
+        tbl14.Enabled = true
+        if tbl7.WaitForChild(tbl7, "MenuGui").Enabled == false then
+            inputService.MouseIconEnabled = false
+        end
+        local character = tbl6.Character
+        repStorage = character
+        local tbl16 = repStorage.WaitForChild(repStorage, "Humanoid")
+        repStorage = character
+        local tbl17 = repStorage.WaitForChild(repStorage, "Head")
+        local camera = WORKSPACE.CurrentCamera
+        camera.CameraType = Enum.CameraType.Custom
+        replicatedFirstService.WaitForChild(replicatedFirstService, "GrabParts")
+        local part = Instance.new("Part")
+        part.CanQuery = false
+        part.CanTouch = false
+        part.CanCollide = false
+        part.Transparency = 1
+        part.Anchored = true
+        part.Name = "CamPart"
+        part.Parent = character
+        repStorage = tbl17.AncestryChanged
+        local v92 = repStorage.Connect(repStorage, function(...)
+            replicatedFirstService = tbl17
+            repStorage = replicatedFirstService.IsDescendantOf(replicatedFirstService, WORKSPACE) == false
+            if repStorage then
+                repStorage = r31
+                repStorage.Disconnect(repStorage)
+                repStorage = part
+                repStorage.Destroy(repStorage)
+            end 
+        end)
+        local attachment = Instance.new("Attachment")
+        attachment.Parent = part
+        attachment.Position = Vector3.new(0, -2, -1)
+        repStorage = runService.RenderStepped
+        repStorage.Connect(repStorage, function(...) part.CFrame = camera.CFrame end)
+        local WORKSPACE = WORKSPACE
+        local v102 = { WORKSPACE.GetChildren(WORKSPACE) }
+        for v11, index2 in pairs(v(v102)) do
+            if index2.Name == "RotateOrientPart" then index2.Destroy(index2) end 
+        end
+        local part2 = Instance.new("Part")
+        part2.Transparency = 1
+        part2.CanCollide = false
+        part2.CanTouch = false
+        part2.CanQuery = false
+        part2.Position = Vector3.new(0, 1000, 0)
+        part2.Anchored = true
+        part2.Name = "RotateOrientPart"
+        part2.Parent = WORKSPACE
+        local attachment2 = Instance.new("Attachment")
+        attachment2.Name = "PartOrient"
+        attachment2.Parent = part2
+        attachment2.Position = Vector3.new(0, 0, 0)
+        repStorage = runService.Stepped
+        repStorage.Connect(repStorage, function(...)
+            repStorage = camera.CFrame
+            local tbl18 = repStorage.ToOrientation(repStorage)
+            part2.Orientation = Vector3.new(part2.Orientation.X, math.deg(tbl18[2]), part2.Orientation.Z) 
+        end)
+        local enable5 = false
+        local enable6 = false
+        local v122 = 0
+        local v132 = 30
+        local v14 = 20
+        
+        local function function12(...)
+            repStorage = "getgenv"
+            repStorage = typeof(Env[repStorage]) == "function"
+            if repStorage then
+                repStorage = pcall
+                repStorage = { repStorage(getgenv) }
+                replicatedFirstService = repStorage(getgenv)
+                local v162 = repStorage[2]
+                if v162 then v162 = type(v162) == "table" end
+                if v162 then repStorage = repStorage[2] end
+            end
+            if n then
+                local v15 = n
+                repStorage = tonumber(v15)
+                if repStorage then return math.max(3, repStorage), repStorage end
+                return math.max(3, v132), nil
+            else
+                replicatedFirstService = _G
+            end 
+        end
+        
+        local function function13(...)
+            repStorage = function12() ~= v14
+            if repStorage then
+                if repStorage then
+                    repStorage = function12()
+                    v14 = repStorage
+                    local enable7 = enable6 == true
+                    if enable7 and r28 then
+                        enable7 = T[2] ~= nil
+                        if enable7 then
+                            v122 = v14
+                        else
+                            local tbl19 = v14
+                            if v122 > tbl19 then
+                                v122 = v14
+                            else
+                                if v122 < 3 then i[v102] = 3 end
+                                tbl19 = v52
+                                tbl19.FireServer(tbl19, v122)
+                            end
+                        end
+                    end
+                end
+            else
+                replicatedFirstService = repStorage
+            end 
+        end
+        
+        repStorage = repStorage.GamepassEvents.FurtherReachBoughtNotifier.OnClientEvent
+        repStorage.Connect(repStorage, function(...)
+            v132 = 30
+            function13() 
+        end)
+        v132 = tbl11.InvokeServer(tbl11, 20837132) == true and 30 or v132
+        { function12() }
+        v14 = function12()
+        local enable8 = false
+        local enable9 = false
+        local enable10 = false
+        
+        local function function3(function14, ...)
+            local tbl22 = function14
+            enable6 = false
+            enable4 = false
+            local tbl20 = UDim2.new(0, 11, 0, 11)
+            tbl15.Size = tbl20
+            local tbl23 = v62
+            tbl23.Fire(tbl23, enable6)
+            tbl4.ChangeColor("Grab")
+            if r28 then
+                local tbl21 = contextAction
+                tbl21.UnbindAction(tbl21, "Throw")
+                tbl21 = contextAction
+                tbl21.UnbindAction(tbl21, "ZoomIn")
+                tbl21 = contextAction
+                tbl21.UnbindAction(tbl21, "ZoomOut")
+                tbl21 = contextAction
+                tbl21.UnbindAction(tbl21, "ZoomPC")
+                tbl21 = contextAction
+                tbl21.UnbindAction(tbl21, "Rotate")
+                enable5 = false
+                tbl22 = v13
+                tbl22.Fire(tbl22, "GrabbingControls", false)
+                tbl22 = v13
+                tbl22.Fire(tbl22, "GrabControls", false)
+                tbl22 = v13
+                tbl22.Fire(tbl22, "RotatingControls", false)
+                tbl22 = v13
+                tbl22.Fire(tbl22, "RotateControls", false)
+                camera.CameraType = Enum.CameraType.Custom
+                tbl22 = runService
+                tbl22.UnbindFromRenderStep(tbl22, "dragBinding")
+                tbl22 = runService
+                tbl22.UnbindFromRenderStep(tbl22, "buttonDistanceMoving")
+                enable9 = false
+                enable8 = false
+                tbl20 = r28
+                tbl20.Destroy(tbl20)
+                tbl20 = v42
+                tbl20.FireServer(tbl20, r29)
+            end 
+        end
+        
+        local function function15(...)
+            if enable10 == false then
+                if enable9 == true and enable8 == false then
+                    enable10 = true
+                    replicatedFirstService = v122 > 3
+                    if replicatedFirstService then
+                        v122 = math.floor(v122 - 1)
+                        replicatedFirstService = v52
+                        replicatedFirstService.FireServer(replicatedFirstService, v122)
+                    end
+                    enable10 = false
+                end
+                repStorage = replicatedFirstService == n
+                if enable9 == false and enable8 == true then
+                    enable10 = true
+                    replicatedFirstService = v122 < v14
+                    if replicatedFirstService then
+                        v122 = math.ceil(v122 + 1)
+                        replicatedFirstService = v52
+                        replicatedFirstService.FireServer(replicatedFirstService, v122)
+                    end
+                    enable10 = false
+                end
+            end 
+        end
+        
+        local function function16(...)
+            if enable6 == true then
+                r28.DragPart.Position = camera.CFrame.LookVector * v122 + camera.CFrame.Position
+                r28.DragPart.DragAttach.WorldOrientation = attachment2.WorldOrientation
+                r28.BeamPart.CFrame = CFrame.lookAt(r28.GrabPart.Position, r28.DragPart.Position, Vector3.new(0, 0, 1))
+                local tbl24 = (r28.GrabPart.Position - r28.DragPart.Position).Magnitude * 1.5
+                local v172 = tbl24
+                r28.BeamPart.GrabBeam.CurveSize1 = v172
+                r28.GrabPart.BeamSound.PlaybackSpeed = tbl24 / 2 + 2.5
+                tbl24 = r29
+                if tbl24.IsDescendantOf(tbl24, WORKSPACE) == false then i[Hu]("Throw") end
+            end 
+        end
+        
+        local function function20(function19, function17, function18, ...)
+            replicatedFirstService = function18
+            local v222 = function19
+            if function17 == Enum.UserInputState.Begin and (v222 == "Throw" and enable6 == true) then
+                function3(v222)
+                if r29.Anchored == false then
+                    repStorage = 0
+                    local tbl25 = r29.Parent
+                    local v192 = tbl25.IsA(tbl25, "Model")
+                    if v192 then tbl25 = i[au].Parent.Name ~= "Workspace" end
+                    if v192 then
+                        local tbl26 = r29.Parent
+                        tbl26 = tbl26[2]
+                        tbl26 = tbl26[1]
+                        for index6, index5 in pairs(tbl26.GetChildren(tbl26)) do
+                            if index5.IsA(index5, "BasePart") then index6 = index6 + index5.Mass end 
+                        end
+                        tbl26 = camera.CFrame.LookVector * 750 / v192 + camera.CFrame.LookVector * 15
+                        if tbl26.Magnitude > 100 then
+                            tbl26 = i[Zu].CFrame.LookVector * 100
+                        else
+                            if tbl26.Magnitude < 50 then tbl26 = i[Zu].CFrame.LookVector * 50 end
+                            local tbl27 = i[au].Parent
+                            local v202 = tbl27[1]
+                            local v21 = tbl27[2]
+                            for index3, index4 in pairs(tbl27.GetChildren(tbl27)) do
+                                if index4.IsA(index4, "BasePart") then
+                                    index4.Velocity = camera.CFrame.LookVector * 750 / v192 + camera[index3][v21] * v202
+                                end 
+                            end
+                        end
+                    end
+                    local v182 = camera.CFrame.LookVector * 750 / (v192 + r29.Mass) + camera.CFrame.LookVector * 15
+                    r29.Velocity = v182
+                end
+            end 
+        end
+        
+        repStorage = camera.CFrame
+        repStorage.GetComponents(repStorage)
+        repStorage = character
+        local tbl28 = repStorage.WaitForChild(repStorage, "HumanoidRootPart")
+        repStorage = tbl28
+        repStorage.WaitForChild(repStorage, "RootAttachment")
+        repStorage = inputService
+        repStorage.GetGamepadState(repStorage, Enum.UserInputType.Gamepad1)
+        
+        local function function21(...)
+            if inputService.MouseBehavior ~= Enum.MouseBehavior.LockCenter then
+                inputService.MouseBehavior = Enum.MouseBehavior.LockCenter
+            end
+            if camera.CameraType ~= Enum.CameraType.Scriptable then
+                camera.CameraType = Enum.CameraType.Scriptable
+            end
+            replicatedFirstService = tbl6.Character
+            local tbl30 = replicatedFirstService[3]
+            local tbl29 = tbl30[2]
+            for v23, index7 in pairs(tbl30.GetDescendants(tbl30)) do
+                if index7.IsA(index7, "BasePart") then index7.Transparency = 1 end 
+            end
+            camera.CFrame = CFrame.new(tbl28.CFrame * r51) * camera.CFrame.Rotation
+            tbl29 = part2
+            tbl29 = tbl29.Clone(tbl29)
+            tbl29.Anchored = true
+            tbl29.Orientation = Vector3.new(tbl29.Orientation.X - (r52.Position.v6 + r52.Position.v6), tbl29.Orientation.v6 + r52.Position.X + r52.Position.X, tbl29.Orientation.Z)
+            attachment2.WorldOrientation = tbl29.WaitForChild(tbl29, "PartOrient").WorldOrientation
+            tbl29.Destroy(tbl29)
+            if enable6 == false then
+                tbl29 = runService
+                tbl29.UnbindFromRenderStep(tbl29, "camBinding")
+                camera.CameraType = Enum.CameraType.Custom
+                inputService.MouseBehavior = Enum.MouseBehavior.Default
+                enable5 = false
+            end 
+        end
+        
+        local function function27(function24, function23, function26, function25, function22, ...)
+            local tbl33 = function24
+            repStorage = function25
+            tbl33 = function26
+            if enable6 == true then
+                if tbl33 == "Rotate" and function23 == Enum.UserInputState.Begin then
+                    if enable5 == false then
+                        tbl33 = tbl28.CFrame
+                        tbl33.ToObjectSpace(tbl33, camera.CFrame).Position
+                        camera.CameraType = Enum.CameraType.Scriptable
+                        inputService.MouseBehavior = Enum.MouseBehavior.LockCenter
+                        tbl33 = runService
+                        tbl33.BindToRenderStep(tbl33, "camBinding", Enum.RenderPriority.Camera.Value - 1, function21)
+                        enable5 = true
+                        local tbl34 = v13
+                        tbl34.Fire(tbl34, "RotatingControls", true)
+                        tbl34 = v13
+                        tbl34.Fire(tbl34, "RotateControls", false)
+                        tbl34 = v13
+                        tbl34.Fire(tbl34, "")
+                        tbl4.ChangeColor("Rotate", Color3.new(0, 1, 1))
+                    else
+                        camera.CameraType = Enum.CameraType.Custom
+                        inputService.MouseBehavior = Enum.MouseBehavior.Default
+                        local tbl36 = runService
+                        tbl36.UnbindFromRenderStep(tbl36, "camBinding")
+                        enable5 = false
+                        tbl4.ChangeColor("Rotate")
+                        local tbl35 = v13
+                        tbl35.Fire(tbl35, "RotatingControls", false)
+                        tbl35 = v13
+                        tbl35.Fire(tbl35, "RotateControls", true)
+                    end
+                end
+                repStorage = tbl33 == R
+                if tbl33 == "rotateMove" and (enable5 == true and (function22 == false and repStorage.KeyCode ~= Enum.KeyCode.Thumbstick2)) then
+                    local tbl32 = part2
+                    local tbl31 = tbl32.Clone(tbl32)
+                    tbl31.Anchored = true
+                    tbl31.Orientation = Vector3.new(tbl31.Orientation.X + tbl31.Delta.v6, tbl31.Orientation.v6 + tbl31.Delta.X, tbl31.Orientation.Z)
+                    attachment2.WorldOrientation = tbl31.WaitForChild(tbl31, "PartOrient").WorldOrientation
+                    tbl31.Destroy(tbl31)
+                end
+            end 
+        end
+        
+        local tbl37 = inputService.InputChanged
+        tbl37.Connect(tbl37, function(function29, function28, ...)
+            local tbl38 = function29
+            local tbl39 = function28
+            if enable6 == true then
+                if tbl38.UserInputType == Enum.UserInputType.MouseMovement then
+                    tbl38 = enable6 == true
+                    if tbl38 and (enable5 == true and (function28 == false and tbl38.KeyCode ~= Enum.KeyCode.Thumbstick2)) then
+                        tbl39 = part2
+                        tbl38 = tbl39.Clone(tbl39)
+                        tbl38.Anchored = true
+                        tbl38.Orientation = Vector3.new(tbl38.Orientation.X + tbl38.Delta.v6, tbl38.Orientation.v6 + tbl38.Delta.X, tbl38.Orientation.Z)
+                        attachment2.WorldOrientation = tbl38.WaitForChild(tbl38, "PartOrient").WorldOrientation
+                        tbl38.Destroy(tbl38)
+                    end
+                else
+                    if tbl38.UserInputType == Enum.UserInputType.Touch and (enable6 == true and (enable5 == true and (function28 == false and tbl38.KeyCode ~= Enum.KeyCode.Thumbstick2))) then
+                        tbl39 = part2
+                        tbl38 = tbl39.Clone(tbl39)
+                        tbl38.Anchored = true
+                        tbl38.Orientation = Vector3.new(tbl38.Orientation.X + tbl38.Delta.v6, tbl38.Orientation.v6 + tbl38.Delta.X, tbl38.Orientation.Z)
+                        attachment2.WorldOrientation = tbl38.WaitForChild(tbl38, "PartOrient").WorldOrientation
+                        tbl38.Destroy(tbl38)
+                    end
+                end
+            end 
+        end)
+        
+        local function function33(function31, function32, function30, ...)
+            if enable6 == true then
+                local tbl41 = "Z"
+                repStorage = 0
+                if tbl41.Position[tbl41] < repStorage then
+                    repStorage = math.ceil(v122 + function30.Position.Z * 2)
+                    tbl41 = 3
+                    if repStorage < tbl41 then
+                        i[v102] = 3
+                    else
+                        tbl41 = math.ceil(tbl41 + R)
+                        i[v102] = tbl41
+                    end
+                    tbl41 = v52
+                    tbl41.FireServer(tbl41, v122)
+                end
+                local tbl40 = "Z"
+                if tbl41.Position[tbl40] > 0 then
+                    tbl41 = math.floor(v122 + function30.Position.Z * 2)
+                    local v24 = v14
+                    if v24 < v24 then
+                        v122 = v14
+                    else
+                        v24 = math.floor(tbl40 + m)
+                        i[v102] = v24
+                    end
+                    tbl40 = v52
+                    tbl40.FireServer(tbl40, v122)
+                end
+            end 
+        end
+        
+        local function function37(function34, function36, function35, ...)
+            replicatedFirstService = function35
+            local v26 = function36
+            local v25 = function34
+            if v26 == Enum.UserInputState.Begin and v25 == "ZoomOut" then
+                enable8 = true
+                enable9 = false
+            end
+            if v26 == Enum.UserInputState.End and v25 == "ZoomOut" or v26 == Enum.UserInputState.Cancel then
+                enable8 = false
+                enable9 = false
+            end
+            v25 = v25
+            if v26 == Enum.UserInputState.Begin and v25 == "ZoomIn" then
+                enable9 = true
+                enable8 = false
+            else
+                v25 = H
+                if v26 == Enum.UserInputState.End and function34 == "ZoomIn" or v26 == Enum.UserInputState.Cancel then
+                    enable9 = false
+                    enable8 = false
+                end
+            end 
+        end
+        
+        local tbl42 = repStorage.GrabEvents.EndGrabEarly.OnClientEvent
+        tbl42.Connect(tbl42, function(...)
+            if enable6 == true then
+                enable6 = false
+                if r28 then i[Hu]("Throw") end
+            end 
+        end)
+        tbl42 = tbl16.Died
+        tbl42.Connect(tbl42, function(...) function3("Throw") end)
+        local enable11 = false
+        tbl42 = function11("LowQualityMode").Event
+        tbl42.Connect(tbl42, function(...) enable11 = true end)
+        
+        local function function5(function38, function39, function40, ...)
+            replicatedFirstService = function40
+            if function38 == "Grab" and (function39 == Enum.UserInputState.Begin and tbl16.Health > 0) then
+                if enable6 == true then i[Hu](function38) end
+                if r10 then
+                    tbl15.Size = UDim2.new(0, 7, 0, 7)
+                    repStorage = contextAction
+                    repStorage.UnbindAction(repStorage, "Hold")
+                    enable3 = false
+                    enable6 = true
+                    local tbl53 = v62
+                    tbl53.Fire(tbl53, enable6)
+                    tbl4.ChangeColor("Grab", Color3.new(0, 1, 1))
+                    tbl4.PlaceButton("Throw", function20)
+                    tbl4.PlaceButton("ZoomIn", function37)
+                    tbl4.PlaceButton("ZoomOut", function37)
+                    tbl4.PlaceButton("ZoomPC", function33)
+                    tbl4.PlaceButton("Rotate", function27)
+                    tbl53 = v13
+                    tbl53.Fire(tbl53, "HoldControls", false)
+                    tbl53 = v13
+                    tbl53.Fire(tbl53, "GrabbingControls", true)
+                    tbl53 = v13
+                    tbl53.Fire(tbl53, "GrabControls", false)
+                    v122 = ((r10.Instance.CFrame * r11).Position - camera.CFrame.Position).Magnitude
+                    if v14 < v122 then
+                        v122 = v14
+                    else
+                        if v122 < 3 then i[v102] = 3 end
+                        local tbl45 = r10.Instance
+                        local tbl46 = v27
+                        local tbl47 = tbl46.Clone(tbl46)
+                        if enable11 == true then
+                            tbl47.GrabPart.LowQualityGrabPartBall.Transparency = 0
+                            tbl47.GrabPart.Transparency = 1
+                            tbl47.BeamPart.GrabBeam.Segments = 30
+                        end
+                        tbl47.DragPart.Position = camera.CFrame.LookVector * v122 + camera.CFrame.Position
+                        tbl46 = v28
+                        tbl46.FireServer(tbl46, r10.Instance, r11)
+                        tbl46 = v52
+                        tbl46.FireServer(tbl46, v122)
+                        tbl46 = tbl6
+                        local tbl48 = tbl46.WaitForChild(tbl46, "BeamColor")
+                        tbl48.WaitForChild(tbl48, "ColorSequenceHolder")
+                        tbl48.WaitForChild(tbl48, "BallColorHolder")
+                        local tbl49 = tbl6
+                        local tbl50 = tbl49.FindFirstChild(tbl49, "FartherReach")
+                        if tbl50 then tbl49 = tbl50.Value == true end
+                        if tbl50 then i[Au].BeamPart.GrabBeam.Texture = "rbxassetid://8933355899" end
+                        local tbl51 = tbl47
+                        local tbl52 = tbl51[2]
+                        for v29, index8 in pairs(tbl51.GetDescendants(tbl51)) do
+                            if index8.IsA(index8, "BasePart") then
+                                index8.Color = tbl52.WaitForChild(tbl52, "BallColorHolder").Value
+                            else
+                                if index8.IsA(index8, "Beam") then
+                                    index8.Color = tbl52.WaitForChild(tbl52, "ColorSequenceHolder").Color
+                                end
+                            end 
+                        end
+                        tbl49 = tbl45.Parent
+                        tbl49.FindFirstChild(tbl49, "Humanoid")
+                        if r10.Instance.Anchored == false then
+                            r10.Instance.AssemblyLinearVelocity = tbl17.AssemblyLinearVelocity
+                            r10.Instance.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+                        end
+                        tbl47.DragPart.Anchored = true
+                        tbl47.GrabPart.GrabAttach.Orientation = attachment2.WorldOrientation
+                        tbl47.DragPart.DragAttach.WorldOrientation = attachment2.WorldOrientation
+                        tbl47.GrabPart.WeldConstraint.Part1 = r10.Instance
+                        tbl52 = (r10.Instance.CFrame * r11).Position
+                        tbl47.GrabPart.Position = tbl52
+                        tbl47.GrabPart.Anchored = false
+                        tbl47.BeamPart.Anchored = true
+                        tbl47.BeamPart.GrabBeam.Attachment0 = attachment
+                        tbl47.Parent = WORKSPACE
+                        tbl49 = v32
+                        tbl49.FireServer(tbl49, r10.Instance, camera.CFrame)
+                        enable10 = false
+                        local tbl44 = runService
+                        tbl44.BindToRenderStep(tbl44, "dragBinding", Enum.RenderPriority.First.Value, function16)
+                        tbl44 = runService
+                        tbl44.BindToRenderStep(tbl44, "buttonDistanceMoving", Enum.RenderPriority.First.Value, function15)
+                        tbl44 = tbl47.GrabPart.AttachSound
+                        tbl44.Play(tbl44)
+                        wait()
+                        tbl44 = tbl47
+                        if tbl44.FindFirstChild(tbl44, "GrabPart") then
+                            local tbl43 = i[Au].GrabPart.BeamSound
+                            tbl43.Play(tbl43)
+                        end
+                    end
+                end
+            end 
+        end
+        
+        local GAME = GAME
+        GAME.GetService(GAME, "PhysicsService")
+        local v30 = repStorage.HoldEvents.Use
+        local enable12 = false
+        local v31 = 0
+        local enable13 = false
+        
+        local function function44(function42, function41, function43, ...)
+            local tbl55 = function42
+            tbl55 = function43
+            if function41 == Enum.UserInputState.Begin and enable12 == false then
+                v31 = v31 + 1
+                tbl55 = r68
+                if tbl55 then
+                    tbl55 = v30
+                    tbl55.FireServer(tbl55, r68)
+                end
+                repStorage = enable13
+                if repStorage == false then
+                    enable13 = true
+                    local func = Color3.new
+                    tbl4.ChangeColor("HoldUse", func(0, 1, 1))
+                    repStorage = r68.HoldPart
+                    if repStorage.GetAttribute(repStorage, "DestroysSelfTime") then
+                        local tbl54 = r68.HoldPart
+                        wait(tbl54.GetAttribute(tbl54, "DestroysSelfTime") - .1)
+                        tbl54 = v31 == v31
+                        repStorage = v31 + 1
+                        if tbl54 then i[Ku] = true end
+                    end
+                else
+                    enable13 = false
+                    tbl4.ChangeColor("HoldUse")
+                end
+            end 
+        end
+        
+        local tbl58 = (function(...)
+            repStorage = SCRIPT
+            local tbl56 = repStorage.FindFirstChild(repStorage, "ClientHoldPositions")
+            if tbl56 then tbl56 = tbl56.IsA(tbl56, "ModuleScript") end
+            if tbl56 then return require(tbl56) end
+            local tbl57 = function9(v22, "ClientHoldPositions", "ModuleScript")
+            if tbl57 then tbl56 = tbl57.IsA(tbl57, "ModuleScript") end
+            if tbl57 then return require(tbl57) end
+            return {
+                ["HoldItem"] = function(function46, function48, function45, function47, function49, ...)
+                    tbl56 = function45
+                    tbl56 = function46
+                    tbl57 = function47
+                    tbl57 = function48
+                    local v322 = CFrame.new((tbl57.CFrame + tbl57.CFrame.LookVector * 1.25 + tbl57.CFrame.UpVector * -0.75).Position) * function49.CFrame.Rotation
+                    return v322, v322 
+                end
+            } 
+        end)()
+        
+        local function function53(function52, function51, function50, ...)
+            replicatedFirstService = function50
+            local tbl59 = function51
+            local tbl60 = {
+                tbl58.HoldItem(enable13, tbl16, tbl59, camera, tbl59, r61, function52)
+            }
+            tbl59.SetPrimaryPartCFrame(tbl59, CFrame.new(tbl58.HoldItem(enable13, tbl16, tbl59, camera, tbl59, r61, function52).Position) * tbl59.CFrame.Rotation)
+            tbl59 = tbl59.CFrame
+            tbl59.SetPrimaryPartCFrame(tbl59, tbl59.Lerp(tbl59, tbl60[2], .1))
+            local v33 = camera.CFrame.Rotation 
+        end
+        
+        local function function2(function56, function55, function54, ...)
+            replicatedFirstService = function54
+            local tbl61 = function55
+            if (tbl61 == Enum.UserInputState.Begin and enable12 == false or tbl61 == nil) and r68 ~= nil then
+                enable12 = true
+                r66.PrimaryPart = r67
+                if r66 then
+                    tbl61 = r63
+                    tbl61.Disconnect(tbl61)
+                    tbl61 = r62
+                    tbl61.Disconnect(tbl61)
+                    tbl61 = r70
+                    tbl61.Disconnect(tbl61)
+                    tbl61 = r66
+                    tbl61.Destroy(tbl61)
+                    enable13 = false
+                end
+                local tbl62 = RaycastParams.new()
+                local character2 = tbl6.Character
+                tbl62.FilterDescendantsInstances = { character2.GetDescendants(character2) }
+                tbl62.FilterType = Enum.RaycastFilterType.Exclude
+                tbl62.IgnoreWater = true
+                local WORKSPACE2 = WORKSPACE
+                local tbl63 = WORKSPACE2.Raycast(WORKSPACE2, camera.CFrame.Position, camera.CFrame.LookVector * 8, tbl62)
+                if tbl63 then
+                    WORKSPACE2 = CFrame.new(tbl63.Position)
+                else
+                    WORKSPACE2 = CFrame.new(camera.CFrame.Position + camera.CFrame.LookVector * 8)
+                end
+                tbl63 = WORKSPACE
+                local tbl64 = tbl63.WaitForChild(tbl63, "RotateOrientPart")
+                local tbl65 = r68.HoldPart.DropItemRemoteFunction
+                if tbl65.InvokeServer(tbl65, r68, nil, Vector3.new(tbl64.Orientation.X, tbl64.Orientation.v6, tbl64.Orientation.Z)) == true then
+                    for index10, index9 in ("Z")[1], pairs(tbl62) do
+                        index10.IsA(index10, "BasePart")
+                        if tbl11 then
+                            if p then
+                                index9.IsA(index9, "BasePart")
+                            else
+                                if index9.IsA(index9, "ParticleEmitter") then
+                                else
+                                    index9.IsA(index9, "SurfaceGui")
+                                end
+                            end
+                        end 
+                    end
+                    tbl63 = contextAction
+                    tbl63.UnbindAction(tbl63, "HoldUse")
+                    tbl63 = contextAction
+                    tbl63.UnbindAction(tbl63, "HoldDrop")
+                    tbl63 = v13
+                    tbl63.Fire(tbl63, "HoldingControls", false)
+                    tbl63 = v13
+                    tbl63.Fire(tbl63, "HoldControls", false)
+                    enable13 = false
+                end
+                enable12 = false
+            end 
+        end
+        
+        local function function62(function60, function59, function61, ...)
+            if r68 == nil and (function59 == Enum.UserInputState.Begin and enable12 == false) then
+                enable12 = true
+                local tbl66 = r59
+                if r66 then
+                    replicatedFirstService = r63
+                    replicatedFirstService.Disconnect(replicatedFirstService)
+                    replicatedFirstService = r62
+                    replicatedFirstService.Disconnect(replicatedFirstService)
+                    replicatedFirstService = r70
+                    replicatedFirstService.Disconnect(replicatedFirstService)
+                    replicatedFirstService = r66
+                    replicatedFirstService.Destroy(replicatedFirstService)
+                    enable13 = false
+                end
+                local tbl67 = r59
+                local tbl68 = tbl67.Clone(tbl67)
+                tbl68.PrimaryPart = tbl68.HoldPart
+                local tbl69 = r59
+                for v34, index11 in tbl69[1], pairs(tbl69.GetDescendants(tbl69)) do
+                    if index11.IsA(index11, "BasePart") then
+                        table.insert(i[vM], {
+                            ["PartReference"] = index11,
+                            ["CanCollide"] = index11.CanCollide,
+                            ["CanTouch"] = index11.CanTouch,
+                            ["CanQuery"] = index11.CanQuery,
+                            ["Transparency"] = index11.Transparency
+                        })
+                    end
+                    if index11.IsA(index11, "Decal") or index11.IsA(index11, "Texture") then
+                        table.insert(i[vM], {
+                            ["PartReference"] = index11,
+                            ["Transparency"] = index11.Transparency
+                        })
+                    else
+                        if index11.IsA(index11, "SurfaceGui") then
+                            table.insert(i[vM], {
+                                ["PartReference"] = index11,
+                                ["Enabled"] = index11.Enabled
+                            })
+                        else
+                            if index11.IsA(index11, "ParticleEmitter") then
+                                table.insert(i[vM], {
+                                    ["PartReference"] = index11,
+                                    ["Enabled"] = index11.Enabled
+                                })
+                            end
+                        end
+                    end 
+                end
+                local tbl70 = tbl66.HoldPart.HoldItemRemoteFunction
+                tbl69 = character
+                if tbl70.InvokeServer(tbl70, tbl66, tbl69) == true then
+                    function3("Throw")
+                    local tbl72 = contextAction
+                    tbl72.UnbindAction(tbl72, "Grab")
+                    enable1 = false
+                    local tbl73 = contextAction
+                    tbl73.UnbindAction(tbl73, "Hold")
+                    tbl4.PlaceButton("HoldUse", function44)
+                    tbl4.PlaceButton("HoldDrop", function2)
+                    tbl73 = v13
+                    tbl73.Fire(tbl73, "HoldControls", false)
+                    tbl73 = v13
+                    tbl73.Fire(tbl73, "HoldingControls", true)
+                    tbl73 = tbl68
+                    local v35 = tbl73.WaitForChild(tbl73, "HoldPart")
+                    tbl72 = v35
+                    tbl69 = tbl72.WaitForChild(tbl72, "RigidConstraint")
+                    tbl69.Destroy(tbl69)
+                    tbl68.Parent = WORKSPACE
+                    tbl69 = tbl66.AncestryChanged
+                    local v37 = tbl69.Connect(tbl69, function(...)
+                        tbl67 = tbl66
+                        if tbl67.IsDescendantOf(tbl67, WORKSPACE) == false then
+                            enable12 = true
+                            if tbl68 then
+                                tbl67 = r63
+                                tbl67.Disconnect(tbl67)
+                                tbl67 = r62
+                                tbl67.Disconnect(tbl67)
+                                tbl67 = r70
+                                tbl67.Disconnect(tbl67)
+                                tbl67 = tbl68
+                                tbl67.Destroy(tbl67)
+                                enable13 = false
+                            end
+                            tbl67 = contextAction
+                            tbl67.UnbindAction(tbl67, "HoldUse")
+                            tbl67 = contextAction
+                            tbl67.UnbindAction(tbl67, "HoldDrop")
+                            tbl67 = v13
+                            tbl67.Fire(tbl67, "HoldControls", false)
+                            tbl67 = v13
+                            tbl67.Fire(tbl67, "HoldingControls", false)
+                            enable12 = false
+                        end 
+                    end)
+                    tbl69 = tbl66.DescendantRemoving
+                    local v39 = tbl69.Connect(tbl69, function(function58, ...)
+                        if function58.Name == "EdiblePart" then
+                            tbl69 = i[qu]
+                            tbl67 = tbl69[3]
+                            tbl69 = tbl69[1]
+                            for v38, index12 in tbl69, pairs(tbl69.GetDescendants(tbl69)) do
+                                if index12.Name == "EdiblePart" then index12.Destroy(index12) end 
+                            end
+                        end 
+                    end)
+                    local tbl74 = tbl66
+                    local tbl71 = tbl74[2]
+                    local v40 = tbl74[3]
+                    for v41, index13 in pairs(tbl74.GetDescendants(tbl74)) do
+                        if index13.IsA(index13, "BasePart") then
+                            index13.CanTouch = false
+                            index13.CanQuery = false
+                            index13.CanCollide = false
+                            index13.Transparency = 1
+                        end
+                        if index13.IsA(index13, "Decal") or index13.IsA(index13, "Texture") then
+                            index13.Transparency = 1
+                        else
+                            if index13.IsA(index13, "ParticleEmitter") then
+                                index13.Enabled = false
+                            else
+                                if index13.IsA(index13, "SurfaceGui") then index13.Enabled = false end
+                            end
+                        end 
+                    end
+                    tbl74 = tbl68
+                    local v422 = tbl74[1]
+                    tbl71 = tbl74[2]
+                    for v43, index14 in pairs(tbl74.GetDescendants(tbl74)) do
+                        if index14.IsA(index14, "BasePart") then
+                            index14.CanTouch = false
+                            index14.CanQuery = false
+                            index14.CanCollide = false
+                            index14.Massless = true
+                            index14.Anchored = true
+                        else
+                            if index14.Name == "FoodSizzling" then index14.Destroy(index14) end
+                        end 
+                    end
+                    tbl71 = tbl68
+                    tbl71.SetPrimaryPartCFrame(tbl71, camera.CFrame + camera.CFrame.LookVector * 1.25 + camera.CFrame.UpVector * -0.75)
+                    tbl71 = runService.RenderStepped
+                    local v36 = tbl71.Connect(tbl71, function(function57, ...) function53(function57, tbl68, v35) end)
+                else
+                    local tbl75 = tbl68
+                    tbl75.Destroy(tbl75)
+                end
+                enable12 = false
+            end 
+        end
+        
+        local tbl76 = tbl16.Died
+        tbl76.Connect(tbl76, function(...) if r68 then function2(r68) end end)
+        tbl4.PlaceButton("Grab", function5)
+        enable1 = true
+        local enable2 = true
+        local tbl3 = runService.Stepped
+        tbl3.Connect(tbl3, function(...)
+            function13()
+            if enable6 == false and enable2 == true then
+                if r68 == nil then
+                    replicatedFirstService = v14
+                    local tbl83 = tbl10.RaycastFromCam(tbl6, replicatedFirstService)
+                    if tbl83 then
+                        if enable4 == false then
+                            enable4 = true
+                            if enable1 == false then
+                                tbl4.PlaceButton("Grab", function5)
+                                tbl83 = v13
+                                tbl83.Fire(tbl83, "GrabControls", true)
+                                enable1 = true
+                            end
+                            tbl4.GrayOutButton("Grab", false)
+                            tbl83 = v13
+                            tbl83.Fire(tbl83, "GrabControls", true)
+                            tbl15.Size = UDim2.new(0, 21, 0, 21)
+                        end
+                        repStorage = repStorage[2]
+                        tbl83 = tbl83
+                        local tbl78 = tbl83
+                        local v46 = repStorage
+                        local tbl80 = tbl78.Instance
+                        local tbl81 = tbl80.Parent
+                        local v45 = tbl81.IsA(tbl81, "Model")
+                        if v45 then
+                            tbl81 = tbl80.Parent
+                            local tbl79 = tbl81.FindFirstChild(tbl81, "HoldPart")
+                            if tbl79 then
+                                tbl81 = tbl80 == false
+                                if tbl79.FindFirstChild(tbl79, "RigidConstraint") and tbl79.RigidConstraint.Attachment1 == nil then
+                                    tbl79 = false
+                                    if enable3 == tbl79 then
+                                        enable3 = true
+                                        local v44 = tbl78.Instance.Parent
+                                        tbl4.PlaceButton("Hold", function62)
+                                        tbl79 = v13
+                                        tbl79.Fire(tbl79, "HoldControls", true)
+                                    end
+                                    if enable3 == true and r59 ~= tbl78.Instance.Parent then
+                                        enable3 = false
+                                        local tbl77 = contextAction
+                                        tbl77.UnbindAction(tbl77, "Hold")
+                                        tbl77 = v13
+                                        tbl77.Fire(tbl77, "HoldControls", false)
+                                        tbl4.PlaceButton("Grab", function5)
+                                        tbl77 = v13
+                                        tbl77.Fire(tbl77, "GrabControls", true)
+                                        enable1 = true
+                                    end
+                                end
+                            else
+                                if enable3 == true then
+                                    enable3 = false
+                                    local tbl82 = contextAction
+                                    tbl82.UnbindAction(tbl82, "Hold")
+                                    tbl82 = v13
+                                    tbl82.Fire(tbl82, "HoldControls", false)
+                                    tbl4.PlaceButton("Grab", function5)
+                                    tbl82 = v13
+                                    tbl82.Fire(tbl82, "GrabControls", true)
+                                    enable1 = true
+                                end
+                            end
+                        end
+                    else
+                        if enable4 == true then
+                            enable4 = false
+                            if enable1 == false then
+                                tbl4.PlaceButton("Grab", function5)
+                                local tbl85 = v13
+                                tbl85.Fire(tbl85, "GrabControls", true)
+                                enable1 = true
+                            end
+                            tbl4.GrayOutButton("Grab", true)
+                            local tbl86 = v13
+                            tbl86.Fire(tbl86, "GrabControls", false)
+                            tbl15.Size = UDim2.new(0, 11, 0, 11)
+                        end
+                        if enable3 == true then
+                            enable3 = false
+                            local tbl84 = contextAction
+                            tbl84.UnbindAction(tbl84, "Hold")
+                            tbl84 = v13
+                            tbl84.Fire(tbl84, "HoldControls", false)
+                            tbl4.PlaceButton("Grab", function5)
+                            tbl84 = v13
+                            tbl84.Fire(tbl84, "GrabControls", true)
+                            enable1 = true
+                        end
+                    end
+                end
+            else
+                local tbl87 = enable4
+                if tbl87 == false then
+                    enable4 = true
+                    tbl4.GrayOutButton("Grab", true)
+                    tbl4.ChangeColor("Grab", Color3.new(0, 1, 1))
+                    tbl87 = v13
+                    tbl87.Fire(tbl87, "GrabControls", false)
+                end
+            end 
+        end)
+        tbl3 = function11("ToggleMobileButtonVisibility").Event
+        tbl3.Connect(tbl3, function(function4, ...)
+            if function4 == false then
+                enable2 = false
+                replicatedFirstService = v13
+                replicatedFirstService.Fire(replicatedFirstService, "RotatingControls", false)
+                replicatedFirstService = v13
+                replicatedFirstService.Fire(replicatedFirstService, "RotateControls", false)
+                replicatedFirstService = v13
+                replicatedFirstService.Fire(replicatedFirstService, "GrabbingControls", false)
+                replicatedFirstService = v13
+                replicatedFirstService.Fire(replicatedFirstService, "GrabControls", false)
+                replicatedFirstService = v13
+                replicatedFirstService.Fire(replicatedFirstService, "HoldControls", false)
+                replicatedFirstService = v13
+                replicatedFirstService.Fire(replicatedFirstService, "HoldingControls", false)
+                function2()
+                function3("Throw")
+                replicatedFirstService = contextAction
+                replicatedFirstService.UnbindAction(replicatedFirstService, "Grab")
+                replicatedFirstService = contextAction
+                replicatedFirstService.UnbindAction(replicatedFirstService, "Throw")
+                replicatedFirstService = contextAction
+                replicatedFirstService.UnbindAction(replicatedFirstService, "ZoomPC")
+                replicatedFirstService = contextAction
+                replicatedFirstService.UnbindAction(replicatedFirstService, "ZoomIn")
+                replicatedFirstService = contextAction
+                replicatedFirstService.UnbindAction(replicatedFirstService, "ZoomOut")
+                replicatedFirstService = contextAction
+                replicatedFirstService.UnbindAction(replicatedFirstService, "Rotate")
+                replicatedFirstService = contextAction
+                replicatedFirstService.UnbindAction(replicatedFirstService, "Hold")
+                replicatedFirstService = contextAction
+                replicatedFirstService.UnbindAction(replicatedFirstService, "HoldUse")
+                replicatedFirstService = contextAction
+                replicatedFirstService.UnbindAction(replicatedFirstService, "HoldDrop")
+                enable3 = false
+                enable1 = false
+            else
+                tbl4.PlaceButton("Grab", function5)
+                replicatedFirstService = v13
+                replicatedFirstService.Fire(replicatedFirstService, "GrabControls", true)
+                enable1 = true
+                enable2 = true
+            end 
+        end) 
+    end
+    
+    local tbl88 = GAME.Players.LocalPlayer.CharacterAdded
+    tbl88.Connect(tbl88, function(...)
+        task.wait(1)
+        function63() 
+    end)
+    function63()
+    local GAME = GAME
+    GAME = loadstring(GAME.HttpGet(GAME, "https://gitlab.com/cooldawg123moo/rufield/-/raw/main/Rayfield.lua"))()
+    local tbl89 = GAME.CreateWindow(GAME, {
+        ["Name"] = "Free Reach by rurur123",
+        ["LoadingTitle"] = "Farther Reach Thing",
+        ["LoadingSubtitle"] = "by rurur123 on discord!",
+        ["Theme"] = "Tatsumaki",
+        ["ConfigurationSaving"] = {
+            ["Enabled"] = true,
+            ["FolderName"] = "hahahahaha",
+            ["FileName"] = "Settings"
+        },
+        ["Discord"] = {
+            ["Enabled"] = true,
+            ["Invite"] = "T9baH5j9NU",
+            ["RememberJoins"] = false
+        },
+        ["KeySystem"] = false,
+        ["KeySettings"] = {
+            ["Title"] = "Join the server",
+            ["Subtitle"] = "Key System",
+            ["Note"] = "Join discord: discord.gg/T9baH5j9NU",
+            ["FileName"] = "Key",
+            ["SaveKey"] = false,
+            ["GrabKeyFromSite"] = true,
+            ["Key"] = {
+                "https://gitlab.com/cooldawg123moo/ruhubconfigfiles/-/raw/main/hello2.txt?ref_type=heads"
+            }
+        }
+    })
+    local tbl = tbl89.CreateTab(tbl89, "Grab/Line", "hand")
+    tbl.CreateSection(tbl, "Free Reach")
+    tbl.CreateParagraph(tbl, {
+        ["Title"] = "Info",
+        ["Content"] = "Default is 20, farther reach gamepass is 30. Btw, join the server (discord.gg/T9baH5j9NU) cuz im remaking RuHub completely, and I promise it WILL be the best free FTAP script."
+    })
+    tbl.CreateSlider(tbl, {
+        ["Name"] = "Grab Line Reach",
+        ["Range"] = { 20, 60 },
+        ["Increment"] = 1,
+        ["Suffix"] = "",
+        ["CurrentValue"] = 30,
+        ["Flag"] = "nigga",
+        ["Callback"] = function(function64, ...) getgenv().Reach = function64 end
+    })
+    local tbl90 = GAME.Players.LocalPlayer
+    local tbl2 = tbl90.FindFirstChild(tbl90, "FartherReach") or Instance.new("BoolValue")
+    tbl2.Name = "FartherReach"
+    tbl2.Parent = GAME.Players.LocalPlayer
+    tbl2.Value = false
+    tbl.CreateToggle(tbl, {
+        ["Name"] = "Farther Reach Gamepass Triangular Pattern",
+        ["CurrentValue"] = false,
+        ["Flag"] = "beamtexture",
+        ["Callback"] = function(function1, ...) tbl2.Value = function1 end
+    })
+end
