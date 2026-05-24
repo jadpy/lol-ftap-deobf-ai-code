@@ -1,0 +1,740 @@
+    local GAME = GAME
+    local players = GAME.GetService(GAME, "Players")
+    local GAME = GAME
+    local runService = GAME.GetService(GAME, "RunService")
+    local GAME = GAME
+    local inputService = GAME.GetService(GAME, "UserInputService")
+    local GAME = GAME
+    local workspace = GAME.GetService(GAME, "Workspace")
+    local GAME2 = GAME
+    local teams = GAME2.GetService(GAME2, "Teams")
+    local GAME3 = GAME
+    GAME3.GetService(GAME3, "TweenService")
+    GAME3 = GAME
+    local teleportService = GAME3.GetService(GAME3, "TeleportService")
+    local localPlayer = players.LocalPlayer
+    local camera = workspace.CurrentCamera
+    local v72 = "\xe3\x81\xbb\xe3\x82\x8d\xe3\x82\x93\xe3\x80\x81\xe3\x81\xaf\xe3\x82\x80\xe3\x81\x8b\xe3\x81\x9c"
+    local v82 = "\xe4\xb8\x8d\xe6\x98\x8e"
+    local tbl17 = r15("\xcf]\xd1\xfb\xfd\x17\xcc\xf6\xa2\xe6\x89~\xefg.\xc9", 11046095983639)
+    if getgenv()[tbl16[tbl17]] then
+        tbl17 = "HolonConnections"
+        local v9 = getgenv()[tbl17]
+        for v102, index7 in pairs(v9) do
+            if index7 then index7.Disconnect(index7) end 
+        end
+    end
+    getgenv().HolonConnections = {}
+    pcall(function(...)
+        local tbl18 = runService
+        tbl18.UnbindFromRenderStep(tbl18, "HolonAimbot") 
+    end)
+    
+    local function function28(function27, ...)
+        local v112 = function27
+        local GAME4 = GAME
+        function28 = GAME4.GetService(GAME4, "CoreGui")
+        GAME4 = function28.FindFirstChild(function28, v112)
+        if GAME4 then
+            function28 = GAME
+            GAME4 = function28.GetService(function28, "CoreGui")[v112]
+            GAME4.Destroy(GAME4)
+        end
+        GAME4 = GAME
+        function28 = GAME4.GetService(GAME4, "CoreGui")
+        GAME4 = function28.FindFirstChild(function28, "Rayfield")
+        if GAME4 then
+            function28 = GAME
+            GAME4 = function28.GetService(function28, "CoreGui").Rayfield
+            GAME4.Destroy(GAME4)
+        end
+        if gethui and ("gethui").FindFirstChild("gethui", v112) then
+            GAME4 = gethui()[v112]
+            GAME4.Destroy(GAME4)
+        end
+        local tbl19 = localPlayer
+        if tbl19.FindFirstChild(tbl19, "PlayerGui") and tbl19.FindFirstChild(tbl19, v112) then
+            GAME4 = localPlayer.PlayerGui[v112]
+            GAME4.Destroy(GAME4)
+        end 
+    end
+    
+    function28("HolonFOV")
+    function28("HolonMiniUI")
+    function28("Rayfield")
+    
+    local function function23(function29, ...)
+        local tbl20 = function29
+        tbl20.CreateLabel(tbl20, "\xe4\xbd\x9c\xe8\x80\x85: " .. v72)
+        tbl20.CreateLabel(tbl20, "Roblox ID: " .. v82)
+        tbl20.CreateButton(tbl20, {
+            ["Name"] = "Discord",
+            ["Callback"] = function(...)
+                setclipboard("https://discord.gg/EHBXqgZZYN")
+                local tbl23 = r32
+                tbl23.Notify(tbl23, {
+                    ["Title"] = "\xe3\x83\xaa\xe3\x83\xb3\xe3\x82\xaf",
+                    ["Content"] = "Discord\xe3\x81\xae\xe6\x8b\x9b\xe5\xbe\x85\xe3\x83\xaa\xe3\x83\xb3\xe3\x82\xaf\xe3\x82\x92\xe3\x82\xb3\xe3\x83\x94\xe3\x83\xbc\xe3\x81\x97\xe3\x81\xbe\xe3\x81\x97\xe3\x81\x9f",
+                    ["Duration"] = 3
+                }) 
+            end
+        })
+        tbl20.CreateButton(tbl20, {
+            ["Name"] = "Copy & Load EN Version",
+            ["Callback"] = function(...)
+                setclipboard("loadstring(game:HttpGet(\"https://raw.githubusercontent.com/hololove1021/holon-mvs2/refs/heads/main/hub-en.lua\"))()")
+                task.spawn(function(...)
+                    tbl20 = GAME
+                    loadstring(tbl20.HttpGet(tbl20, "https://raw.githubusercontent.com/hololove1021/holon-mvs2/refs/heads/main/hub-en.lua"))() 
+                end) 
+            end
+        })
+        tbl20.CreateButton(tbl20, {
+            ["Name"] = "\xe3\x82\xb5\xe3\x83\xbc\xe3\x83\x90\xe3\x83\xbc\xe5\x86\x8d\xe5\x8f\x82\xe5\x8a\xa0 (Rejoin)",
+            ["Callback"] = function(...)
+                tbl20 = {
+                    pcall(function(...)
+                        local tbl21 = teleportService
+                        tbl21.TeleportToPlaceInstance(tbl21, GAME.PlaceId, GAME.JobId, localPlayer) 
+                    end)
+                }
+                tbl20 = tbl20[2]
+                local v122 = pcall(function(...)
+                    local tbl22 = teleportService
+                    tbl22.TeleportToPlaceInstance(tbl22, GAME.PlaceId, GAME.JobId, localPlayer) 
+                end)
+                local enable2 = not v122
+                if enable2 then
+                    enable2 = teleportService
+                    enable2.Teleport(enable2, GAME.PlaceId, localPlayer)
+                end 
+            end
+        }) 
+    end
+    
+    local function function11(...)
+        local tbl24 = e[GAME]
+        tbl24 = tbl24[1]
+        for v132, index8 in ipairs(tbl24.GetPlayers(tbl24)) do
+            if index8 ~= localPlayer then
+                table.insert({}, index8.DisplayName .. " (@" .. index8.Name .. ")")
+            end 
+        end
+        return {} 
+    end
+    
+    local tbl25 = {}
+    
+    local function function31(function30, ...)
+        local tbl26 = function30
+        local character = tbl26.Character
+        if character then
+            character = tbl26.Character
+            local tbl27 = character.FindFirstChild(character, "HolonHighlight")
+            character = tbl27.Character
+            tbl27 = character.FindFirstChild(character, "HolonBillboard")
+            if tbl27 then tbl27.Destroy(tbl27) end
+            if tbl27 then tbl27.Destroy(tbl27) end
+        end
+        if tbl25[tbl26] then tbl25[tbl26].Visible = false end 
+    end
+    
+    local function function33(function32, ...)
+        local tbl28 = function32
+        GAME = tbl28.CharacterAdded
+        table.insert(getgenv().HolonConnections, GAME.Connect(GAME, function(...) function31(tbl28) end)) 
+    end
+    
+    local tbl29 = players
+    table.insert(getgenv().HolonConnections, Y(tbl29))
+    tbl29 = players
+    { func(tbl29) }
+    local v32 = tbl29[2]
+    local tbl30 = tbl29[3]
+    Y(v142)
+    func(tbl30, v142)
+    tbl30 = players.PlayerAdded
+    table.insert(getgenv().HolonConnections, tbl30.Connect(tbl30, function33))
+    tbl30 = runService.Heartbeat
+    table.insert(getgenv().HolonConnections, tbl30.Connect(tbl30, function(...)
+        GAME = players
+        local tbl35 = GAME[2]
+        local v17 = tbl35[3]
+        for v16, index9 in pairs(tbl35.GetPlayers(tbl35)) do
+            if index9 ~= localPlayer then
+                local character2 = index9.Character
+                tbl17 = character2
+                if tbl17 then
+                    tbl17 = character2
+                    tbl35 = tbl17.FindFirstChild(tbl17, "HumanoidRootPart")
+                end
+                GAME3 = character2
+                if GAME3 then
+                    GAME3 = character2
+                    tbl17 = GAME3.FindFirstChildOfClass(GAME3, "Humanoid")
+                end
+                local tbl36 = character2
+                GAME3 = tbl36
+                if tbl36 then
+                    tbl36 = character2
+                    GAME3 = tbl36.FindFirstChild(tbl36, "HolonHighlight")
+                end
+                local tbl34 = GAME3
+                local tbl31 = character2
+                GAME3 = tbl25[enable3]
+                if tbl31 then
+                    tbl31 = character2
+                    GAME3 = tbl31.FindFirstChild(tbl31, "HolonBillboard")
+                end
+                function33 = false
+                local enable3 = function33 and (character2 and character2.Parent ~= nil)
+                if enable3 then
+                    function33 = enable3.Team ~= localPlayer.Team or enable3.Team == nil
+                    if false and not function33 then enable3 = false end
+                    if enable3 then
+                        if function33 then local v152 = Color3.fromRGB(255, 0, 0) end
+                        tbl31 = tbl31
+                        if function33 then
+                            tbl31 = tbl31
+                            if not tbl34 then
+                                tbl34 = Instance.new("Highlight")
+                                tbl34.Name = "HolonHighlight"
+                                tbl34.FillTransparency = 0.5
+                                tbl34.OutlineTransparency = 0
+                                tbl34.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+                                pcall(function(...) tbl34.Parent = character2 end)
+                            end
+                            tbl34.Adornee = character2
+                            local tbl33 = function33
+                            tbl34.FillColor = tbl33
+                            tbl34.OutlineColor = tbl29
+                            tbl34.Enabled = true
+                            local tbl32 = r38
+                            tbl33 = "ShowNames"
+                            if tbl32[tbl33] then
+                                tbl33 = not tbl31
+                                tbl32 = tbl31
+                                if tbl33 then
+                                    tbl31 = tbl32
+                                    if tbl33 then
+                                        if tbl31 then tbl31.Destroy(tbl31) end
+                                        GAME3 = Instance.new("BillboardGui")
+                                        GAME3.Name = "HolonBillboard"
+                                        GAME3.AlwaysOnTop = true
+                                        GAME3.Size = UDim2.new(0, 200, 0, 50)
+                                        GAME3.ExtentsOffset = Vector3.new(0, 1.5, 0)
+                                        GAME3.Parent = character2
+                                        tbl33 = Instance.new("TextLabel", GAME3)
+                                        tbl33.BackgroundTransparency = 1
+                                        tbl33.Size = UDim2.new(1, 0, 1, 0)
+                                        tbl33.Font = Enum.Font.SourceSansBold
+                                        tbl33.TextSize = 14
+                                        tbl33.TextStrokeTransparency = 0
+                                    end
+                                    tbl33 = GAME3.FindFirstChildOfClass(GAME3, "TextLabel")
+                                    if tbl33 then
+                                        tbl33.Text = tbl32.DisplayName .. " (@" .. tbl32.Name .. ")"
+                                        tbl33.TextColor3 = r
+                                    end
+                                    GAME3.Enabled = true
+                                    if tbl31 then tbl31.Visible = false end
+                                else
+                                    tbl33 = tbl31.Parent ~= character2
+                                end
+                            else
+                                if tbl31 then tbl31.Enabled = false end
+                            end
+                        else
+                            tbl29 = Color3.fromRGB(0, 255, 0)
+                        end
+                    else
+                        if tbl34 then tbl34.Enabled = false end
+                        if GAME3 then tbl31.Enabled = false end
+                        if tbl31 then tbl31.Visible = false end
+                    end
+                else
+                    if tbl34 then tbl34.Enabled = false end
+                    if GAME3 then tbl31.Enabled = false end
+                    if tbl25[enable3] then tbl31.Visible = false end
+                end
+            end 
+        end 
+    end))
+    
+    local function function16(...)
+        GAME = workspace
+        local tbl37 = GAME[2]
+        tbl37 = tbl37[1]
+        for v18, index10 in pairs(tbl37.GetDescendants(tbl37)) do
+            if index10.IsA(index10, "BasePart") and not index10.IsDescendantOf(index10, localPlayer.Character) then
+                index10.LocalTransparencyModifier = 0
+            end 
+        end 
+    end
+    
+    tbl29 = inputService.InputBegan
+    table.insert(getgenv().HolonConnections, tbl29.Connect(tbl29, function(function34, function35, ...)
+        if not function35 and (function34.KeyCode == Enum.KeyCode.Z and false) then
+            GAME = RaycastParams.new()
+            GAME.FilterDescendantsInstances = { localPlayer.Character }
+            GAME.FilterType = Enum.RaycastFilterType.Exclude
+            local tbl38 = workspace
+            local tbl39 = tbl38.Raycast(tbl38, camera.CFrame.Position, camera.CFrame.LookVector * 1000, GAME)
+            if tbl39 then function28 = localPlayer.Character end
+            if tbl39 then
+                tbl38 = localPlayer.Character
+                tbl38.PivotTo(tbl38, CFrame.new(tbl39.Position + tbl39.Normal * 1.5))
+            end
+        end 
+    end))
+    tbl29 = runService.Heartbeat
+    table.insert(getgenv().HolonConnections, tbl29.Connect(tbl29, function(...)
+        if false and localPlayer.Character then
+            local character3 = localPlayer.Character
+            local tbl40 = character3.FindFirstChildOfClass(character3, "Humanoid")
+            character3 = localPlayer.Character
+            local tbl41 = character3.FindFirstChild(character3, "HumanoidRootPart")
+            if tbl40 then
+                if tbl41 then
+                    tbl40 = character3.FindFirstChildOfClass(character3, "Humanoid").MoveDirection.Magnitude > 0
+                end
+                character3 = localPlayer.Character
+            end
+            if tbl40 then
+                tbl40 = tbl40.MoveDirection * 16
+                tbl41.AssemblyLinearVelocity = Vector3.new(tbl40.X, tbl41.AssemblyLinearVelocity.Y, tbl40.Z)
+            end
+        end 
+    end))
+    local tbl6 = {
+        ["\xe9\xa0\xad"] = "Head",
+        ["\xe8\x83\xb4\xe4\xbd\x93"] = "HumanoidRootPart",
+        ["\xe4\xb8\x8a\xe5\x8d\x8a\xe8\xba\xab"] = "UpperTorso",
+        ["\xe4\xb8\x8b\xe5\x8d\x8a\xe8\xba\xab"] = "LowerTorso"
+    }
+    local tbl9 = {
+        ["Head"] = "\xe9\xa0\xad",
+        ["HumanoidRootPart"] = "\xe8\x83\xb4\xe4\xbd\x93",
+        ["UpperTorso"] = "\xe4\xb8\x8a\xe5\x8d\x8a\xe8\xba\xab",
+        ["LowerTorso"] = "\xe4\xb8\x8b\xe5\x8d\x8a\xe8\xba\xab"
+    }
+    task.spawn(function(...) end)
+    local tbl2 = {}
+    local screenGui = Instance.new("ScreenGui")
+    screenGui.Name = "HolonFOV"
+    screenGui.IgnoreGuiInset = true
+    local tbl15 = gethui
+    local v42 = tbl15 and gethui()
+    if tbl15 then
+        local tbl8 = h0 and gethui()
+        screenGui.Parent = tbl8
+        screenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+        local frame = Instance.new("Frame")
+        frame.Name = "Circle"
+        frame.AnchorPoint = Vector2.new(0.5, 0.5)
+        frame.BackgroundColor3 = Color3.new(1, 1, 1)
+        frame.BackgroundTransparency = 1
+        frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+        frame.Size = UDim2.new(0, 300, 0, 300)
+        frame.Parent = screenGui
+        tbl8 = Instance.new("UICorner")
+        tbl8.CornerRadius = UDim.new(1, 0)
+        tbl8.Parent = frame
+        Instance.new("UIStroke")
+        Color3.new(1, 1, 1)
+        local screenGui = Instance.new("ScreenGui")
+        screenGui.Name = "HolonMiniUI"
+        screenGui.Parent = v42
+        screenGui.Enabled = false
+        screenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+        local frame2 = Instance.new("Frame")
+        frame2.Size = UDim2.new(0, 120, 0, 190)
+        frame2.Position = UDim2.new(1, -10, .4, 0)
+        frame2.AnchorPoint = Vector2.new(1, 0.5)
+        frame2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+        frame2.BorderSizePixel = 0
+        frame2.Parent = screenGui
+        local corner = Instance.new("UICorner")
+        corner.CornerRadius = UDim.new(0, 8)
+        corner.Parent = frame2
+        local stroke = Instance.new("UIStroke")
+        stroke.Color = Color3.fromRGB(100, 100, 100)
+        stroke.Thickness = 1
+        stroke.Parent = frame2
+        Instance.new("UIListLayout")
+        UDim.new(0, 5)
+        local padding = Instance.new("UIPadding")
+        padding.Parent = frame2
+        padding.PaddingTop = UDim.new(0, 5)
+        padding.PaddingBottom = UDim.new(0, 5)
+        padding.PaddingLeft = UDim.new(0, 5)
+        padding.PaddingRight = UDim.new(0, 5)
+        local textButton = Instance.new("TextButton")
+        textButton.Size = UDim2.new(0, 110, 0, 25)
+        textButton.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+        textButton.Text = "Aim: OFF"
+        textButton.TextColor3 = Color3.new(1, 1, 1)
+        textButton.Font = Enum.Font.SourceSansBold
+        textButton.TextSize = 12
+        textButton.Parent = frame2
+        Instance.new("UICorner", textButton).CornerRadius = UDim.new(0, 6)
+        local textButton2 = Instance.new("TextButton")
+        textButton2.Size = UDim2.new(0, 110, 0, 25)
+        textButton2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+        textButton2.Text = "Team: \xe6\x95\xb5\xe3\x83\x81\xe3\x83\xbc\xe3\x83\xa0"
+        textButton2.TextColor3 = Color3.new(1, 1, 1)
+        textButton2.Font = Enum.Font.SourceSans
+        textButton2.TextSize = 12
+        textButton2.Parent = frame2
+        Instance.new("UICorner", textButton2).CornerRadius = UDim.new(0, 6)
+        local textButton3 = Instance.new("TextButton")
+        textButton3.Size = UDim2.new(0, 110, 0, 25)
+        textButton3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+        textButton3.Text = "Part: \xe8\x83\xb4\xe4\xbd\x93"
+        textButton3.TextColor3 = Color3.new(1, 1, 1)
+        textButton3.Font = Enum.Font.SourceSans
+        textButton3.TextSize = 12
+        textButton3.Parent = frame2
+        Instance.new("UICorner", textButton3).CornerRadius = UDim.new(0, 6)
+        local frame3 = Instance.new("Frame")
+        frame3.Size = UDim2.new(0, 110, 0, 25)
+        frame3.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+        frame3.Parent = frame2
+        Instance.new("UICorner", frame3).CornerRadius = UDim.new(0, 6)
+        local frame4 = Instance.new("Frame")
+        frame4.Size = UDim2.new(150 / 800, 0, 1, 0)
+        frame4.BackgroundColor3 = Color3.fromRGB(0, 120, 255)
+        frame4.Parent = frame3
+        Instance.new("UICorner", frame4).CornerRadius = UDim.new(0, 6)
+        Instance.new("TextLabel")
+        UDim2.new(1, 0, 1, 0)
+        Color3.new(1, 1, 1)
+        local textButton4 = Instance.new("TextButton")
+        textButton4.Size = UDim2.new(0, 110, 0, 25)
+        textButton4.BackgroundColor3 = Color3.fromRGB(200, 100, 0)
+        textButton4.Text = "Unlock"
+        textButton4.TextColor3 = Color3.new(1, 1, 1)
+        textButton4.Font = Enum.Font.SourceSansBold
+        textButton4.TextSize = 12
+        textButton4.Parent = frame2
+        Instance.new("UICorner", textButton4).CornerRadius = UDim.new(0, 6)
+        
+        local function function2(...)
+            padding = textButton
+            stroke = padding
+            padding = stroke
+            padding = padding
+            padding.Text = "Aim: " .. (false and "ON" or "OFF")
+            padding = textButton
+            corner = "BackgroundColor3"
+            corner = false
+            if corner then tbl8 = Color3.fromRGB(0, 170, 0) end
+            padding = padding
+            if corner then
+                padding = padding
+                padding.BackgroundColor3 = tbl8
+                textButton2.Text = "Team: " .. "\xe6\x95\xb5\xe3\x83\x81\xe3\x83\xbc\xe3\x83\xa0"
+                textButton3.Text = "Part: " .. (tbl9["HumanoidRootPart"] or "HumanoidRootPart")
+                frame4.Size = UDim2.new(150 / 800, 0, 1, 0)
+            else
+                Color3.fromRGB(170, 0, 0)
+            end 
+        end
+        
+        local tbl5 = textButton.MouseButton1Click
+        tbl5.Connect(tbl5, function(...)
+            r37.Enabled = not false
+            padding = tbl2.AimEnabled
+            if padding then
+                padding = tbl2.AimEnabled
+                padding.Set(padding, false)
+            end
+            function2() 
+        end)
+        tbl5 = textButton2.MouseButton1Click
+        tbl5.Connect(tbl5, function(...)
+            local tbl10 = {
+                "\xe6\x95\xb5\xe3\x83\x81\xe3\x83\xbc\xe3\x83\xa0",
+                "\xe5\x85\xa8\xe3\x81\xa6\xe3\x81\xae\xe3\x83\x81\xe3\x83\xbc\xe3\x83\xa0",
+                "\xe5\x80\x8b\xe5\x88\xa5\xe3\x83\x97\xe3\x83\xac\xe3\x82\xa4\xe3\x83\xa4\xe3\x83\xbc"
+            }
+            padding = ipairs
+            local tbl11 = teams
+            tbl10 = tbl11[3]
+            tbl11 = tbl11[1]
+            for index5, index6 in tbl11, padding(tbl11.GetTeams(tbl11)) do
+                table.insert(index5, index6.Name) 
+            end
+            r37.TargetTeam = tbl10[(table.find(tbl10, "\xe6\x95\xb5\xe3\x83\x81\xe3\x83\xbc\xe3\x83\xa0") or 0) % #tbl10 + 1] or "\xe6\x95\xb5\xe3\x83\x81\xe3\x83\xbc\xe3\x83\xa0"
+            tbl10 = tbl2.AimTargetTeam
+            if tbl10 then
+                tbl10 = tbl2.AimTargetTeam
+                tbl10.Set(tbl10, "\xe6\x95\xb5\xe3\x83\x81\xe3\x83\xbc\xe3\x83\xa0")
+            end
+            function2() 
+        end)
+        tbl5 = textButton3.MouseButton1Click
+        tbl5.Connect(tbl5, function(...)
+            padding = { "Head", "HumanoidRootPart", "UpperTorso", "LowerTorso" }
+            r37.TargetPart = padding[(table.find(padding, "HumanoidRootPart") or 0) % #padding + 1] or "HumanoidRootPart"
+            corner = tbl2.AimTargetPart
+            if corner then
+                corner = tbl2.AimTargetPart
+                corner.Set(corner, tbl9["HumanoidRootPart"])
+            end
+            function2() 
+        end)
+        tbl5 = textButton4.MouseButton1Click
+        tbl5.Connect(tbl5, function(...) end)
+        local enable1 = false
+        local tbl4 = frame3.InputBegan
+        tbl4.Connect(tbl4, function(function24, ...)
+            local tbl12 = function24
+            if tbl12.UserInputType == Enum.UserInputType.MouseButton1 or tbl12.UserInputType == Enum.UserInputType.Touch then
+                enable1 = true
+            end 
+        end)
+        tbl4 = inputService.InputEnded
+        tbl4.Connect(tbl4, function(function25, ...)
+            local tbl13 = function25
+            if tbl13.UserInputType == Enum.UserInputType.MouseButton1 or tbl13.UserInputType == Enum.UserInputType.Touch then
+                enable1 = false
+            end 
+        end)
+        tbl4 = inputService.InputChanged
+        tbl4.Connect(tbl4, function(function26, ...)
+            local v52 = enable1
+            local tbl14 = function26
+            if v52 then
+                tbl14 = tbl14.UserInputType == Enum.UserInputType.MouseMovement or tbl14.UserInputType == Enum.UserInputType.Touch
+                padding = padding
+            end
+            if v52 then
+                padding = inputService
+                tbl14 = math.floor(math.clamp(padding.GetMouseLocation(padding).X - frame3.AbsolutePosition.X, 0, frame3.AbsoluteSize.X) / frame3.AbsoluteSize.X * 790 + 10)
+                stroke = tbl14
+                r37.FOV = stroke
+                padding = tbl2.AimFOV
+                if padding then
+                    padding = tbl2.AimFOV
+                    padding.Set(padding, tbl14)
+                end
+                function2()
+            end 
+        end)
+        tbl4 = runService
+        tbl4.BindToRenderStep(tbl4, "HolonAimbot", Enum.RenderPriority.Camera.Value + 1, function(...)
+            frame.Size = UDim2.new(0, 150 * 2, 0, 150 * 2)
+            screenGui.Enabled = false and true
+            padding = inputService
+            Vector2.new(camera.ViewportSize.X / 2, camera.ViewportSize.Y / 2)
+            padding.GetMouseDelta(padding) 
+        end)
+        local v13 = "https://sirius.menu/rayfield";
+        (function(...)
+            local GAME = GAME
+            local v22 = loadstring(GAME.HttpGet(GAME, v13))()
+            corner = v22
+            GAME = corner.CreateWindow(corner, {
+                ["Name"] = "halom HUB",
+                ["LoadingTitle"] = "halom HUB",
+                ["LoadingSubtitle"] = "\xe4\xbd\x9c\xe8\x80\x85: \xe3\x81\xbb\xe3\x82\x8d\xe3\x82\x93\xe3\x80\x81\xe3\x81\xaf\xe3\x82\x80\xe3\x81\x8b\xe3\x81\x9c",
+                ["ConfigurationSaving"] = { ["Enabled"] = false }
+            })
+            
+            local function function1(...)
+                GAME = {}
+                local tbl = players
+                tbl = tbl[3]
+                tbl = tbl[1]
+                for index, index2 in tbl, ipairs(tbl.GetPlayers(tbl)) do
+                    table.insert(index, index2.DisplayName .. " (@" .. index2.Name .. ")") 
+                end
+                return tbl 
+            end
+            
+            GAME = GAME.CreateTab(GAME, "\xe3\x82\xaa\xe3\x83\xbc\xe3\x83\x88\xe3\x82\xa8\xe3\x82\xa4\xe3\x83\xa0", 4483362458)
+            GAME.CreateSection(GAME, "\xe3\x82\xa8\xe3\x82\xa4\xe3\x83\xa0\xe3\x83\x9c\xe3\x83\x83\xe3\x83\x88\xe8\xa8\xad\xe5\xae\x9a")
+            tbl2.AimEnabled = GAME.CreateToggle(GAME, {
+                ["Name"] = "\xe3\x82\xaa\xe3\x83\xbc\xe3\x83\x88\xe3\x82\xa8\xe3\x82\xa4\xe3\x83\xa0\xe6\x9c\x89\xe5\x8a\xb9\xe5\x8c\x96",
+                ["CurrentValue"] = false,
+                ["Callback"] = function(function3, ...)
+                    r37.Enabled = function3
+                    function2() 
+                end
+            })
+            tbl2.AimShowFOV = GAME.CreateToggle(GAME, {
+                ["Name"] = "FOV\xe5\x86\x86\xe3\x82\x92\xe8\xa1\xa8\xe7\xa4\xba",
+                ["CurrentValue"] = true,
+                ["Callback"] = function(function4, ...)
+                    r37.ShowFOV = function4
+                    function2() 
+                end
+            })
+            tbl2.AimTargetTeam = GAME.CreateDropdown(GAME, {
+                ["Name"] = "\xe5\xaf\xbe\xe8\xb1\xa1\xe3\x83\x81\xe3\x83\xbc\xe3\x83\xa0",
+                ["Options"] = (function(...)
+                    GAME = {
+                        "\xe6\x95\xb5\xe3\x83\x81\xe3\x83\xbc\xe3\x83\xa0",
+                        "\xe5\x85\xa8\xe3\x81\xa6\xe3\x81\xae\xe3\x83\x81\xe3\x83\xbc\xe3\x83\xa0",
+                        "\xe5\x80\x8b\xe5\x88\xa5\xe3\x83\x97\xe3\x83\xac\xe3\x82\xa4\xe3\x83\xa4\xe3\x83\xbc"
+                    }
+                    local tbl3 = teams
+                    function1 = tbl3[2]
+                    tbl3 = tbl3[1]
+                    for index3, index4 in ipairs(tbl3.GetTeams(tbl3)) do
+                        table.insert(index3, index4.Name) 
+                    end
+                    return tbl3 
+                end)(),
+                ["CurrentOption"] = "\xe6\x95\xb5\xe3\x83\x81\xe3\x83\xbc\xe3\x83\xa0",
+                ["Callback"] = function(function5, ...)
+                    r37.TargetTeam = function5[1]
+                    function2() 
+                end
+            })
+            GAME.CreateToggle(GAME, {
+                ["Name"] = "\xe3\x83\x9f\xe3\x83\x8bUI\xe3\x82\x92\xe8\xa1\xa8\xe7\xa4\xba",
+                ["CurrentValue"] = false,
+                ["Callback"] = function(function6, ...) screenGui.Enabled = function6 end
+            })
+            GAME.CreateButton(GAME, {
+                ["Name"] = "\xe7\x8f\xbe\xe5\x9c\xa8\xe3\x81\xae\xe3\x82\xbf\xe3\x83\xbc\xe3\x82\xb2\xe3\x83\x83\xe3\x83\x88\xe3\x82\x92\xe8\xa7\xa3\xe9\x99\xa4",
+                ["Callback"] = function(...) e[v32] = nil end
+            })
+            GAME.CreateSection(GAME, "\xe8\xa8\xad\xe5\xae\x9a")
+            tbl2.AimFOV = GAME.CreateSlider(GAME, {
+                ["Name"] = "FOV\xe3\x82\xb5\xe3\x82\xa4\xe3\x82\xba (\xe5\x86\x86\xe3\x81\xae\xe5\xa4\xa7\xe3\x81\x8d\xe3\x81\x95)",
+                ["Range"] = { 10, 800 },
+                ["Increment"] = 1,
+                ["Suffix"] = "px",
+                ["CurrentValue"] = 190,
+                ["Callback"] = function(function7, ...)
+                    r37.FOV = function7
+                    function2() 
+                end
+            })
+            tbl2.AimTargetPart = GAME.CreateDropdown(GAME, {
+                ["Name"] = "\xe7\x8b\x99\xe3\x81\x86\xe9\x83\xa8\xe4\xbd\x8d",
+                ["Options"] = {
+                    "\xe9\xa0\xad",
+                    "\xe8\x83\xb4\xe4\xbd\x93",
+                    "\xe4\xb8\x8a\xe5\x8d\x8a\xe8\xba\xab",
+                    "\xe4\xb8\x8b\xe5\x8d\x8a\xe8\xba\xab"
+                },
+                ["CurrentOption"] = "\xe8\x83\xb4\xe4\xbd\x93",
+                ["Callback"] = function(function8, ...)
+                    padding = r37
+                    padding.TargetPart = tbl6[function8[1]] or "HumanoidRootPart"
+                    function2() 
+                end
+            })
+            tbl2.AimThroughWalls = GAME.CreateToggle(GAME, {
+                ["Name"] = "\xe5\xa3\x81\xe8\xb2\xab\xe9\x80\x9a(\xe3\x82\xa8\xe3\x82\xa4\xe3\x83\xa0)",
+                ["CurrentValue"] = false,
+                ["Callback"] = function(function9, ...)
+                    r37.ThroughWalls = function9
+                    function2() 
+                end
+            })
+            GAME.CreateToggle(GAME, {
+                ["Name"] = "\xe3\x83\x95\xe3\x83\xac\xe3\x83\xb3\xe3\x83\x89\xe3\x82\x92\xe9\x99\xa4\xe5\xa4\x96",
+                ["CurrentValue"] = false,
+                ["Callback"] = function(function10, ...) r37.ExcludeFriends = function10 end
+            })
+            GAME.CreateSection(GAME, "\xe3\x83\x97\xe3\x83\xac\xe3\x82\xa4\xe3\x83\xa4\xe3\x83\xbc\xe5\x80\x8b\xe5\x88\xa5\xe8\xa8\xad\xe5\xae\x9a")
+            GAME.CreateDropdown(GAME, {
+                ["Name"] = "\xe3\x83\x9b\xe3\x83\xaf\xe3\x82\xa4\xe3\x83\x88\xe3\x83\xaa\xe3\x82\xb9\xe3\x83\x88 (\xe9\x99\xa4\xe5\xa4\x96)",
+                ["Options"] = function11(),
+                ["CurrentOption"] = {},
+                ["MultipleOptions"] = true,
+                ["Callback"] = function(function12, ...) r37.Whitelist = function12 end
+            })
+            GAME.CreateDropdown(GAME, {
+                ["Name"] = "\xe3\x83\x96\xe3\x83\xa9\xe3\x83\x83\xe3\x82\xaf\xe3\x83\xaa\xe3\x82\xb9\xe3\x83\x88 (\xe5\xaf\xbe\xe8\xb1\xa1)",
+                ["Options"] = function11(),
+                ["CurrentOption"] = {},
+                ["MultipleOptions"] = true,
+                ["Callback"] = function(function13, ...) r37.Blacklist = function13 end
+            })
+            GAME.CreateButton(GAME, {
+                ["Name"] = "\xe3\x83\xaa\xe3\x82\xb9\xe3\x83\x88\xe3\x82\x92\xe3\x82\xaf\xe3\x83\xaa\xe3\x82\xa2",
+                ["Callback"] = function(...)
+                    r37.Whitelist = {}
+                    r37.Blacklist = {}
+                    padding = v22
+                    padding.Notify(padding, {
+                        ["Title"] = "\xe3\x82\xaf\xe3\x83\xaa\xe3\x82\xa2",
+                        ["Content"] = "\xe3\x83\xaa\xe3\x82\xb9\xe3\x83\x88\xe3\x82\x92\xe3\x83\xaa\xe3\x82\xbb\xe3\x83\x83\xe3\x83\x88\xe3\x81\x97\xe3\x81\xbe\xe3\x81\x97\xe3\x81\x9f",
+                        ["Duration"] = 2
+                    }) 
+                end
+            })
+            local tbl7 = GAME.CreateTab(GAME, "\xe7\xa7\xbb\xe5\x8b\x95/\xe3\x83\x97\xe3\x83\xac\xe3\x82\xa4\xe3\x83\xa4\xe3\x83\xbc", 4483362458)
+            tbl7.CreateSection(tbl7, "\xe7\xa7\xbb\xe5\x8b\x95\xe7\xb3\xbb\xe3\x83\x8f\xe3\x83\x83\xe3\x82\xaf")
+            tbl7.CreateToggle(tbl7, {
+                ["Name"] = "\xe3\x82\xb9\xe3\x83\x94\xe3\x83\xbc\xe3\x83\x89\xe3\x82\xa2\xe3\x83\x83\xe3\x83\x97\xe6\x9c\x89\xe5\x8a\xb9\xe5\x8c\x96",
+                ["CurrentValue"] = false,
+                ["Callback"] = function(function14, ...)
+                    GAME = function14
+                    r39.SpeedEnabled = GAME
+                    if not GAME and localPlayer.Character then
+                        localPlayer.Character.Humanoid.WalkSpeed = 16
+                    end 
+                end
+            })
+            tbl7.CreateSlider(tbl7, {
+                ["Name"] = "\xe3\x82\xb9\xe3\x83\x94\xe3\x83\xbc\xe3\x83\x89\xe5\x80\xa4",
+                ["Range"] = { 16, 200 },
+                ["Increment"] = 1,
+                ["Suffix"] = "spd",
+                ["CurrentValue"] = 16,
+                ["Callback"] = function(function15, ...) r39.SpeedValue = function15 end
+            })
+            tbl7.CreateToggle(tbl7, {
+                ["Name"] = "\xe3\x83\x9e\xe3\x83\x83\xe3\x83\x97\xe9\x80\x8f\xe8\xa6\x96 (xray)",
+                ["CurrentValue"] = false,
+                ["Callback"] = function(function17, ...)
+                    r39.MapHollow = function17
+                    function16() 
+                end
+            })
+            tbl7.CreateToggle(tbl7, {
+                ["Name"] = "Z\xe3\x82\xad\xe3\x83\xbc\xe3\x83\x86\xe3\x83\xac\xe3\x83\x9d\xe3\x83\xbc\xe3\x83\x88 (\xe8\xa6\x96\xe7\xb7\x9a\xe3\x81\xae\xe5\x85\x88\xe3\x81\xb8)",
+                ["CurrentValue"] = false,
+                ["Callback"] = function(function18, ...) r39.ClickTP = function18 end
+            })
+            tbl7 = GAME.CreateTab(GAME, "\xe3\x83\x93\xe3\x82\xb8\xe3\x83\xa5\xe3\x82\xa2\xe3\x83\xab", 4483362458)
+            tbl7.CreateSection(tbl7, "\xe3\x83\x97\xe3\x83\xac\xe3\x82\xa4\xe3\x83\xa4\xe3\x83\xbc\xe8\xa6\x96\xe8\xa6\x9a\xe5\x8c\x96")
+            tbl7.CreateToggle(tbl7, {
+                ["Name"] = "\xe3\x83\x97\xe3\x83\xac\xe3\x82\xa4\xe3\x83\xa4\xe3\x83\xbcESP (\xe9\x80\x8f\xe9\x81\x8e)",
+                ["CurrentValue"] = false,
+                ["Callback"] = function(function19, ...) r38.Enabled = function19 end
+            })
+            tbl7.CreateToggle(tbl7, {
+                ["Name"] = "\xe6\x95\xb5\xe3\x81\xae\xe3\x81\xbf\xe8\xa1\xa8\xe7\xa4\xba",
+                ["CurrentValue"] = false,
+                ["Callback"] = function(function20, ...) r38.OnlyEnemies = function20 end
+            })
+            tbl7.CreateToggle(tbl7, {
+                ["Name"] = "\xe5\x90\x8d\xe5\x89\x8d\xe3\x82\x92\xe8\xa1\xa8\xe7\xa4\xba",
+                ["CurrentValue"] = false,
+                ["Callback"] = function(function21, ...) r38.ShowNames = function21 end
+            })
+            tbl7.CreateToggle(tbl7, {
+                ["Name"] = "\xe3\x83\x88\xe3\x83\xac\xe3\x83\xbc\xe3\x82\xb5\xe3\x83\xbc\xe3\x82\x92\xe8\xa1\xa8\xe7\xa4\xba",
+                ["CurrentValue"] = false,
+                ["Callback"] = function(function22, ...) r38.ShowTracers = function22 end
+            })
+            function23(GAME.CreateTab(GAME, "\xe8\xa9\xb3\xe7\xb4\xb0", 4483362458))
+            function1 = v22
+            function1.Notify(function1, {
+                ["Title"] = "halom HUB",
+                ["Content"] = "v1 \xe3\x81\x8c\xe8\xaa\xad\xe3\x81\xbf\xe8\xbe\xbc\xe3\x81\xbe\xe3\x82\x8c\xe3\x81\xbe\xe3\x81\x97\xe3\x81\x9f\xef\xbc\x81",
+                ["Duration"] = 5
+            }) 
+        end)()
+    else
+        tbl15.GetService(tbl15, "CoreGui") or tbl15.WaitForChild(tbl15, "PlayerGui")
+    end
+end
