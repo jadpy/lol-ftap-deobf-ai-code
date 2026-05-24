@@ -1,0 +1,206 @@
+        local GAME = GAME
+        GAME = GAME.GetService(GAME, "StarterGui")
+        GAME.SetCore(GAME, "SendNotification", {
+            ["Title"] = "\xe2\x9c\x93 Key Link Copied!",
+            ["Text"] = "The key link has been copied to your clipboard",
+            ["Duration"] = 5
+        })
+    else
+        warn("Failed to copy link. Your executor might not support setclipboard()")
+    end
+    tbl2 = GAME
+    local v32 = loadstring(tbl2.HttpGet(tbl2, "https://sirius.menu/rayfield"))()
+    local tbl3 = v32
+    tbl2 = tbl3.CreateWindow(tbl3, {
+        ["Name"] = "FTAP Superfling",
+        ["LoadingTitle"] = "Fling Things and People",
+        ["LoadingSubtitle"] = "by Zenon",
+        ["ConfigurationSaving"] = {
+            ["Enabled"] = true,
+            ["FolderName"] = nil,
+            ["FileName"] = "FTAP_Superfling"
+        },
+        ["Discord"] = {
+            ["Enabled"] = false,
+            ["Invite"] = "noinvitelink",
+            ["RememberJoins"] = true
+        },
+        ["KeySystem"] = true,
+        ["KeySettings"] = {
+            ["Title"] = "Key System",
+            ["Subtitle"] = "Authentication",
+            ["Note"] = "The key link has been copied to your clipboard! Paste it in your browser to get the key.",
+            ["FileName"] = "FTAP_Key",
+            ["SaveKey"] = true,
+            ["GrabKeyFromSite"] = false,
+            ["Key"] = { "KEY-851231234" }
+        }
+    })
+    tbl3 = v32
+    tbl3.Notify(tbl3, {
+        ["Title"] = "\xf0\x9f\x93\x8b Link Copied!",
+        ["Content"] = "Key link is in your clipboard - paste and visit it to get your key",
+        ["Duration"] = 6,
+        ["Image"] = 4483362458
+    })
+    tbl3 = GAME
+    local workspace = tbl3.GetService(tbl3, "Workspace")
+    local GAME = GAME
+    local debrisService = GAME.GetService(GAME, "Debris")
+    local tbl4 = {
+        ["Strength"] = 850,
+        ["FlingEnabled"] = true,
+        ["AutoFling"] = false
+    }
+    local tbl5 = tbl2.CreateTab(tbl2, "Main", 4483362458)
+    tbl5.CreateSection(tbl5, "Fling Settings")
+    tbl5.CreateToggle(tbl5, {
+        ["Name"] = "Enable Fling",
+        ["CurrentValue"] = true,
+        ["Flag"] = "FlingToggle",
+        ["Callback"] = function(function2, ...)
+            local v42 = function2
+            tbl4.FlingEnabled = v42
+            local tbl6 = v32
+            if v42 then tbl5 = "Enabled" end
+            tbl6.Notify(tbl6, {
+                ["Title"] = "Fling",
+                ["Content"] = "Fling " .. (v42 or "Disabled"),
+                ["Duration"] = 2,
+                ["Image"] = 4483362458
+            }) 
+        end
+    })
+    local v52 = tbl5.CreateSlider(tbl5, {
+        ["Name"] = "Fling Strength",
+        ["Range"] = { 100, 2000 },
+        ["Increment"] = 50,
+        ["CurrentValue"] = 850,
+        ["Flag"] = "StrengthSlider",
+        ["Callback"] = function(function3, ...) tbl4.Strength = function3 end
+    })
+    tbl5.CreateToggle(tbl5, {
+        ["Name"] = "Auto Fling (Instant Release)",
+        ["CurrentValue"] = false,
+        ["Flag"] = "AutoFlingToggle",
+        ["Callback"] = function(function4, ...) tbl4.AutoFling = function4 end
+    })
+    tbl5.CreateSection(tbl5, "Strength Presets")
+    tbl5.CreateButton(tbl5, {
+        ["Name"] = "Low (500)",
+        ["Callback"] = function(...)
+            tbl4.Strength = 500
+            local tbl7 = v52
+            tbl7.Set(tbl7, 500)
+            tbl7 = v32
+            tbl7.Notify(tbl7, {
+                ["Title"] = "Preset Applied",
+                ["Content"] = "Strength set to Low (500)",
+                ["Duration"] = 2,
+                ["Image"] = 4483362458
+            }) 
+        end
+    })
+    tbl5.CreateButton(tbl5, {
+        ["Name"] = "Medium (850)",
+        ["Callback"] = function(...)
+            tbl4.Strength = 850
+            local tbl8 = v52
+            tbl8.Set(tbl8, 850)
+            tbl8 = v32
+            tbl8.Notify(tbl8, {
+                ["Title"] = "Preset Applied",
+                ["Content"] = "Strength set to Medium (850)",
+                ["Duration"] = 2,
+                ["Image"] = 4483362458
+            }) 
+        end
+    })
+    tbl5.CreateButton(tbl5, {
+        ["Name"] = "High (1200)",
+        ["Callback"] = function(...)
+            tbl4.Strength = 1200
+            local tbl9 = v52
+            tbl9.Set(tbl9, 1200)
+            tbl9 = v32
+            tbl9.Notify(tbl9, {
+                ["Title"] = "Preset Applied",
+                ["Content"] = "Strength set to High (1200)",
+                ["Duration"] = 2,
+                ["Image"] = 4483362458
+            }) 
+        end
+    })
+    tbl5.CreateButton(tbl5, {
+        ["Name"] = "Extreme (2000)",
+        ["Callback"] = function(...)
+            tbl4.Strength = 2000
+            local tbl10 = v52
+            tbl10.Set(tbl10, 2000)
+            tbl10 = v32
+            tbl10.Notify(tbl10, {
+                ["Title"] = "Preset Applied",
+                ["Content"] = "Strength set to Extreme (2000)",
+                ["Duration"] = 2,
+                ["Image"] = 4483362458
+            }) 
+        end
+    })
+    local tbl11 = tbl2.CreateTab(tbl2, "Info", 4483362458)
+    tbl11.CreateParagraph(tbl11, {
+        ["Title"] = "How to Use",
+        ["Content"] = "1. Enable fling with the toggle\n2. Adjust strength with the slider\n3. Grab objects in-game\n4. Release to fling them\n\nAuto Fling will fling immediately when you grab something."
+    })
+    tbl11.CreateSection(tbl11, "Get Key")
+    tbl11.CreateButton(tbl11, {
+        ["Name"] = "\xf0\x9f\x93\x8b Copy Key Link Again",
+        ["Callback"] = function(...)
+            setclipboard("https://link-center.net/1450468/1rZM580IMFxE")
+            local tbl12 = v32
+            tbl12.Notify(tbl12, {
+                ["Title"] = "\xe2\x9c\x93 Copied!",
+                ["Content"] = "Key link copied to clipboard",
+                ["Duration"] = 3,
+                ["Image"] = 4483362458
+            }) 
+        end
+    })
+    tbl11.CreateParagraph(tbl11, {
+        ["Title"] = "Key Information",
+        ["Content"] = "The link was auto-copied when you ran the script!\n\nKey: KEY-851231234\n\nIf you need to copy the link again, use the button above."
+    })
+    local tbl = workspace.ChildAdded
+    tbl.Connect(tbl, function(function5, ...)
+        local tbl14 = function5
+        local tbl13 = tbl14.Name
+        if tbl13 == "GrabParts" then
+            local tbl15 = tbl14
+            local tbl16 = tbl15.FindFirstChild(tbl15, "GrabPart")
+            tbl16 = tbl16.FindFirstChild(tbl16, "WeldConstraint")
+            local bodyVel = Instance.new("BodyVelocity")
+            tbl5 = tbl16.Part1
+            bodyVel.Parent = tbl5
+            if false and true then
+                task.wait(.1)
+                tbl15 = tbl14.Parent
+                if tbl15 then
+                    tbl15 = tbl14
+                    tbl15.Destroy(tbl15)
+                end
+            end
+            tbl15 = tbl14
+            tbl13 = tbl15.GetPropertyChangedSignal(tbl15, "Parent")
+            tbl13.Connect(tbl13, function(...)
+                local enable1 = not tbl14.Parent
+                if enable1 then
+                    bodyVel.MaxForce = Vector3.new(1000000000, 1000000000, 1000000000)
+                    bodyVel.Velocity = workspace.CurrentCamera.CFrame.LookVector * 850
+                    enable1 = debrisService
+                    enable1.AddItem(enable1, bodyVel, 1)
+                end 
+            end)
+        end 
+    end)
+    tbl = v32
+    tbl.LoadConfiguration(tbl)
+end
